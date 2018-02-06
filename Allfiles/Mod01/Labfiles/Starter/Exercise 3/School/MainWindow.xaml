@@ -1,0 +1,38 @@
+﻿<Window x:Class="School.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:app="clr-namespace:School"
+        Title="The School of Fine Arts" Height="362" Width="614" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Window.Resources>
+        <app:AgeConverter x:Key="ageConverter" />
+        <DataTemplate x:Key="ClassTemplate">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=FirstName}" />
+                <TextBlock Text=" " />
+                <TextBlock Text="{Binding Path=LastName}" />
+                <TextBlock Text=" : Class " />
+                <TextBlock Text="{Binding Path=Class}" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <ComboBox Height="23" HorizontalAlignment="Stretch" Margin="40,16,42,0" x:Name="teachersList" VerticalAlignment="Top" Width="Auto" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding}" ItemTemplate="{StaticResource ClassTemplate}" SelectionChanged="teachersList_SelectionChanged" />
+        <ListView Height="Auto" HorizontalAlignment="Stretch" Margin="40,44,40,60" x:Name="studentsList" VerticalAlignment="Stretch" Width="Auto" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding}" KeyDown="studentsList_KeyDown" MouseDoubleClick="studentsList_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Width="75" Header="Student ID"
+                           DisplayMemberBinding="{Binding Path=Id}" />
+                        <GridViewColumn Width="190" Header="First Name"
+                           DisplayMemberBinding="{Binding Path=FirstName}" />
+                        <GridViewColumn Width="190" Header="Last Name"
+                           DisplayMemberBinding="{Binding Path=LastName}" />
+                        <GridViewColumn Width="75" Header="Age"
+                           DisplayMemberBinding="{Binding Path=DateOfBirth, Converter={StaticResource ageConverter}}" />
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Save Changes" Height="23" HorizontalAlignment="Left" Margin="40,0,0,10" Name="saveChanges" VerticalAlignment="Bottom" Width="90" IsEnabled="False" Click="saveChanges_Click" />
+    </Grid>
+</Window>
