@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="GradesPrototype.Views.StudentsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtClass" Grid.Row="0" Margin="15,5,0,0" FontSize="18" />
+
+        <ScrollViewer Grid.Row="1" Margin="15" BorderThickness="0" VerticalScrollBarVisibility="Auto">
+            <Grid x:Name="list" Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Margin="8">
+                    <Button Height="150" Width="127.5" Click="Student_Click" Tag="Kevin Liu">
+                        <StackPanel>
+                            <TextBlock Text="Kevin" FontSize="16" />
+                            <TextBlock Text="Liu" FontSize="16"  />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                
+                <Grid Grid.Column="1" Margin="8">
+                    <Button Height="150" Width="127.5" Click="Student_Click" Tag="Martin Weber">
+                        <StackPanel>
+                            <TextBlock Text="Martin" FontSize="16" />
+                            <TextBlock Text="Weber" FontSize="16"  />
+                        </StackPanel>
+                    </Button>
+                </Grid>            
+                
+                <Grid Grid.Column="2" Margin="8">
+                    <Button Height="150" Width="127.5" Click="Student_Click" Tag="George Li">
+                        <StackPanel>
+                            <TextBlock Text="George" FontSize="16" />
+                            <TextBlock Text="Li" FontSize="16"  />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Column="3" Margin="8">
+                    <Button Height="150" Width="127.5" Click="Student_Click" Tag="Lisa Miller">
+                        <StackPanel>
+                            <TextBlock Text="Lisa" FontSize="16" />
+                            <TextBlock Text="Miller" FontSize="16"  />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                
+                <Grid Grid.Column="4" Margin="8">
+                    <Button Height="150" Width="127.5" Click="Student_Click" Tag="Run Liu">
+                        <StackPanel>
+                            <TextBlock Text="Run" FontSize="16" />
+                            <TextBlock Text="Liu" FontSize="16"  />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
