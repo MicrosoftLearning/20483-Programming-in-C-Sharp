@@ -1,0 +1,15 @@
+
+Test the Grade class by creating a unit test project. 
+
+TODO: Exercise 2: Task 3a: Create a Unit Test project called GradesTest
+
+TODO: Exercise 2: Task 3b: Define the following tests and suport methods (details provided in the lab description):
+
+	Init (to initialize the DataSource)
+    TestValidGrade
+    TestBadDate
+    TestDateNotRecognized
+    TestBadAssessment
+    TestBadSubject
+
+TODO: Exercise 2: Task 3c: Build and run the tests. Verify that all tests succeed, or make corrections until they succeed
