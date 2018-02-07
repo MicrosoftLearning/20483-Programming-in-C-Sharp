@@ -1,0 +1,36 @@
+﻿<Window x:Class="Grades.WPF.AddStudentDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Grades.WPF"                      
+        Height="400" Width="450"
+        ResizeMode="NoResize"
+        Title="Add Student">
+
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Style="{StaticResource LabelCenter}" FontSize="24" Text="Unassigned Students" />
+
+            <TextBlock x:Name="txtMessage" Grid.Row="1" Style="{StaticResource LabelCenter}" Text="No students" VerticalAlignment="Center" FontSize="14" />
+            <ScrollViewer x:Name="listContainer" Grid.Row="1" Margin="45,0,45,45" BorderThickness="0" VerticalScrollBarVisibility="Auto">
+                <ItemsControl x:Name="list">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <local:StudentPhoto Margin="8" Height="150" Width="127.5" RenderTransformOrigin="0.5,0.5" Cursor="Hand" MouseLeftButtonUp="Student_Click" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+
+        <Button x:Name="OKButton" Grid.Row="1" Margin="10" Content="Close" Click="OKButton_Click" Width="75" Height="23" HorizontalAlignment="Center" />
+    </Grid>
+</Window>

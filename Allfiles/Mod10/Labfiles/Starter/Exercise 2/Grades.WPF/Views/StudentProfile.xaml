@@ -1,0 +1,230 @@
+﻿<UserControl x:Class="Grades.WPF.StudentProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Grades.WPF"
+             >
+    <UserControl.Resources>
+        <local:ListColorConverter x:Key="converter" />
+        
+        <Style x:Key="LabelSubject" BasedOn="{StaticResource LabelStyle}" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style x:Key="TextBoxSubject" BasedOn="{StaticResource TextBoxStyle}" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <local:GrungeButton x:Name="btnBack" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,0,0,0" Click="Back_Click">
+                <TextBlock Style="{StaticResource LabelCenter}" Text="Back" />
+            </local:GrungeButton>
+
+            <ItemsControl x:Name="listChild" Margin="15,0,0,0" Visibility="Collapsed">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Style="{StaticResource LabelStyle}" FontSize="18" Margin="5" Text="{Binding Name}" Tag="{Binding}"  Cursor="Hand" MouseLeftButtonUp="Child_Click" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <local:StudentPhoto x:Name="studentPhoto" Grid.Row="2" Margin="30" Height="250" Width="235" >
+                <local:StudentPhoto.RenderTransform>
+                    <RotateTransform Angle="-2"/>
+                </local:StudentPhoto.RenderTransform>
+            </local:StudentPhoto>
+        </Grid>
+
+        <Grid Grid.Column="1" Margin="20">
+            <local:FlipControl x:Name="flipControl" Margin="10">
+                <local:FlipControl.FrontContent>
+                    <Grid x:Name="studentDetails">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="1"/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+
+                        <Image Source="../Images/paper.jpg" Stretch="Fill" Margin="0">
+                            <Image.Effect>
+                                <DropShadowEffect Opacity="0.415"/>
+                            </Image.Effect>
+                        </Image>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Margin="5" Text="Report Card" TextWrapping="Wrap" Style="{StaticResource LabelLeft}"/>
+                            <Image Grid.Row="1" Margin="15,0,23,0" Height="4" Source="../Images/grit-bar.png" VerticalAlignment="Top" Stretch="Fill"/>
+
+                            <Grid HorizontalAlignment="Right" Margin="0,16.471,23,0" VerticalAlignment="Top" Width="143.567" Height="19.31" Cursor="Hand" Tag="Back" MouseLeftButtonUp="Flip_Click">
+                                <TextBlock Margin="0,1.999,21.416,0" Text="Section Options" Style="{StaticResource LabelRight}" FontSize="10.667" Foreground="#FF0071BC" FontFamily="Verdana"/>
+                                <Path Fill="#C10071BC" Stretch="Fill" Width="15.416" Data="F1M59.6631,6.5762C55.1811,1.9822,48.4011,-0.4738,40.0561,-0.5258C26.1571,-0.7598,8.9571,6.0752,0.00010000000000332,15.0342L6.7611,21.7952C13.8241,14.7322,28.5951,9.0362,39.7911,9.0362C39.8591,9.0362,39.9281,9.0362,39.9961,9.0372C43.9931,9.0622,49.4591,9.8132,52.8151,13.2542C56.0301,16.5492,56.1741,18.7662,55.9991,20.1462C55.1151,27.2132,41.8271,36.5312,33.4601,41.8662L29.6431,23.2072C25.4811,36.4162,15.5941,52.5372,6.6371,63.9172C20.8501,61.1352,39.7071,59.6802,53.3591,62.0002L38.4061,50.0282C56.2261,38.6022,64.4161,29.8852,65.4871,21.3362C66.1351,16.1692,64.1741,11.2042,59.6631,6.5762" HorizontalAlignment="Right" Margin="0,0,0,4.166"/>
+                            </Grid>
+
+                            <Grid x:Name="gridProfile" Grid.Row="2">
+                                <ScrollViewer x:Name="profileView" VerticalScrollBarVisibility="Auto" BorderThickness="0">
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid Margin="0" Height="36" Background="{Binding Converter={StaticResource converter}}">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="67"/>
+                                                        <ColumnDefinition Width="140"/>
+                                                        <ColumnDefinition Width="30"/>
+                                                        <ColumnDefinition Width="185"/>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <TextBlock Grid.Column="0" Margin="5,0,5,0" Text="{Binding AssessmentDateString}" Style="{StaticResource LabelDefault}" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+                                                    <TextBlock Grid.Column="1" Margin="5,0,5,0" Text="{Binding SubjectName}" Style="{StaticResource LabelSubject}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                    <TextBlock Grid.Column="2" Margin="5,0,5,0" Text="{Binding Assessment}" Style="{StaticResource LabelSubject}" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+                                                    <TextBlock Grid.Column="3" Margin="5,0,5,0" Text="{Binding Comments}" Style="{StaticResource LabelLeft}" FontSize="12" Width="175" TextWrapping="Wrap" VerticalAlignment="Center"  />
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                                
+                                <Grid x:Name="separatorVertical" Margin="65,10,0,10" HorizontalAlignment="Left" Opacity="0.5">
+                                    <Grid.LayoutTransform>
+                                        <RotateTransform Angle="-90" />
+                                    </Grid.LayoutTransform>
+                                    <Image Height="4" Source="../Images/grit-bar.png" Stretch="Fill" />
+                                </Grid>
+
+                                <ScrollViewer x:Name="profileEdit" VerticalScrollBarVisibility="Auto" BorderThickness="0" Visibility="Collapsed">
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid Margin="0">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="110"/>
+                                                        <ColumnDefinition Width="80"/>
+                                                        <ColumnDefinition Width="40"/>
+                                                        <ColumnDefinition />
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <DatePicker Grid.Column="0" SelectedDate="{Binding AssessmentDate, Mode=TwoWay, ValidatesOnDataErrors=True}" Margin="3" />
+                                                    <local:SubjectList Grid.Column="1" Margin="3" />
+
+                                                    <TextBox Grid.Column="2" Text="{Binding Assessment, Mode=TwoWay, ValidatesOnDataErrors=True}" Style="{StaticResource TextBoxStyle}" FontSize="16"  Margin="3" />
+                                                    <TextBox Grid.Column="3" Height="40" Text="{Binding Comments, Mode=TwoWay}" Style="{StaticResource TextBoxStyle}" TextWrapping="Wrap"  Margin="3"  />
+
+                                                    <local:GrungeButton Grid.Column="4" VerticalAlignment="Top" Margin="3" Tag="{Binding}" Click="Update_Click">
+                                                        <TextBlock Style="{StaticResource LabelCenter}" Text="Update" />
+                                                    </local:GrungeButton>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                            </Grid>
+                            <TextBlock x:Name="txtNoGrades" Grid.Row="2" Style="{StaticResource LabelCenter}" Text="No grades" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" />
+                            <Grid Grid.Row="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="txtSaveReport" Grid.Column="0" Margin="10" Style="{StaticResource LabelRight}" Text="save report" FontSize="29.333" HorizontalAlignment="Left" Cursor="Hand" MouseLeftButtonUp="SaveReport_Click"/>
+                                <TextBlock x:Name="txtAddGrade" Grid.Column="1" Margin="10" Style="{StaticResource LabelRight}" Text="+ add grade" FontSize="29.333" HorizontalAlignment="Right" Cursor="Hand" MouseLeftButtonUp="AddGrade_Click"/>    
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </local:FlipControl.FrontContent>
+                <local:FlipControl.BackContent>
+                    <Grid x:Name="formSearch">
+                        <Image Source="../Images/paper.jpg" Stretch="Fill" Margin="0">
+                            <Image.Effect>
+                                <DropShadowEffect Opacity="0.415"/>
+                            </Image.Effect>
+                        </Image>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <TextBlock Margin="5" Text="Section Options" TextWrapping="Wrap" Style="{StaticResource LabelLeft}"/>
+                            <Image Grid.Row="1" Margin="15,0,23,0" Height="4" Source="../Images/grit-bar.png" VerticalAlignment="Top" Stretch="Fill"/>
+
+                            <Grid HorizontalAlignment="Right" Margin="0,16.471,23,0" VerticalAlignment="Top" Width="143.567" Height="19.31" Cursor="Hand" Tag="Front" MouseLeftButtonUp="Flip_Click">
+                                <TextBlock Margin="0,1.999,21.416,0" Text="Report Card" Style="{StaticResource LabelRight}" FontSize="10.667" Foreground="#FF0071BC" FontFamily="Verdana" />
+                                <Path Fill="#C10071BC" Stretch="Fill" Width="15.416" Data="F1M59.6631,6.5762C55.1811,1.9822,48.4011,-0.4738,40.0561,-0.5258C26.1571,-0.7598,8.9571,6.0752,0.00010000000000332,15.0342L6.7611,21.7952C13.8241,14.7322,28.5951,9.0362,39.7911,9.0362C39.8591,9.0362,39.9281,9.0362,39.9961,9.0372C43.9931,9.0622,49.4591,9.8132,52.8151,13.2542C56.0301,16.5492,56.1741,18.7662,55.9991,20.1462C55.1151,27.2132,41.8271,36.5312,33.4601,41.8662L29.6431,23.2072C25.4811,36.4162,15.5941,52.5372,6.6371,63.9172C20.8501,61.1352,39.7071,59.6802,53.3591,62.0002L38.4061,50.0282C56.2261,38.6022,64.4161,29.8852,65.4871,21.3362C66.1351,16.1692,64.1741,11.2042,59.6631,6.5762" HorizontalAlignment="Right" Margin="0,0,0,4.166"/>
+                            </Grid>
+
+                            <Grid Grid.Row="2" Margin="14,35,14,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="32" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="48"/>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3"  Text="To Filter list by Subject and/or Date, enter search criteria and then click Go" Style="{StaticResource LabelDefault}" TextWrapping="Wrap" Margin="0"/>
+
+                                <TextBlock x:Name="txtError" Grid.Row="1" Style="{StaticResource LabelStyle}" Foreground="Red" TextAlignment="Center" Visibility="Collapsed" />
+
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="25"/>
+                                        <ColumnDefinition Width="0.235*" />
+                                        <ColumnDefinition Width="0.765*" />
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="cbFilterSubject" Grid.Column="0" VerticalAlignment="Center" Margin="0" Checked="FilterSubject_Checked" />
+                                    <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="Filter by Subject" Style="{StaticResource LabelDefault}" TextWrapping="Wrap" Margin="0,0,10,0" TextAlignment="Left" />
+                                    <local:SubjectList x:Name="listSubject" Grid.Column="2" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" />
+                                </Grid>
+
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="25"/>
+                                        <ColumnDefinition Width="Auto"  />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="cbFilterDate" Grid.Column="0" VerticalAlignment="Center" Margin="0" />
+                                    <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="Filter by Date" Style="{StaticResource LabelDefault}" Margin="0,0,4.927,0" TextAlignment="Left"/>
+
+                                    <StackPanel Grid.Column="2" Margin="5">
+                                        <TextBlock VerticalAlignment="Center" Grid.Column="2" Text="Start Date" Style="{StaticResource LabelDefault}" Margin="0" />
+                                        <DatePicker x:Name="dpStartDate" Grid.Column="3" SelectedDate="{Binding StartDate, Mode=TwoWay}" SelectedDateChanged="StartDate_SelectedDateChanged" />
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="3" Margin="5">
+                                        <TextBlock VerticalAlignment="Center" Grid.Column="2" Text="End Date" Style="{StaticResource LabelDefault}" Margin="0" />
+                                        <DatePicker x:Name="dpEndDate" Grid.Column="3" SelectedDate="{Binding EndDate, Mode=TwoWay}" />
+                                    </StackPanel>
+                                </Grid>
+
+                                <local:GrungeButton HorizontalAlignment="Right" Grid.Row="4" Margin="5" Cursor="Hand" VerticalAlignment="Center" Click="Filter_Click">
+                                    <TextBlock Style="{StaticResource LabelCenter}" Text="Go" />
+                                </local:GrungeButton>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </local:FlipControl.BackContent>
+            </local:FlipControl>
+        </Grid>
+    </Grid>
+</UserControl>
