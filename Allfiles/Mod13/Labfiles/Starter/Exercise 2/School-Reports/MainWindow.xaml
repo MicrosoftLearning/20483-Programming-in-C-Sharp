@@ -1,0 +1,12 @@
+﻿<Window x:Class="School.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:app="clr-namespace:School"
+        Title="The School of Fine Arts - Reports" Height="200" Width="614" ResizeMode="NoResize">
+   <Grid Margin="0,0,0,0">
+        <Button Content="Print" Height="23" HorizontalAlignment="Left" Margin="40,95,0,0" Name="decrypt" VerticalAlignment="Top" Width="90" IsEnabled="False" Click="decrypt_Click" />
+        <TextBox x:Name="folderPathTextBox" HorizontalAlignment="Left" Height="26" Margin="40,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="372"/>
+        <Label Content="Folder containing individual reports:" HorizontalAlignment="Left" Height="23" Margin="40,21,0,0" VerticalAlignment="Top" Width="372"/>
+        <Button x:Name="browse" Content="Browse..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="431,49,0,0" Click="browse_Click"/>
+    </Grid>
+</Window>
