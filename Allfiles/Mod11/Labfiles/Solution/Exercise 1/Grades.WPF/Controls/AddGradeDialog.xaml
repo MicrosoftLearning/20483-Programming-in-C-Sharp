@@ -1,0 +1,60 @@
+﻿<Window x:Class="Grades.WPF.AddGradeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Grades.WPF"
+        Height="235" Width="400"
+        ResizeMode="NoResize"
+        Title="Add Grade">
+
+    <Grid Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" Style="{StaticResource LabelRight}" Text="Assessment Date: " />
+            <DatePicker x:Name="dpDate" Grid.Row="0" Grid.Column="1"  Margin="5" SelectedDate="{Binding AssessmentDate, Mode=TwoWay, ValidatesOnDataErrors=True}" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Style="{StaticResource LabelRight}" Text="Subject: " />
+            <local:SubjectList x:Name="listSubject" Grid.Row="1" Grid.Column="1" Margin="5" />
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Style="{StaticResource LabelRight}" Text="Assessment: " />
+            <TextBox x:Name="txtAssessment" Grid.Row="2" Grid.Column="2" Margin="5" Style="{StaticResource TextBoxStyle}" FontSize="16" Text="{Binding Assessment, Mode=TwoWay, ValidatesOnDataErrors=True}" />
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Margin="5" Style="{StaticResource LabelRight}" Text="Comments: " />
+            <TextBox x:Name="txtComments" Grid.Row="3" Grid.Column="3" Margin="5" Height="40" Style="{StaticResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding Comments, Mode=TwoWay}" />
+        </Grid>
+        
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="OKButton" Content="Add" Click="OKButton_Click" Width="75" Height="23"  Margin="5">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="IsEnabled" Value="false" />
+                        <Style.Triggers>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding ElementName=dpDate, Path=(Validation.HasError)}" Value="false" />
+                                    <Condition Binding="{Binding ElementName=txtAssessment, Path=(Validation.HasError)}" Value="false" />
+                                </MultiDataTrigger.Conditions>
+                                <Setter Property="IsEnabled" Value="true" />
+                            </MultiDataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+            </Button>
+            <Button x:Name="CancelButton" Content="Cancel" Click="CancelButton_Click" Width="75" Height="23" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>
