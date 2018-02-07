@@ -1,0 +1,1 @@
+gacutil -i bin\Debug\FourthCoffee.Core.dll

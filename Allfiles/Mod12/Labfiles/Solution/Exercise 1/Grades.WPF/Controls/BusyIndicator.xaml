@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Grades.WPF.BusyIndicator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#99000000">
+        <Border CornerRadius="6" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="LightGray" Offset="0" />
+                    <GradientStop Color="DarkGray" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.75" />
+            </Border.Effect>
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <ProgressBar x:Name="progress" IsIndeterminate="True" Width="200" Height="25" Margin="20" />
+                <TextBlock x:Name="txtMessage" Grid.Row="1" FontSize="14" FontFamily="Verdana" Text="Please Wait..." TextAlignment="Center" />
+            </Grid>
+        </Border>            
+    </Grid>
+</UserControl>

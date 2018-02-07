@@ -1,0 +1,16 @@
+﻿<Window x:Class="FourthCoffee.TypeInspector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fourth Coffee Type Inspector" Height="509" Width="771">
+    <Grid>
+        <ListBox x:Name="membersList" HorizontalAlignment="Left" Height="325" Margin="11,135,0,0" VerticalAlignment="Top" Width="735"/>
+        <ComboBox x:Name="typesList" HorizontalAlignment="Left" Margin="75,74,0,0" VerticalAlignment="Top" Width="572"/>
+        <Button x:Name="inspectButton" Content="Inspect Type" HorizontalAlignment="Left" Margin="652,75,0,0" VerticalAlignment="Top" Width="94" Click="inspectButton_Click"/>
+        <Button x:Name="loadButton" Content="Load Assembly" HorizontalAlignment="Left" Margin="652,14,0,0" VerticalAlignment="Top" Width="94" Click="loadButton_Click"/>
+        <TextBox x:Name="pathBox" IsEnabled="False" HorizontalAlignment="Left" Height="54" Margin="75,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="572"/>
+        <Label Content="Assembly:" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Types:" HorizontalAlignment="Left" Margin="11,72,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Members:" HorizontalAlignment="Left" Margin="11,109,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

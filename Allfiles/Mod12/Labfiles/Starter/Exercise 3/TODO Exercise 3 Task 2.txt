@@ -1,0 +1,7 @@
+Remove the existing reference to the Grades.Utilities assembly from theGrades.WPF project
+
+Remove the Grades.Utilities project from the solution
+
+Reference the Grades.Utilities assembly held in the GAC from the Grades.WPF project
+
+Build, run, and test the solution

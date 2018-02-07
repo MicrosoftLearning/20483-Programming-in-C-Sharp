@@ -1,0 +1,7 @@
+Generate a keyfile for the Grade.Utilities project
+
+Reference the keyfile from the project properties (Signing page)
+
+Build the assembly
+
+Deploy the assembly to the GAC (gacutil -i)
