@@ -1,0 +1,42 @@
+-----------------------
+Starting beverage service
+Loaded 205 beverages
+Entering test sequence
+Ready
+Entering close down sequence
+Closing beverage service
+-----------------------
+Starting beverage service
+Loaded 1450 beverages
+Entering test sequence
+Ready
+Entering close down sequence
+Closing beverage service
+-----------------------
+Starting beverage service
+Loaded 890 beverages
+Entering test sequence
+Ready
+Entering close down sequence
+Closing beverage service
+-----------------------
+Starting beverage service
+Loaded 878 beverages
+Entering test sequence
+Ready
+Entering close down sequence
+Closing beverage service
+-----------------------
+Starting beverage service
+Loaded 888 beverages
+Entering test sequence
+Ready
+Entering close down sequence
+Closing beverage service
+-----------------------
+Starting beverage service
+Loaded 450 beverages
+Entering test sequence
+Ready
+Entering close down sequence
+Closing beverage service

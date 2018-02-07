@@ -1,0 +1,36 @@
+-----------------------
+Starting account service
+Entering test sequence
+Ready
+Entering close down sequence
+Closing account service
+-----------------------
+Starting account service
+Entering test sequence
+Ready
+Entering close down sequence
+Closing account service
+-----------------------
+Starting account service
+Entering test sequence
+Ready
+Entering close down sequence
+Closing account service
+-----------------------
+Starting account service
+Entering test sequence
+Ready
+Entering close down sequence
+Closing account service
+-----------------------
+Starting account service
+Entering test sequence
+Ready
+Entering close down sequence
+Closing account service
+-----------------------
+Starting account service
+Entering test sequence
+Ready
+Entering close down sequence
+Closing account service

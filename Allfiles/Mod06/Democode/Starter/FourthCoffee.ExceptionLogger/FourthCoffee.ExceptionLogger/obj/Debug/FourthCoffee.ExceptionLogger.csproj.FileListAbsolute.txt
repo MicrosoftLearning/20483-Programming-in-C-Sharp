@@ -1,0 +1,14 @@
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\FourthCoffee.ExceptionLogger.exe.config
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\FourthCoffee.ExceptionLogger.exe
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\FourthCoffee.ExceptionLogger.pdb
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csprojResolveAssemblyReference.cache
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\MainWindow.baml
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\MainWindow.g.cs
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\App.g.cs
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger_MarkupCompile.cache
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.g.resources
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.Properties.Resources.resources
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csproj.GenerateResource.Cache
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csproj.CoreCompileInputs.cache
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.exe
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.pdb

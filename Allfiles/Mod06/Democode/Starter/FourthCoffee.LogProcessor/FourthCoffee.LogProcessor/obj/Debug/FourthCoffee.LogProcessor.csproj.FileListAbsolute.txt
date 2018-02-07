@@ -1,0 +1,1 @@
+C:\Users\shalevz\Desktop\20483\Mod06\Democode\Starter\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\obj\Debug\FourthCoffee.LogProcessor.csproj.CoreCompileInputs.cache

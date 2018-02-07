@@ -1,0 +1,42 @@
+-----------------------
+Starting customer service
+Loaded 100890 customers
+Entering test sequence
+Ready
+Entering close down sequence
+Closing customer service
+-----------------------
+Starting customer service
+Loaded 101500 customers
+Entering test sequence
+Ready
+Entering close down sequence
+Closing customer service
+-----------------------
+Starting customer service
+Loaded 101508 customers
+Entering test sequence
+Ready
+Entering close down sequence
+Closing customer service
+-----------------------
+Starting customer service
+Loaded 101580 customers
+Entering test sequence
+Ready
+Entering close down sequence
+Closing customer service
+-----------------------
+Starting customer service
+Loaded 101301 customers
+Entering test sequence
+Ready
+Entering close down sequence
+Closing customer service
+-----------------------
+Starting customer service
+Loaded 108915 customers
+Entering test sequence
+Ready
+Entering close down sequence
+Closing customer service

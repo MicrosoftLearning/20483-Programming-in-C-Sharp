@@ -1,0 +1,30 @@
+﻿<Window x:Class="FourthCoffee.ExceptionLogger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Name="mainWindow"
+        Title="Exception Logger" Height="346" Width="651">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="213*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Title:" Margin="20,91,576,191" Grid.RowSpan="2" />
+        <TextBox x:Name="errorTitle" Margin="64,91,110,184" Grid.RowSpan="2"/>
+        <Label Content="Details:" Margin="8,44,524,138" Grid.Row="1" />
+        <TextBox x:Name="errorText" TextWrapping="Wrap" AcceptsReturn="True" Margin="64,44,110,35" Grid.Row="1" />
+        <Button x:Name="new" Content="New" HorizontalAlignment="Left" Margin="539,67,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.347,-0.3" Click="new_Click"/>
+        <Button x:Name="load" Content="Load" HorizontalAlignment="Left" Margin="539,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.347,-0.3" Click="load_Click"/>
+
+
+
+
+        <Button x:Name="save" Content="Save" HorizontalAlignment="Left" Margin="539,158,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.347,-0.3" Grid.Row="1" Click="save_Click"/>
+        <Label Content="File:" Margin="20,13,576,56" />
+        <GroupBox Header="Exception details" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Height="245" Grid.RowSpan="2" Width="615" FontWeight="Bold"/>
+        <ComboBox x:Name="files" Margin="64,13,110,56" />
+
+
+    </Grid>
+
+</Window>
