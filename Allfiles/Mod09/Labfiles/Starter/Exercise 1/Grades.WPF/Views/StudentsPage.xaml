@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Grades.WPF.StudentsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Grades.WPF"
+    >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtClass" Grid.Row="0" Margin="15,5,0,0" Style="{StaticResource LabelLeft}" FontSize="18" />
+
+        <ScrollViewer Grid.Row="1" Margin="15" BorderThickness="0" VerticalScrollBarVisibility="Auto">
+            <ItemsControl x:Name="list">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Margin="0" Orientation="Horizontal" HorizontalAlignment="Center"  />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <!-- TODO: Exercise 1: Task 2a: Define the DataTemplate for the "list" ItemsControl including the StudentPhoto user control -->
+                
+                <!-- TODO: Exercise 1: Task 3a: Set the handler for the click event for the StudentPhoto control -->
+                <!-- TODO: Exercise 1: Task 4a: Add the "Remove" button to the DataTemplate -->
+                <!-- TODO: Exercise 1: Task 4d: Add event handlers to highlight the "Remove" button as the mouse enters and exits this control -->
+                <!-- TODO: Exercise 1: Task 4e: Raise the RemoveStudent_Click event if the user clicks the "Remove" button -->
+            </ItemsControl>
+        </ScrollViewer>
+        <TextBlock Grid.Row="2" Margin="0,0,15,10" VerticalAlignment="Bottom" Height="34" Style="{StaticResource LabelRight}" Text="+ add student" TextWrapping="Wrap" FontSize="29.333" HorizontalAlignment="Right" Width="214.5" TextAlignment="Right" Cursor="Hand" MouseLeftButtonUp="AddStudent_Click"/>
+    </Grid>
+</UserControl>

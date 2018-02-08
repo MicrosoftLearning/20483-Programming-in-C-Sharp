@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="Grades.WPF.LogonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:Grades.WPF"
+      KeyDown="UserControl_KeyUp"             
+      >
+
+    <!-- TODO: Exercise 2: Task 1a: Define the LoginTextBoxStyle -->
+    <!-- TODO: Exercise 2: Task 1c: Define the PasswordBoxStyle -->
+
+    <Grid>
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid Margin="25" x:Name="logonForm">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:Name="txtError" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource LabelStyle}" Foreground="Red" TextAlignment="Center" Visibility="Collapsed" />
+
+                <TextBlock Grid.Row="1" Style="{StaticResource LabelStyle}" FontSize="24" Text="Username: " />
+                
+                <!-- TODO: Exercise 2: Task 1b: Apply the LoginTextBoxStyle to the "username" TextBox -->
+                <TextBox x:Name="username" Grid.Row="1" Grid.Column="1" FontSize="24" />
+
+                <TextBlock Grid.Row="2" Style="{StaticResource LabelStyle}" FontSize="24" Text="Password: " />
+                
+                <!-- TODO: Exercise 2: Task 1d: Apply the PasswordBoxStyle to the "password" TextBox -->
+                <PasswordBox x:Name="password" Grid.Row="2" Grid.Column="1"  FontSize="24" />
+
+                <local:GrungeButton Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Logon_Click">
+                    <TextBlock Style="{StaticResource LabelStyle}" Text="Log on" />
+                </local:GrungeButton>
+            </Grid>
+            <Grid Margin="25" x:Name="logoffForm" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource LabelStyle}" Text="Logged in as " />
+                    <TextBlock x:Name="logonName" Style="{StaticResource LabelStyle}" />
+                    <TextBlock Style="{StaticResource LabelStyle}" Text="." />
+                </StackPanel>
+
+                <local:GrungeButton Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Logoff_Click">
+                    <TextBlock Style="{StaticResource LabelStyle}" Text="Log out" />
+                </local:GrungeButton>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
