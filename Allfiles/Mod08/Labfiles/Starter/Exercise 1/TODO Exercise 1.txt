@@ -1,0 +1,12 @@
+Task 1: Create the Grades.Web project (use the Empty ASP.NET Web Application template). 
+        Set the port to 1650 and specify that the application runs by using IIS Express
+
+Task 2: Add the GradesWebDataService WCF Data Service to the Grades.Web project
+        Add a reference to the Grades.DataModel project to the Grades.Web project
+		Add a connection string for the SchoolGradesDB database to web.config
+
+Task 3: Specify the data context on which to base the data service and add access rules for the entities in this data source
+
+Task 4: Define the StudentsInClass operation and add an appropriate access rule
+
+Task 5: Test the WCF data service by using Internet Explorer

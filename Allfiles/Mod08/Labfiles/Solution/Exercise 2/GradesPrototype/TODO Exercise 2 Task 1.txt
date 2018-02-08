@@ -1,0 +1,7 @@
+﻿Task 1a: Remove the reference to the Grades.DataModel project
+
+Task 1b: Add a Service Reference to the GradesWebDataService WCF Data Service
+         - specify a namespace of Grades.DataModel
+		 - edit Reference.cs and remove the leading "GradesPrototype" element from the data service namespace
+
+Task 1c: Create a DataModel folder, and copy the Classes.cs, Grade.cs, and Teacher.cs files from the Grades.DataModel project to this folder
