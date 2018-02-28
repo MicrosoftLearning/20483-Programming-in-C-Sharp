@@ -7,21 +7,14 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
-
+2. Navigate to **Allfiles/Mod02/Democode/Starter/FourthCoffee.MethodTestHarness**, and then open the **FourthCoffee.MethodTestHarness.sln** file.
 
 #### Demonstration Steps
 
-1.	Start the MSL-TMG1 virtual machine if it is not already running.
-2.	Start the 20483B-SEA-DEV11 virtual machine.
-3.	Log on to Windows 10 as **Student** with the password **Pa$$w0rd**. If necessary, click **Switch User** to display the list of users.
-4.	Switch to the Windows 10 **Start** window.
-5.	Click **Visual Studio 2017**.
-6.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-7.	In the **Open Project** dialog box, browse to the **E:\Mod02\Democode\Starter\FourthCoffee.MethodTestHarness** folder, click **FourthCoffee.MethodTestHarness.sln**, and then click Open.
-8.	In Visual Studio, on the **View** menu, click **Task List**.
-9.	In the **Task List** window, in the **Categories** list, click **Comments**.
-10.	Double-click the **TODO: 01: Define the Initialize method.** task.
-11.	In the code editor, click in the blank line below the comment, and then type the following code:
+1.	In Visual Studio, on the **View** menu, click **Task List**.
+2.	In the **Task List** window, in the **Categories** list, click **Comments**.
+3.	Double-click the **TODO: 01: Define the Initialize method.** task.
+4.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     bool Initialize()
     {
@@ -31,23 +24,23 @@
         !string.IsNullOrEmpty(path);
     } 
     ```
-12.	In the **Task List** window, double-click the **TODO: 02: Invoke the Initialize method.** task.
-13.	In the code editor, click in the blank line below the comment, and then type the following code:
+5.	In the **Task List** window, double-click the **TODO: 02: Invoke the Initialize method.** task.
+6.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var isInitialized= Initialize();
     ```
-14.	Right-click the call to the **Initialize** method, point to **Breakpoint**, and then click **Insert Breakpoint**.
-15.	On the **Build** menu, click **Build Solution**.
-16.	On the **Debug** menu, click Start **Debugging**.
-17.	Press F11 to step into the **Initialize** method.
-18.	Press F10 to step to the **GetApplicationPath** method call.
-19.	Press F10 to step over the **GetApplicationPath** method call.
-20.	Press Shift+F11 to step out of the **Initialize** method.
-21.	Press F10 to step over the **Initialize** method call.
-22.	Hover over the **isInitialized** variable, 
+7.	Right-click the call to the **Initialize** method, point to **Breakpoint**, and then click **Insert Breakpoint**.
+8.	On the **Build** menu, click **Build Solution**.
+9.	On the **Debug** menu, click Start **Debugging**.
+10.	Press F11 to step into the **Initialize** method.
+11.	Press F10 to step to the **GetApplicationPath** method call.
+12.	Press F10 to step over the **GetApplicationPath** method call.
+13.	Press Shift+F11 to step out of the **Initialize** method.
+14.	Press F10 to step over the **Initialize** method call.
+15.	Hover over the **isInitialized** variable, 
 and verify that the value returned is **true**.
-23.	On the **Debug** menu, click **Stop Debugging**.
-24.	On the **File** menu, click **Close Solution**.
+16.	On the **Debug** menu, click **Stop Debugging**.
+17.	On the **File** menu, click **Close Solution**.
 
 
 # Lesson 4: Monitoring Applications

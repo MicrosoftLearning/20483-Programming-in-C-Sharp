@@ -7,62 +7,57 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor**, and then open the **FourthCoffee.LogProcessor.sln** file.
 
 #### Demonstration Steps
 
-1.  Click **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to
-    **E:\\Mod06\\Democode\\Starter\\FourthCoffee.LogProcessor** folder, click
-    **FourthCoffee.LogProcessor.sln**, and then click **Open**.
-4.  In Visual Studio, on the **View** menu, click **Task List**.
-5.  In the **Task List** window, in the **Categories** list, click **Comments**.
-6.  Double-click the **TODO: 01: Ensure log file directory exists.** task.
-7.  In the code editor, click in the blank line below the comment, and then type
+1.  In Visual Studio, on the **View** menu, click **Task List**.
+2.  In the **Task List** window, in the **Categories** list, click **Comments**.
+3.  Double-click the **TODO: 01: Ensure log file directory exists.** task.
+4.  In the code editor, click in the blank line below the comment, and then type
     the following code:
     ```cs
     if (!Directory.Exists(logDirectoryRoot))
        throw new DirectoryNotFoundException();
     ```
-16.	In the **Task List** window, double-click the **TODO: 02: Get all log file paths.** task.
-17.	In the code editor, click in the blank line below the comment, and then type the following code:
+5.	In the **Task List** window, double-click the **TODO: 02: Get all log file paths.** task.
+6.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     return Directory.GetFiles(this._logDirectoryPath,   "*.txt");       
     ```
-18.	In the **Task List** window, double-click the **TODO: 03: Check for existing combined log file and delete if it already exists.** task.
-19.	In the code editor, click in the blank line below the comment, and then type the following code:
+7.	In the **Task List** window, double-click the **TODO: 03: Check for existing combined log file and delete if it already exists.** task.
+8.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     if (File.Exists(combinedLogPath))
        File.Delete(combinedLogPath);
     ```
-20.	In the **Task List** window, double-click the **TODO: 04: Write the heading to the combined log file.** task.
-21.	In the code editor, click in the blank line below the comment, and then type the following code:
+9.	In the **Task List** window, double-click the **TODO: 04: Write the heading to the combined log file.** task.
+10.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     File.AppendAllLines(combinedLogPath, heading);
     ```
-22.	In the **Task List** window, double-click the **TODO: 05: Get the log file name without the file extension.** task.
-23.	In the code editor, click in the blank line below the comment, and then type the following code:
+11.	In the **Task List** window, double-click the **TODO: 05: Get the log file name without the file extension.** task.
+12.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var logName = 
        Path.GetFileNameWithoutExtension(logPath);
     ```
-24.	In the **Task List** window, double-click the **TODO: Task 06: Read the contents of the existing log file.** task.
-25.	In the code editor, click in the blank line below the comment, and then type the following code:
+13.	In the **Task List** window, double-click the **TODO: Task 06: Read the contents of the existing log file.** task.
+14.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var logText = File.ReadAllText(logPath);
     ```
-26.	In the **Task List** window, double-click the **TODO: Task 07: Write the log file contents to the combined log file.** task.
-27.	In the code editor, click in the blank line below the comment, and then type the following code:
+15.	In the **Task List** window, double-click the **TODO: Task 07: Write the log file contents to the combined log file.** task.
+16.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     File.AppendAllLines(combinedLogPath, logContent);
     ```
-28.	On the **Build** menu, click **Build Solution**.
-29.	On the **Debug** menu, click **Start Without Debugging**.
-30.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
-31.	Open File Explorer and browse to the **E:\Mod06\Democode\Data\Logs** folder.
-32.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
-33.	Close Notepad, close File Explorer, and then close Visual Studio.
+17.	On the **Build** menu, click **Build Solution**.
+18.	On the **Debug** menu, click **Start Without Debugging**.
+19.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
+20.	Open File Explorer and browse to the **Allfiles\Mod06\Democode\Data\Logs** folder.
+21.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
+22.	Close Notepad, close File Explorer, and then close Visual Studio.
 
 
 # Lesson 2:  Serializing and Deserializing Data
@@ -72,32 +67,29 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
-
+2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
 #### Demonstration Steps
 
-1.	Click **Visual Studio 2017**.
-2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.	In the **Open Project** dialog box, browse to **E:\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, click **FourthCoffee.ExceptionLogger.sln**, and then click **Open**.
-4.	In Visual Studio, on the **View** menu, click **Task List**.
-5.	In the **Task List** window, in the **Categories** list, click **Comments**.
-6.	Double-click the **TODO: 01: Decorate the type with the Serializable attribute.** task.
-7.	In the code editor, click in the blank line below the comment, and then type the following code:
+1.	In Visual Studio, on the **View** menu, click **Task List**.
+2.	In the **Task List** window, in the **Categories** list, click **Comments**.
+3.	Double-click the **TODO: 01: Decorate the type with the Serializable attribute.** task.
+4.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     [Serializable]
     ```
-8.	In the **Task List** window, double-click the **TODO: 02: Implement the ISerializable interface.** task.
-9.	In the code editor, click in the blank line below the comment, and then type the following code:
+5.	In the **Task List** window, double-click the **TODO: 02: Implement the ISerializable interface.** task.
+6.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     : ISerializable
     ```
-10.	Right-click the text **ISerializable**, point to **Implement Interface**, and then click **Implement Interface**.
-11.	In the **GetObjectData** method, replace the existing code to throw a new **NotImplementedException** object with the following code:
+7.	Right-click the text **ISerializable**, point to **Implement Interface**, and then click **Implement Interface**.
+8.	In the **GetObjectData** method, replace the existing code to throw a new **NotImplementedException** object with the following code:
     ```cs
     info.AddValue("Title", this.Title);
     info.AddValue("Details", this.Details);
     ```
-12.	In the **Task List** window, double-click the **TODO: 03: Add a deserialization constructor.** task.
-13.	In the code editor, click in the blank line below the comment, and then type the following code:
+9.	In the **Task List** window, double-click the **TODO: 03: Add a deserialization constructor.** task.
+10.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     public ExceptionEntry(
        SerializationInfo info, 
@@ -107,31 +99,31 @@
           this.Details = info.GetString("Details");
        }
     ```
-14.	In the **Task List** window, double-click the **TODO: 04: Create a SoapFormatter object and serialize the entry object.** task.
-15.	In the code editor, click in the blank line below the comment, and then type the following code:
+11.	In the **Task List** window, double-click the **TODO: 04: Create a SoapFormatter object and serialize the entry object.** task.
+12.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var formatter = new SoapFormatter();
     formatter.Serialize(stream, entry);
     ```
-16.	In the **Task List** window, double-click the **TODO: 05: Create a SoapFormatter object and deserialize the stream to the entry object.** task.
-17.	In the code editor, click in the blank line below the comment, and then type the following code:
+13.	In the **Task List** window, double-click the **TODO: 05: Create a SoapFormatter object and deserialize the stream to the entry object.** task.
+14.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var formatter = new SoapFormatter();
     entry = formatter.Deserialize(stream) as ExceptionEntry;
     ```
-18.	On the **Build** menu, click **Build Solution**.
-19.	On the **Debug** menu, click **Start Without Debugging**.
-20.	In the **Exception Logger** window, create a new exception entry by using the following information, and then click **Save**:
+15.	On the **Build** menu, click **Build Solution**.
+16.	On the **Debug** menu, click **Start Without Debugging**.
+17.	In the **Exception Logger** window, create a new exception entry by using the following information, and then click **Save**:
     -	Title: Critical database error
     -	Details: Could not find database server
-21.	In the **Save Successful** message box, click **OK**. The exception entry has now been serialized.
-22.	Close the Exception Logger application.
-23.	Open File Explorer and browse to the **E:\Mod06\Democode\Data\Exceptions** folder.
-24.	In the **E:\Mod06\Democode\Data\Exceptions** folder, double-click the Exception_\<date and time\>.txt file.  
-25.	In Notepad, find the **Title** and **Details** XML elements.
-26.	Switch to Visual Studio, and on the **Debug** menu, click **Start Without Debugging**.
-27.	In the **Exception Logger** window, in the File list, click **E:\Mod06\Democode\Data\Exceptions\Exception_\<date and time\>.txt**, and then click Load. The ExceptionEntry object has now been deserialized.
-28.	Close the application, close Visual Studio, and then close File Explorer.
+18.	In the **Save Successful** message box, click **OK**. The exception entry has now been serialized.
+19.	Close the Exception Logger application.
+20.	Open File Explorer and browse to the **Allfiles\Mod06\Democode\Data\Exceptions** folder.
+21.	In the **Allfiles\Mod06\Democode\Data\Exceptions** folder, double-click the Exception_\<date and time\>.txt file.  
+22.	In Notepad, find the **Title** and **Details** XML elements.
+23.	Switch to Visual Studio, and on the **Debug** menu, click **Start Without Debugging**.
+24.	In the **Exception Logger** window, in the File list, click **Allfiles\Mod06\Democode\Data\Exceptions\Exception_\<date and time\>.txt**, and then click Load. The ExceptionEntry object has now been deserialized.
+25.	Close the application, close Visual Studio, and then close File Explorer.
 
 
 # Lesson 3:  Performing I/O by Using Streams

@@ -8,60 +8,56 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod05\Democode**, and then open the **BaseConstructors.sln** file.
 
 #### Demonstration Steps
 
 
-1.  Click **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to **E:\\Mod05\\Democode**, click
-    **BaseConstructors.sln**, and then click **Open**.
-4.  In Solution Explorer, double-click **Beverage.cs** and review the contents
+1.  In Solution Explorer, double-click **Beverage.cs** and review the contents
     of the class.
-5.  Note that the **Beverage** class contains a default constructor and an
+2.  Note that the **Beverage** class contains a default constructor and an
     alternative constructor.
-6.  In Solution Explorer, double-click **Coffee.cs** and review the contents of
+3.  In Solution Explorer, double-click **Coffee.cs** and review the contents of
     the class.
-7.  Note that the **Coffee** class inherits from the **Beverage** class.
-8.  Note that the **Coffee** class contains a default constructor and an
+4.  Note that the **Coffee** class inherits from the **Beverage** class.
+5.  Note that the **Coffee** class contains a default constructor and an
     alternative constructor.
-9. Note that the alternative constructor explicitly calls the alternative
+6. Note that the alternative constructor explicitly calls the alternative
 constructor in the base class.
-10.  In Solution Explorer, double-click **Program.cs** and review the contents of
+7.  In Solution Explorer, double-click **Program.cs** and review the contents of
     the class.
-11.  Note that the **Program** class creates two instances of the **Coffee**
+8.  Note that the **Program** class creates two instances of the **Coffee**
     type: one by using the default constructor, and one by using the alternative
     constructor.
-12.  On the **Build** menu, click **Rebuild Solution**.
-13.  Press F11 twice so that the first line of executable code in the **Program**
+9.  On the **Build** menu, click **Rebuild Solution**.
+10.  Press F11 twice so that the first line of executable code in the **Program**
     class is highlighted.
-14.  Press F11. Note that the debugger steps into the default constructor for the
+11.  Press F11. Note that the debugger steps into the default constructor for the
     **Coffee** class.
-15.  Press F11. Note that the debugger steps into the default constructor for the
+12.  Press F11. Note that the debugger steps into the default constructor for the
     **Beverage** class.
-16.  Point out that derived class constructors implicitly call the default base
+13.  Point out that derived class constructors implicitly call the default base
     class constructor unless you specify an alternative base class constructor.
-17.  Press F11 six times, until the debugger returns to the default constructor
+14.  Press F11 six times, until the debugger returns to the default constructor
     for the **Coffee** class.
-18.  Point out that the base class constructor logic is executed before the
+15.  Point out that the base class constructor logic is executed before the
     derived class constructor logic.
-19.  Press F11 six times, until the debugger returns to the **Program** class.
-20.  Press F11. The second executable line of code in the **Program** class
+16.  Press F11 six times, until the debugger returns to the **Program** class.
+17.  Press F11. The second executable line of code in the **Program** class
     should be highlighted.
-21.  Press F11. Note that the debugger steps into the alternative constructor for
+18.  Press F11. Note that the debugger steps into the alternative constructor for
     the **Coffee** class.
-22.  Press F11. Note that the debugger steps into the alternative constructor for
+19.  Press F11. Note that the debugger steps into the alternative constructor for
     the **Beverage** class.
-23.  Hover over the **Beverage** constructor parameters, and point out that the
+20.  Hover over the **Beverage** constructor parameters, and point out that the
     **Coffee** constructor has passed argument values to this constructor.
-24.  Press F11 six times, until the debugger returns to the alternative
+21.  Press F11 six times, until the debugger returns to the alternative
     constructor for the **Coffee** class.
-25.  Press F11 six times, until the debugger returns to the **Program** class.
-26.	Press F5 to run the remainder of the application. 
-27.	When the console window appears, point out that it makes no difference to consumers of the class whether variables were set by the derived class constructor or the base class constructor. 
-28.	Press Enter to close the console window. 
-29.	Close Visual Studio. 
+22.  Press F11 six times, until the debugger returns to the **Program** class.
+23.	Press F5 to run the remainder of the application. 
+24.	When the console window appears, point out that it makes no difference to consumers of the class whether variables were set by the derived class constructor or the base class constructor. 
+25.	Press Enter to close the console window. 
+26.	Close Visual Studio. 
 
 
 # Lesson 2: Extending .NET Framework Classes

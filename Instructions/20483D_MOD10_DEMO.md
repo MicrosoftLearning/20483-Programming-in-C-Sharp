@@ -8,26 +8,20 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod10\Democode\Starter**, and then open the **APMTasks.sln** file.
 
 #### Demonstration Steps
 
-
-1.  Click **Visual Studio 2017**.
-2.  In Microsoft Visual Studio®, on the **File** menu, point to **Open**, and
-    then click **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod10\\Democode\\Starter** folder, click **APMTasks.sln**, and then
-    click **Open**.
-4.  On the **Build** menu, click **Build Solution**.
-5.  On the **Debug** menu, click **Start Without Debugging**.
-6.  In the text box, type **http://www.fourthcoffee.com**, and then click
+1.  On the **Build** menu, click **Build Solution**.
+2.  On the **Debug** menu, click **Start Without Debugging**.
+3.  In the text box, type **http://www.fourthcoffee.com**, and then click
     **Check URL**.
-7.  Notice that the label displays the message **The URL returned the following
+4.  Notice that the label displays the message **The URL returned the following
     status code: OK**.
-8.  Close the **MainWindow** window.
-9.  In Solution Explorer, expand **MainWindow.xaml**, and then double-click
+5.  Close the **MainWindow** window.
+6.  In Solution Explorer, expand **MainWindow.xaml**, and then double-click
     **MainWindow.xaml.cs**.
-10. Review the code in the **MainWindow** class:
+7. Review the code in the **MainWindow** class:
     -  Notice that the **btnCheckUrl_Click** method creates an
         **HttpWebRequest** object and then calls the **BeginGetResponse**
         method.
@@ -36,29 +30,29 @@
     -  Notice that the **ResponseCallback** method calls the
         **HttpWebResponse.EndGetResponse** method to get the result of the web
         request and then updates the UI.
-11. Delete the **ResponseCallback** method.
-12. Modify the **btnCheckUrl_Click** method declaration to include the **async**
+8. Delete the **ResponseCallback** method.
+9. Modify the **btnCheckUrl_Click** method declaration to include the **async**
     modifier as follows:
     ```cs
     private async void btnCheckUrl_Click(object sender, RoutedEventArgs e)
     ```
-13.	In the **btnCheckUrl_Click** method, delete the following line of code: 
+10.	In the **btnCheckUrl_Click** method, delete the following line of code: 
     ```cs
     request.BeginGetResponse(new AsyncCallback(ResponseCallback), request);
     ```
-14.	Add the following code in place of the line you just deleted:
+11.	Add the following code in place of the line you just deleted:
     ```cs
     HttpWebResponse response = await Task<WebResponse>.Factory.FromAsync    (request.BeginGetResponse, request.EndGetResponse, request) as HttpWebResponse;
     lblResult.Content = String.Format("The URL returned the following status code: {0}  ", response.StatusCode);
     ```
-15.  Notice that the **MainWindow** class is now far more simple and concise.
-16.  On the **Debug** menu, click **Start Without Debugging**.
-17.  In the text box, type **http://www.fourthcoffee.com**, and then click
+12.  Notice that the **MainWindow** class is now far more simple and concise.
+13.  On the **Debug** menu, click **Start Without Debugging**.
+14.  In the text box, type **http://www.fourthcoffee.com**, and then click
     **Check URL**.
-18.  Notice that the label displays the message **The URL returned the following
+15.  Notice that the label displays the message **The URL returned the following
     status code: OK**.
-19.  Notice that the application works in exactly the same way as before.
-20.  Close the **MainWindow** window, and then close Visual Studio.
+16.  Notice that the application works in exactly the same way as before.
+17.  Close the **MainWindow** window, and then close Visual Studio.
 
 
 # Lesson 3:  Synchronizing Concurrent Access to Data
@@ -68,40 +62,36 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod10\Democode\Starter**, and then open the **Locking.sln** file.
+
 
 #### Demonstration Steps
 
-1.  Click **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod10\\Democode\\Starter** folder, click **Locking.sln**, and then
-    click **Open**.
-4.  In Solution Explorer, double-click **Coffee.cs**.
-5.  Review the **Coffee** class, paying particular attention to the
+1.  In Solution Explorer, double-click **Coffee.cs**.
+2.  Review the **Coffee** class, paying particular attention to the
     **MakeCoffees** method.
-6.  Notice how the **MakeCoffees** method uses a **lock** statement to prevent
+3.  Notice how the **MakeCoffees** method uses a **lock** statement to prevent
     concurrent access to the critical code.
-7.  In Solution Explorer, double-click **Program.cs**.
-8.  In the **Program** class, review the **Main** method.
-9.  Notice how the **Main** method uses a **Parallel.For** loop to
+4.  In Solution Explorer, double-click **Program.cs**.
+5.  In the **Program** class, review the **Main** method.
+6.  Notice how the **Main** method uses a **Parallel.For** loop to
     simultaneously place 100 orders for between one and 100 coffees.
-10. On the **Build** menu, click **Build Solution**.
-11. On the **Debug** menu, click **Start Debugging**.
-12. Review the console window output, and notice that the application keeps
+7. On the **Build** menu, click **Build Solution**.
+8. On the **Debug** menu, click **Start Debugging**.
+9. Review the console window output, and notice that the application keeps
     track of stock levels effectively.
-13. Press Enter to close the console window.
-14. In the **Coffee** class, comment out the following line of code:
+10. Press Enter to close the console window.
+11. In the **Coffee** class, comment out the following line of code:
     ```cs
     lock (coffeeLock)
     ```
-15.  On the **Debug** menu, click **Start Debugging**.
-16.  Notice that the application throws an exception with the message **Stock
+12.  On the **Debug** menu, click **Start Debugging**.
+13.  Notice that the application throws an exception with the message **Stock
     cannot be negative!**
-17.  Explain that this is due to concurrent access to the critical code section
+14.  Explain that this is due to concurrent access to the critical code section
     in the **MakeCoffees** method.
-18.  On the **Debug** menu, click **Stop Debugging**.
-19.  Close Visual Studio.
+15.  On the **Debug** menu, click **Stop Debugging**.
+16.  Close Visual Studio.
 
 
 

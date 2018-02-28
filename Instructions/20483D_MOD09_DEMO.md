@@ -16,7 +16,7 @@
 3.  In the **New Project** dialog box, in the **Templates** list, click **Visual
     C\#**, and then in the **Project Type** list, click **WPF Application**.
 4.  In the **Name** box, type **DesignView**.
-5.  In the **Location** text box, set the location to **E:\\Mod09\\Democode**,
+5.  In the **Location** text box, set the location to **Allfiles\\Mod09\\Democode**,
     and then click **OK**.
 6.  In the XAML pane, in the **Window** element, change the value of the
     **Title** attribute to **Order Your Coffee Here**.

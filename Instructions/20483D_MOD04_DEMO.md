@@ -10,13 +10,13 @@
 
 #### Demonstration Steps
 
-1.  Click **Visual Studio 2017**.
+1.  Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **New**, and then click
     **Project**.
 3.  In the **New Project** dialog box, in the **Templates** list, click **Visual
     C\#**, and then in the **Project Type** list, click **Console Application**.
 4.  In the **Name** text box, type **ValuesAndReferences**
-5.  In the **Location** text box, set the location to **E:\\Mod04\\Democode**,
+5.  In the **Location** text box, set the location to **Allfiles\\Mod04\\Democode**,
     and then click **OK**.
 6. Within the **ValuesAndReferences** namespace, add the following code:
     ```cs
@@ -52,7 +52,7 @@
     Reference types: 100, 100
     ```
 10.	Press Enter to close the console window.
-11.	Close Visual Studio 2012.
+11.	Close Visual Studio 2017.
 
 
 

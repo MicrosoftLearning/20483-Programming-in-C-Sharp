@@ -8,28 +8,24 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
+
 
 #### Demonstration Steps
 
-1.  Click **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod07\\Democode\\Demo2\\FourthCoffee.Employees** folder, click
-    **FourthCoffee.Employees.sln**, and then click **Open**.
-4.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
+1.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
     double-click **Program.cs**.
-5.  Review the definition of the **DBContext** variable.
-6.  Review the code in the **PrintEmployeesList** method that uses the
+2.  Review the definition of the **DBContext** variable.
+3.  Review the code in the **PrintEmployeesList** method that uses the
     **DBContext** variable to access the data in the EDM.
-7.  Review the code in the **Main** method that uses the **First** extension
+4.  Review the code in the **Main** method that uses the **First** extension
     method to retrieve an employee and then modifies that employee’s
     **LastName** property.
-8.  On the **Debug** menu, click **Start Without Debugging**.
-9.  Verify that the employees list is displayed, and then press Enter.
-10. Verify that the employee named “Diane Prescott” is now named “Diane
+5.  On the **Debug** menu, click **Start Without Debugging**.
+6.  Verify that the employees list is displayed, and then press Enter.
+7. Verify that the employee named “Diane Prescott” is now named “Diane
     Forsyth,” and then press Enter.
-11. Press Enter to close the application.
+8. Press Enter to close the application.
 
 
 # Lesson 2:  Querying Data by Using LINQ
@@ -39,27 +35,24 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod07\Democode\Demo3\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
+
+
 
 #### Demonstration Steps
 
-1.  Click **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod07\\Democode\\Demo3\\FourthCoffee.Employees** folder, click
-    **FourthCoffee.Employees.sln**, and then click **Open**.
-4.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
+1.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
     double-click **Program.cs**.
-5.  Review the LINQ code in each of the methods.
-6.  On the **Build** menu, click **Build Solution**.
-7.  On the **Debug** menu, click **Start Without Debugging**.
-8.  In the console window, review the output of the **QueryingData** method, and
+2.  Review the LINQ code in each of the methods.
+3.  On the **Build** menu, click **Build Solution**.
+4.  On the **Debug** menu, click **Start Without Debugging**.
+5.  In the console window, review the output of the **QueryingData** method, and
     then press Enter.
-9.  Repeat step 12 for each of the following methods:
+6.  Repeat step 12 for each of the following methods:
     -  **FilteringDataByRow**
     -  **FilteringDataByColumn**
-10. Press Enter to close the application.
-11. In Visual Studio, on the **File** menu, click **Close Solution**.
+7. Press Enter to close the application.
+8. In Visual Studio, on the **File** menu, click **Close Solution**.
 
 
 ### Demonstration: Retrieving and Modifying Grade Data Lab
