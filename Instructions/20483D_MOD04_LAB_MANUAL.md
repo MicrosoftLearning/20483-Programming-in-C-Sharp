@@ -335,7 +335,7 @@ to create a new generic **List** collection.
     -   If the student is not part of the class, throw an **ArgumentException**
         exception to show that the student is not assigned to this class.
 
-3.  In the **Teacher** class, implement the **AddGrade** method as follows:
+3.  In the **Student** class, implement the **AddGrade** method as follows:
 
     -   Verify that the **Grade** object passed to the method does not belong to
         another student.
