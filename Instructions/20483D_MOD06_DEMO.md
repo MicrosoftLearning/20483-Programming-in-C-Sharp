@@ -3,7 +3,7 @@
 # Lesson 1:  Reading and Writing Files
 
 ### Demonstration: Manipulating Files, Directories, and Paths
-
+### Lesson 3 demo steps were not imported from docx ###
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
