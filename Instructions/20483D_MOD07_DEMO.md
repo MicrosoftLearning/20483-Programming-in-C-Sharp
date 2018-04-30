@@ -3,13 +3,13 @@
 
 # Lesson 1:  Creating and Using Entity Data Models
 ### !!!__This document is missing the first demo of Lesson 1: "Creating an Entity Data Model". we need to port it from the docx file (older version of it) __!!! ###
-### !!!__This document is missing some demos of lesson 2 as well. here is a list of all the demos in module 7, make sure they find their way into this document from previous versions of the docx in TFS
-lesson 1 demo 1: Creating an Entity Data Model
-Lesson 1 demo 2: Reading and Modifying Data in an EDM
-Lesson 2 demo1: Querying Data
-LEsson 2 demo 2: Querying Data by Using Anonymous Types
-Lesson 2 demo 3: Retrieving and Modifying Grade Data Lab
-__!!! ###
+### !!!__This document is missing some demos of lesson 2 as well. here is a list of all the demos in module 7, make sure they find their way into this document from previous versions of the docx in TFS__!!! ###
+1. lesson 1 demo 1: Creating an Entity Data Model
+2. Lesson 1 demo 2: Reading and Modifying Data in an EDM
+3. Lesson 2 demo1: Querying Data
+4. Lesson 2 demo 2: Querying Data by Using Anonymous Types
+5. Lesson 2 demo 3: Retrieving and Modifying Grade Data Lab
+
 ### Demonstration: Reading and Modifying Data in an EDM
 
 #### Preparation Steps
