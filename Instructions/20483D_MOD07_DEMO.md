@@ -2,7 +2,7 @@
 # Module 7: Accessing a Database
 
 # Lesson 1:  Creating and Using Entity Data Models
-
+###this document is missing the first demo of the module: "Creating an Entity Data Model". we need to port it from the docx file (older version of it)###
 ### Demonstration: Reading and Modifying Data in an EDM
 
 #### Preparation Steps
