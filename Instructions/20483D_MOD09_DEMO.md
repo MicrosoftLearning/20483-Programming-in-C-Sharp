@@ -69,10 +69,56 @@
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
+#### Demonstration Steps
+
+1.  Open the **Grades.sln** solution from the
+    **E:\\Mod09\\Labfiles\\Solution\\Exercise 3** folder.
+2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
+    **Properties**.
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set
+    **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then
+    click **OK**. Explain to students that they will have to perform this step
+    whenever they open lab starter files because the startup project information
+    is stored in the .suo user options file for a solution which is not included
+    in the Allfiles for this course.
+4.  Build the solution.
+5.  In the **Grades.WPF** project, in the **Controls** folder, open
+    **StudentPhoto.xaml**.
+6.  Review the XAML markup and explain to students that in Exercise 1 of the
+    lab, they will create a **StudentPhoto** user control and add code to use it
+    in the application.
+7.  In the **Views** folder, open **StudentsPage.xaml** and explain to students
+    that they will create the **ItemsControl** and **DataTemplate** elements in
+    this file to host the **StudentPhoto** control and the remove button.
+8.  Open **StudentsPage.xaml.cs** and locate the **Student_Click** event.
+9.  Explain to students that they will add this code to raise the
+    **StudentSelected** event when a user clicks a photograph.
+10. In the **Views** folder, open **StudentProfile.xaml**.
+11. Locate the **StudentPhoto** element and explain to students that they will
+    add the user control to this view.
+12. Open **LogonPage.xaml** and explain to students that in Exercise 2 they will
+    define two styles: one for the username box and one for the password box.
+    Also show students the markup where the style is applied to a control.
+13. In the **Themes** folder, open **Generic.xaml**. Explain to students that
+    here they will define properties for labels and text throughout the
+    application.
+14. Run the application and point out the styling of the labels and text boxes
+    on the Log on page.
+15. Log on as **vallee** with a password of **password99**.
+16. Hover over one of the students in the student list and point out that the
+    photograph animates.
+17. Hover over a remove button and point out that the photograph dims.
+18. Log off, and then log on as **liyale** with a password of **password**.
+19. Explain that parents can now use the application and review the grades of
+    all of their children.
+20. Click each child’s name in turn and then log off.
+21. Close the application, and then close Visual Studio.
 
 
 
-©2017 Microsoft Corporation. All rights reserved.
+
+
+©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the  [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are  **not**  included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 

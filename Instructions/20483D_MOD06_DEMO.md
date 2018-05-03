@@ -68,6 +68,7 @@
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
+
 #### Demonstration Steps
 
 1.	In Visual Studio, on the **View** menu, click **Task List**.
@@ -134,7 +135,33 @@
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
+#### Demonstration Steps
 
+1. Open the **GradesPrototype.sln** solution from the
+    **E:\\Mod06\\Labfiles\\Solution\\Exercise 3** folder.
+2. In the **Views** folder, open **StudentProfile.xaml** and point out that the
+    user interface has been updated to include a **Save Report** button.
+3. In the **Views** folder, open **StudentProfile.xaml.cs**, and locate the
+    **SaveReport_Click** method.
+4. Explain to students that during the lab they will add the code in this
+    method to prompt the user for a filename to save the report as, and to call
+    methods to generate, preview, and save the report.
+5. In **StudentProfile.xaml.cs**, locate the **FormatAsXMLStream** method.
+6. Explain to students that during Exercise 1 they will add the code in this
+    method to generate an XML document in a **MemoryStream** object.
+7. In **StudentProfile.xaml.cs**, locate the **FormatXMLData** method.
+8. Explain to students that during Exercise 2 they will add the code in this
+    method to format the XML data as a string and display it to the user.
+9. Run the application, and log on as **vallee** with a password of
+    **password99**.
+10. View **Kevin Liu’s** report card and then click **Save Report** to generate
+    the XML document.
+11. Specify to save the file in the Documents folder by using the default name.
+12. Review the XML data displayed in the message box, and then confirm that you
+    want to save the file.
+13. Close the application, and then close Visual Studio.
+14. Open the saved report in Internet Explorer and review the content.
+15. Close Internet Explorer.
 
 
 ©2017 Microsoft Corporation. All rights reserved.

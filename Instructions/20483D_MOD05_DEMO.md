@@ -68,8 +68,61 @@ constructor in the base class.
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
+#### Demonstration Steps
 
-
+1. Open the **GradesPrototype.sln** solution from the
+    **E:\\Mod05\\Labfiles\\Solution\\Exercise 3** folder.
+2. In the **Data** folder, open **Grade.cs**, and locate the **User** class.
+3. Explain to students that during Exercise 1 they will add this class and add
+    the **UserName** and **Password** properties and the **VerifyPassword**
+    method.
+4. Locate the **Student** class and explain to students that during Exercise 1
+    they will modify this class to inherit from the new **User** class and to
+    use the member implementations that it provides.
+5. Locate the **User** class again and explain to students that during Exercise
+    2 they will add the abstract **SetPassword** method and use it from the set
+    accessor of the **Password** property.
+6. In the **Student** class, locate the **SetPassword** property and explain to
+    students that they will add code here to override the abstract property in
+    the **User** class to ensure that student passwords are at least six
+    characters long.
+7. In the **Teacher** class, locate the **SetPassword** property and explain to
+    students that they will add code here to override the abstract property in
+    the User class to ensure that teacher passwords contain at least two numeric
+    characters and are at least eight characters long.
+8. In the **Controls** folder, open **ChangePasswordDialog.xaml.cs**, and
+    locate the **ok_Click** method.
+9. Explain to students that during Exercise 2 they will add this code call the
+    appropriate implementation of the **SetPassword** method according to the
+    role of current user.
+10. In the **Services** folder, open **ClassFullException.cs**.
+11. Explain to students that during Exercise 3 they will add **ClassName**
+    property and custom constructors to this class.
+12. In **Grade.cs**, locate the **Teacher** class and explain to students that
+    they will use the **MAX_CLASS_SIZE** constant to define the maximum number
+    of students that may be enrolled in a class.
+13. Locate the **EnrollInClass** method and explain to students that during
+    Exercise 3 they will add code here to throw the **ClassFullException** if
+    the user attempts to add too many students to a class.
+14. Run the application and log on as **vallee** with a password of
+    **password99**.
+15. Point out that the application correctly displays the students in Esther
+    Valle’s class.
+16. Attempt to change the password to **password1** (a password that is not
+    valid), and point out the error message that is displayed.
+17. Change the password to **password101** (a valid password), and point out
+    that the password is successfully changed.
+18. Create four new students.
+19. Try to enroll all four students in the class. When enrolling the fourth
+    student, point out the error message that is displayed.
+20. Log off, and then log on as **liuk** with a password of **password**.
+21. Point out that the application correctly displays the student’s grade
+    report.
+22. Attempt to change the password to **pass** (a password that is not valid),
+    and point out the error message that is displayed.
+23. Change the password to **passwd** (a valid password) and point out that the
+    password is successfully changed.
+24. Close the application, and then close Visual Studio.
 
 
 ©2017 Microsoft Corporation. All rights reserved.

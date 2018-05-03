@@ -93,10 +93,108 @@
 15.  On the **Debug** menu, click **Stop Debugging**.
 16.  Close Visual Studio.
 
+### Demonstration:  Improving the Responsiveness and Performance of the Application Lab
+
+#### Preparation Steps
+
+1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Navigate to **Allfiles\Mod10\Democode\Starter**, and then open the **Locking.sln** file.
+
+
+#### Demonstration Steps
+
+1.  Open the Grades.sln solution from the
+    E:\\Mod10\\Labfiles\\Solution\\Exercise 2 folder.
+
+2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
+    **Properties**.
+
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set
+    **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then
+    click **OK**.
+
+4.  Build the solution.
+
+5.  In the **Grades.WPF** project, open **MainWindow.xaml.cs** and then locate
+    the **Refresh** method.
+
+6.  Explain to students that during Exercise 1, they will convert the
+    **Refresh** method to an **async** method.
+
+7.  In the **Refresh** method, in the **case "Teacher"** block, locate the call
+    to **utils.GetTeacher**.
+
+8.  Explain to students that they will convert the **GetTeacher** method into an
+    *awaitable* method, so that it waits for the method to return without
+    blocking the UI thread.
+
+9.  On the statement that calls **utils.GetTeacher**, right-click
+    **GetTeacher**, and then click **Go To Definition**.
+
+10. Explain that to make the **GetTeacher** method awaitable, the students must:
+
+    1.  Make **GetTeacher** an **async** method.
+
+    2.  Change the return type of the method from **Teacher** to
+        **Task\<Teacher\>**.
+    -  Use a task to run the LINQ query.
+    -  Use an **await** operator to get the query result.
+11. In the Views folder, open **StudentsPage.xaml.cs**, and then locate the
+    **Refresh** method.
+12. In the **Refresh** method, locate the call to
+    **utils.GetStudentsByTeacher**.
+13. Explain to the students that they will convert the **GetStudentsByTeacher**
+    method into an asynchronous method that uses a callback method to update the
+    UI.
+14. On the statement that calls **utils.GetStudentsByTeacher**, right-click
+    **GetStudentsByTeacher**, and then click **Go To Definition**.
+15. Explain to the students that they will use a task to run the LINQ query, use
+    an **await** operator to get the query result, and then pass the results as
+    an argument to the callback method.
+16. In **StudentsPage.xaml.cs**, locate the **OnGetStudentsByTeacherComplete**
+    method.
+17. Explain to the students that this is the callback method, and show how it
+    uses a **Dispatcher** object to update the UI.
+18. In the Controls folder, open the **BusyIndicator.xaml** file.
+19. Explain to the students that during Exercise 2, they will create this user
+    control.
+20. Draw attention to the **ProgressBar** control, which displays a simple
+    animation whenever the control is visible, and to the XAML code that creates
+    the control.
+21. Open the MainWindow.xaml file, locate the **BusyIndicator** element, and
+    then point out that the visibility of the control is initially set to
+    **Collapsed**.
+22. In **MainWindow.xaml.cs**, locate the **StartBusy** and **EndBusy** event
+    handler methods. Point out that the **StartBusy** method makes the
+    **BusyIndicator** control visible and the **EndBusy** method hides the
+    **BusyIndicator** control.
+23. Open the StudentsPage.xaml.cs file, and then point out the following:
+    -  The **StartBusy** and **EndBusy** events.
+    -  The **StartBusyEvent** method that raises the **StartBusy** event.
+    -  The **EndBusyEvent** method that raises the **EndBusy** event.
+24. Locate the **Refresh** method.
+25. Point out that the method raises the **StartBusy** event before the call to
+    **GetStudentsByTeacher**.
+26. Point out that the method raises the **EndBusy** event after the call to
+    **GetStudentsByTeacher**.
+27. In the MainWindow.xaml file, locate the **StudentsPage** element.
+28. Explain that the **StartBusy** and **EndBusy** events are wired up to the
+    **StartBusy** and **EndBusy** event handler methods respectively.
+29. Run the application, and then log on as **vallee** with a password of
+    **password99**.
+30. Point out that the application displays the **BusyIndicator** control while
+    waiting for the list of students to load.
+31. Click **Log off**, and then close the application.
+32. Close Visual Studio.
 
 
 
-©2017 Microsoft Corporation. All rights reserved.
+
+
+
+
+
+©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the  [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are  **not**  included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 
