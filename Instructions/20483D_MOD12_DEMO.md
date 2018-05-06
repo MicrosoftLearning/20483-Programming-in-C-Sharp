@@ -137,18 +137,64 @@
 27. Close the VS2012 x64 Cross Tools Command Prompt window.
 28. In Visual Studio, close the solution.
 
-
-
-
 ### Demonstration: Specifying the Data to Include in the Grades Report Lab
 
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
+#### Demonstration Steps
+
+1.  Open the Grades.sln solution from the
+    E:\\Mod12\\Labfiles\\Solution\\Exercise 2 folder.
+
+2.  In the **Grades.Utilities** project, open IncludeInReport.cs.
+
+3.  Locate the **IncludeInReportAttribute** class definition, and then explain
+    to students that in Exercise 1, they will make this class an attribute class
+    and define its members.
+
+4.  In the **Grades.WPF** project, open Data.cs.
+
+5.  Locate the **LocalGrade** class, and then point out to students the
+    **IncludeInReport** attributes on the **SubjectName**, **AssessmentDate**,
+    **Assessment**, and **Comments** properties.
+
+6.  In the **Grades.Utilities** project, open IncludeInReport.cs.
+
+7.  Locate the **FormatField** struct, and then explain to students that in
+    Exercise 2, they will define this struct to specify the formatting to apply
+    to an item.
+
+8.  In the **IncludeProcessor** class, locate the **GetItemsToInclude** method.
+
+9.  Explain to students that they will add code to this method to find all of
+    the public fields and properties in the **dataForReport** object and process
+    each item that is tagged with the **IncludeInReport** attribute to format it
+    correctly and include it in the report.
+
+10. In the **Grades.WPF** project, in the **Views** folder, open
+    StudentProfile.xaml.cs.
+
+11. Locate the **GenerateStudentReport** method, and then explain to students
+    that they add code to this method to use the **IncludeProcessor** class to
+    determine which fields in the **Grade** object are tagged with the
+    **IncludeInReport** attribute, format them appropriately, and include them
+    in the report.
+
+12. Explain to students that they will use the Strong Name tool to generate a
+    key pair and sign the **Grades.Utilities** assembly with the key pair and
+    then host the assembly in the GAC.
+
+13. Finally, they will generate a report and check that the correct properties
+    are included in the report and the formatting is correctly applied.
+
+14. Close Visual Studio.
 
 
-©2017 Microsoft Corporation. All rights reserved.
+
+
+©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the  [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are  **not**  included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 

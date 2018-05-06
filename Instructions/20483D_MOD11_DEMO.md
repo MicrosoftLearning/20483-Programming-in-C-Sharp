@@ -65,6 +65,41 @@
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
+#### Demonstration Steps
+
+1.  Open the Grades.sln solution from the
+    E:\\Mod11\\Labfiles\\Solution\\Exercise 2 folder.
+2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
+    **Properties**.
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set
+    **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then
+    click **OK**.
+4.  Build the solution.
+5.  In the Grades.Utilities project, open **WordWrapper.cs**.
+6.  Review the code in this class and explain to students that in Exercise 1,
+    they will write some of the code to start Word and create and save a
+    document.
+7.  Review the class definition and the dispose pattern implementation and
+    explain to students that in Exercise 2, they will write this code to control
+    the lifetime of the **Word** object.
+8.  In the Grades.WPF project, in the Views folder, open
+    **StudentProfile.xaml.cs**, and then locate the **GenerateStudentReport**
+    method.
+9.  Review the code in this method and explain to students that in Exercise 1,
+    they will write this code to use the **WordWrapper** class to generate the
+    grade reports and then in Exercise 2, they will update the code to ensure
+    that the **WordWrapper** class is disposed of correctly.
+10. Open Task Manager.
+11. In the **Task Manager** window, click **More details**.
+12. Run the application and log on as **vallee** with a password of
+    **password99**.
+13. Generate a grade report for **Kevin Liu**. When you click **Save**, in the
+    **Task Manager** window, verify that **Microsoft Word (32 bit)** appears and
+    then disappears from the **Background processes** group.
+14. Close the application, and then close Task Manager.
+15. Open Kevin Liu’s grade report in Word, review the report, and then close
+    Word.
+16. Close Visual Studio.
 
 
 

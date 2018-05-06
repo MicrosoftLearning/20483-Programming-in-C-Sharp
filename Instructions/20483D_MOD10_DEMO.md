@@ -132,10 +132,8 @@
     **GetTeacher**, and then click **Go To Definition**.
 
 10. Explain that to make the **GetTeacher** method awaitable, the students must:
-
-    1.  Make **GetTeacher** an **async** method.
-
-    2.  Change the return type of the method from **Teacher** to
+    -  Make **GetTeacher** an **async** method.
+    -  Change the return type of the method from **Teacher** to
         **Task\<Teacher\>**.
     -  Use a task to run the LINQ query.
     -  Use an **await** operator to get the query result.

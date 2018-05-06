@@ -121,8 +121,45 @@
 
 1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
+#### Demonstration Steps
 
-
+1.  Open the **Grades.sln** solution from the
+    **E:\\Mod13\\Labfiles\\Solution\\Exercise 1** folder.
+2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
+    **Properties**.
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set
+    **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then
+    click **OK**.
+4.  In the **Grades.Utilities** project, open **CreateCertificate.cmd**.
+5.  Explain that this command file creates a new certificate that students will
+    use to encrypt the grade report.
+6.  Point out that students need to run a command window as an administrator for
+    the command to succeed.
+7.  In the **Grades.Utilities** folder, open **WordWrapper.cs**, and then locate
+    the **EncryptWithX509** method.
+8.  Explain to students that during Exercise 1, they will add the code in this
+    method to encrypt the grade report.
+9.  Run the application, and then log on as **vallee** with a password of
+    **password99**.
+10. Generate grade reports for George Li and Kevin Liu. Save each report in the
+    **E:\\Mod13\\Labfiles\\Reports** folder.
+11. Close the application, and then attempt to open one of the reports that you
+    created in the previous step by using Windows Internet Explorer® and Notepad
+    to show the encrypted data.
+12. Open the **Schools-Reports.sln** solution from the
+    **E:\\Mod13\\Labfiles\\Solution\\Exercise 2** folder.
+13. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
+14. Explain to students that during Exercise 2, they will add the code in this
+    method to decrypt the reports.
+15. Run the application, and then print a composite report that contains the two
+    reports that you generated earlier. Save the **CompositeReport.oxps** file
+    in the **E:\\Mod13\\Labfiles\\Reports\\ClassReport** folder.
+16. Close the application, and then close Visual Studio.
+17. Open the composite report in the XPS Viewer and review the contents of the
+    report.
+18. Open File Explorer and delete the contents of th**e**
+    E:\\Mod13\\Labfiles\\Reports and E:\\Mod13\\Labfiles\\Reports\\ClassReport
+    folders and then close File Explorer.
 
 
 ©2017 Microsoft Corporation. All rights reserved.
