@@ -329,7 +329,7 @@ control.
 3.	Log on as **vallee** with a password of **password99**.
 4.	In **The School of Fine Arts** window, verify that the styling of the text elements of the application has changed.
 
-    ![alt text](./Images/20483D_09_LogonView.png "Upper: Old style Logon view. Lower: New style Logon view")
+    ![alt text](./Images/20483C_09_LogonView.png "Upper: Old style Logon view. Lower: New style Logon view")
 5.	Close the application, and then in Visual Studio, close the solution.
 
 >**Result :** After completing this exercise, the Logon view will be styled with a consistent look and feel.

@@ -102,11 +102,11 @@ To store data in a text box in a window, set the **Text** property of the text b
 1.	Build the solution and resolve any compilation errors.
 2.	Run the application and verify that it displays the initial list of students.
 
-    ![alt text](./Images/20483D_01_Lab1_StudentList.png "he initial students list")
+    ![alt text](./Images/20483C_01_Lab1_StudentList.png "he initial students list")
 
 3.	Edit the row for Kevin Liu and verify that the **Edit Student Details** window appears and displays the correct details:
 
-    ![alt text](./Images/20483D_01_Lab1_EditStudent.png "Edit Student Details form")
+    ![alt text](./Images/20483C_01_Lab1_EditStudent.png "Edit Student Details form")
 
 4.	Change the last name of **Kevin Liu** to **Cook** and verify that the updated data is copied back to the students list.
 5.	Verify that the **Save Changes** button is now enabled.
@@ -228,7 +228,7 @@ A list of students is displayed in the user interface of the application. If the
 
 1.	If the user presses Delete, find the details of the student that the user has selected and display a message box showing the selected student’s name. Ask the user to confirm that they want to remove the student.
 
-    ![alt text](./Images/20483D_01_Lab1_RemoveStudent.png "Prompt to confirm the deletion of a student.")
+    ![alt text](./Images/20483C_01_Lab1_RemoveStudent.png "Prompt to confirm the deletion of a student.")
 
 #### Task 3: Remove the student and enable the user to save the changes.
 
@@ -286,7 +286,7 @@ Age in years = difference in days / 365.25
 1.	Build the solution and resolve any compilation errors.
 2.	Run the application and verify it displays the initial list of students, with their ages.
 
-    ![alt text](./Images/20483D_01_Lab1_StudentListAges.png "The student list displaying their ages.")
+    ![alt text](./Images/20483C_01_Lab1_StudentListAges.png "The student list displaying their ages.")
 
 3.	Add yourself as a student and verify that your age displays correctly in the student list.
 4.	Close the application.

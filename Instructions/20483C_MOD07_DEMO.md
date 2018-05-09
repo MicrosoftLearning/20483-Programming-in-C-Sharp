@@ -7,7 +7,7 @@
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
 1.  Log on to Windows® 10 as **Student** with the password **Pa\$\$w0rd**. If
     necessary, click **Switch User** to display the list of users.
@@ -79,7 +79,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 2. Navigate to **Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
 
 #### Demonstration Steps
@@ -107,7 +107,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 2. Navigate to **Allfiles\Mod07\Democode\Demo1\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
 
 #### Demonstration Steps
@@ -139,7 +139,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 2. Navigate to **Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
 
 #### Demonstration Steps
@@ -173,7 +173,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483D directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
 #### Demonstration Steps
 

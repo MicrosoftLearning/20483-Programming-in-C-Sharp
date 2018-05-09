@@ -163,7 +163,7 @@ following regular expression.
     and confirm the new password. When the user clicks **OK** the new password
     is set.
 
-![alt text](./Images/20483D_05_ChangePasswordDialog.png "The ChangePasswordDialog window")
+![alt text](./Images/20483C_05_ChangePasswordDialog.png "The ChangePasswordDialog window")
 
 5.  Examine the code in the **ok_Click** method in the
     **ChangePassword.xaml.cs** file. This method runs when the user clicks

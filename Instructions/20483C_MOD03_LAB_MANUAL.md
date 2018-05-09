@@ -150,11 +150,11 @@ view, and then add code to display and refresh the **studentsPage** view.
 3.	Log on as the teacher, **vallee** with a password of **password**.
 4.	Verify that the application displays the **StudentPage** view.
 
-![alt text](./Images/20483D_03_StudentsPage.png "The Students page")
+![alt text](./Images/20483C_03_StudentsPage.png "The Students page")
 
 5.	Click **Kevin Liu** and verify that the application displays the **StudentProfile** view.
 
-![alt text](./Images/20483D_03_StudentProfileKevinLiu.png "The Student Profile page")
+![alt text](./Images/20483C_03_StudentProfileKevinLiu.png "The Student Profile page")
 
 6.	Log off the application.
 7.	Log on as the student, **grubere**, with a password of **password**.
