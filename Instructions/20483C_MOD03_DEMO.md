@@ -14,10 +14,10 @@
 1.  Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **New**, and then click
     **Project**.
-3.  In the **New Project** dialog box, in the **Templates** list, click **Visual
-    C\#**, and then in the **Project Type** list, click **Console Application**.
+3.  In the **New Project** dialog box, in the **Installed** list, click **Visual
+    C\#**, and then in the **Project Type** list, click **Console App(.NET Framework)**.
 4.  In the **Name** box, type **UsingStructs**
-5.  In the **Location** box, set the location to **Allfiles\\Mod03\\Democode**, and
+5.  In the **Location** box, set the location to **[Repository Root]\\Allfiles\\Mod03\\Democode**, and
     then click **OK**.
 6.  In the **UsingStructs** namespace, add the following code:
     ```cs
