@@ -50,7 +50,7 @@
 16.	In the **Exception Logger** application, click **Export**.
 17.	In the **Export Successful** dialog box, click **OK**.
 18.	Close the Exception Logger application.
-19.	Open File Explorer, and browse to the **E:\Mod11\Democode\Data\Exceptions** folder.
+19.	Open File Explorer, and browse to the **[Repository Root]\Mod11\Democode\Data\Exceptions** folder.
 20.	Double-click **Exceptions.docx**, and then view the combined exception report in the Word document.
 21.	Close Microsoft Word.
 22.	Close File Explorer.
@@ -68,7 +68,7 @@
 #### Demonstration Steps
 
 1.  Open the Grades.sln solution from the
-    E:\\Mod11\\Labfiles\\Solution\\Exercise 2 folder.
+    [Repository Root]\\Mod11\\Labfiles\\Solution\\Exercise 2 folder.
 2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set

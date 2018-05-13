@@ -44,7 +44,7 @@ application, and then verify that it still works correctly.
 #### Task 1: Create the User abstract base class.
 
 1.  Start Visual Studio and open the **GradesPrototype.sln** solution from the
-    **E:\\Mod05\\Labfiles\\Starter\\Exercise 1** folder.
+    **[Repository Root]\\Mod05\\Labfiles\\Starter\\Exercise 1** folder.
 2.  In the **Grade.cs** file in the **Data** folder, create a new abstract class
     called **User**.
 3.  Add the **UserName** and **Password** properties to the **User** class. You
@@ -108,7 +108,7 @@ and run the application to test the password functionality.
 #### Task 1: Define the SetPassword abstract method.
 
 1. In Visual Studio, open the **GradesPrototype.sln** solution from the
-**E:\\Mod05\\Labfiles\\Starter\\Exercise 2** folder.
+**[Repository Root]\\Mod05\\Labfiles\\Starter\\Exercise 2** folder.
 2. In the **Data** folder, in the **Grade.cs** file, in the **User** class, define
 a public abstract method called **SetPassword**. This method should take a
 string parameter containing the password and return a Boolean value indicating
@@ -225,7 +225,7 @@ then you will build and run the application to test this feature.
 
 #### Task 1: Implement the ClassFullException class.
 
-1.	In Visual Studio, open the **GradesPrototype.sln** solution from the **E:\Mod05\Labfiles\Starter\Exercise 3** folder.
+1.	In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod05\Labfiles\Starter\Exercise 3** folder.
 2.  Review the **ClassFullException** class in the **Services** folder. Notice
     that the class inherits from the **Exception** class, but most of the
     functionality has yet to be defined.

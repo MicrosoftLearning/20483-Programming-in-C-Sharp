@@ -11,7 +11,7 @@
 #### Demonstration Steps
 
 1. Open the **School.sln** solution from the
-    **E:\\Mod01\\Labfiles\\Solution\\Exercise 4** folder.
+    **[Repository Root]\\Mod01\\Labfiles\\Solution\\Exercise 4** folder.
 2. Run the application, select a student name, and then press Enter to edit
     that student’s details.
 3. Update the **First Name** and **Last Name** boxes to contain your name, and

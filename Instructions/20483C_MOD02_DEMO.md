@@ -52,7 +52,7 @@ and verify that the value returned is **true**.
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 
 1.  Open the **School.sln** solution from the
-    E:\\Mod02\\Labfiles\\Solution\\Exercise 3 folder.
+    [Repository Root]\\Mod02\\Labfiles\\Solution\\Exercise 3 folder.
 2.  Open **MainWindow.xaml.cs** and locate the **studentsList_KeyDown** method.
 3.  Explain to students that in Exercise 1 they will refactor the code that they
     added to this method in Lab 1 into separate methods that can be called from

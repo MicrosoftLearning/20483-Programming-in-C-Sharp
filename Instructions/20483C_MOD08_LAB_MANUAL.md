@@ -37,10 +37,10 @@ First, you will add a new ASP.NET Web Application project to the solution and co
 #### Task 1: Create the Grades.Web project.
 
 
-1.  Start File Explorer, navigate to the **E:\\Mod08\\Labfiles\\Databases**
+1.  Start File Explorer, navigate to the **[Repository Root]\\Mod08\\Labfiles\\Databases**
     folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
-3.  Start Visual Studio, and from the **E:\\Mod08\\Labfiles\\Starter\\Exercise
+3.  Start Visual Studio, and from the **[Repository Root]\\Mod08\\Labfiles\\Starter\\Exercise
     1** folder, open the **GradesPrototype.sln** solution.
 4.  Add a Visual C\# ASP.NET Empty Web Application project called Grades.Web to
     the solution.
@@ -59,7 +59,7 @@ First, you will add a new ASP.NET Web Application project to the solution and co
 1.	Add a new folder named Services to the Grades.Web project.
 2.	Add a new WCF Data Service named GradesWebDataService to the Services folder.
 3.	Add a reference to the Grades.DataModel project in the Grades.Web project.
-4.	Add a reference to the EntityFramework assembly. This assembly is located in the E:\Mod08\Labfiles\Starter\Exercise 1\packages\EntityFramework.5.0.0\lib\net45 folder.
+4.	Add a reference to the EntityFramework assembly. This assembly is located in the [Repository Root]\Mod08\Labfiles\Starter\Exercise 1\packages\EntityFramework.5.0.0\lib\net45 folder.
 5.	Copy the \<connectionStrings\> element from the App.config file in the GradesPrototype project and paste it into the Web.config file in the Grades.Web project.
     >**Note :** The data service in the Grades.Web project needs to connect to the same data source that the data model uses.
 
@@ -117,7 +117,7 @@ First, you will add a service reference in the GradesPrototype project that refe
 #### Task 1: Add a service reference for the WCF Data Service to the GradesPrototype application.
 
 1.  In Visual Studio, open the GradesPrototype.sln solution from the
-    E:\\Mod08\\Labfiles\\Starter\\Exercise 2 folder.
+    [Repository Root]\\Mod08\\Labfiles\\Starter\\Exercise 2 folder.
 2.  Set the following projects to start at startup:
     -  **Grades.Web**
     -  **Grades.WPF**
@@ -276,7 +276,7 @@ application to verify that the images appear.
 #### Task 1: Create the ImageNameConverter value converter class.
 
 1.  In Visual Studio, open the GradesPrototype.sln solution from the
-    E:\\Mod08\\Labfiles\\Starter\\Exercise 3 folder.
+    [Repository Root]\\Mod08\\Labfiles\\Starter\\Exercise 3 folder.
 2.  Set the following projects to start at startup:
     -  **Grades.Web**
     -  **Grades.WPF**

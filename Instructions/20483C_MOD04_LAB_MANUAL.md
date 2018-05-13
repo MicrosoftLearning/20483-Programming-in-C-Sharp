@@ -42,7 +42,7 @@ allowing a student or a teacher to log on.
 #### Task 1: Convert the Grades struct into a class.
 
 1.  Start Visual Studio and open the **GradesPrototype.sln** solution from the
-    **E:\\Mod04\\Labfiles\\Starter\\Exercise 1** folder.
+    **[Repository Root]\\Mod04\\Labfiles\\Starter\\Exercise 1** folder.
 2.  In the **Data** folder, in **Grade.cs**, convert the **Grade** struct into a
     class.
 3.  Define a class constructor that takes the following parameters and uses them
@@ -153,7 +153,7 @@ expected.
 
 #### Task 1: Create a list of valid subject names
 
-1. In Visual Studio, from the **E:\\Mod04\\Labfiles\\Starter\\Exercise 2** folder,
+1. In Visual Studio, from the **[Repository Root]\\Mod04\\Labfiles\\Starter\\Exercise 2** folder,
 open the **GradesPrototype.sln** solution
 2.  In the **Data** folder, in the **DataSource** class, define a generic
     **List** collection to hold the names of valid subjects.
@@ -235,7 +235,7 @@ alphabetical order of their last name and first name.
 
 #### Task 1: Run the application and verify that the students are not displayed in any specific order when logged on as a teacher.
 
-1.  In Visual Studio, from the **E:\\Mod04\\Labfiles\\Starter\\Exercise 3**
+1.  In Visual Studio, from the **[Repository Root]\\Mod04\\Labfiles\\Starter\\Exercise 3**
     folder, open the **GradesPrototype.sln** solution.
 2.  Build the solution and resolve any compilation errors.
 3.  Log in as **vallee** with a password of **password**. Verify that the
@@ -302,7 +302,7 @@ student will be able to log on to view their own grades.
 
 #### Task 1: Change the Teachers and Grades collections to be generic List collections.
 
-1.  In Visual Studio, from the **E:\\Mod04\\Labfiles\\Starter\\Exercise 4**
+1.  In Visual Studio, from the **[Repository Root]\\Mod04\\Labfiles\\Starter\\Exercise 4**
     folder, open the **GradesPrototype.sln** solution.
 
 2.  In the **Data** folder, in the **DataSource.cs** code, change the

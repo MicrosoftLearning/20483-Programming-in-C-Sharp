@@ -13,7 +13,7 @@
     necessary, click **Switch User** to display the list of users.
 2.  Switch to the Windows 10 **Start** window and then type Explorer.
 3.  In the **Apps** list, click **File Explorer**.
-4.  Navigate to the **E:\\Mod07\\Democode\\Databases** folder, and then
+4.  Navigate to the **[Repository Root]\\Mod07\\Democode\\Databases** folder, and then
     double-click **SetupFourthCoffeeDB.cmd**.
 5.  Close File Explorer.
 6.  Switch to the Windows 8 **Start** window.
@@ -21,7 +21,7 @@
 8. In Visual Studio, on the **File** menu, point to **Open**, and then click
     **File**.
 9. In the **Open File** dialog box, browse to the
-    **E:\\Mod07\\Democode\\Databases** folder, click **FourthCoffee.sql**, and
+    **[Repository Root]\\Mod07\\Democode\\Databases** folder, click **FourthCoffee.sql**, and
     then click **Open**.
 10. On the **SQL** menu, point to **Transact-SQL Editor**, and then click
     **Execute**.
@@ -34,7 +34,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 14.  In the **New Project** dialog box, expand **Templates**, click **Visual
     C\#**, and then in the **Template** list, click **Console Application**.
 15.  In the **Name** box, type **FourthCoffee.Employees**, in the **Location**
-    box, type **E:\\Mod07\\Democode\\Demo1\\Starter**, and then click **OK**.
+    box, type **[Repository Root]\\Mod07\\Democode\\Demo1\\Starter**, and then click **OK**.
 16.  In Solution Explorer, right-click **FourthCoffee.Employees**, point to
     **Add**, and then click **New Item**.
 17.  In the **Add New Item – FourthCoffee.Employees** dialog box, click **ADO.NET
@@ -119,7 +119,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 4.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 5.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod07\\Democode\\Demo3\\FourthCoffee.Employees** folder, click
+    **[Repository Root]\\Mod07\\Democode\\Demo3\\FourthCoffee.Employees** folder, click
     **FourthCoffee.Employees.sln**, and then click **Open**.
 6.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
     double-click **Program.cs**.
@@ -151,7 +151,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 4.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 5.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod07\\Democode\\Demo4\\FourthCoffee.Employees** folder, click
+    **[Repository Root]\\Mod07\\Democode\\Demo4\\FourthCoffee.Employees** folder, click
     **FourthCoffee.Employees.sln**, and then click **Open**.
 6.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
     double-click **Program.cs**.
@@ -178,7 +178,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 #### Demonstration Steps
 
 1.  Open the GradesPrototype.sln solution from the
-    E:\\Mod07\\Labfiles\\Solution\\Exercise 3 folder.
+    [Repository Root]\\Mod07\\Labfiles\\Solution\\Exercise 3 folder.
 2.  In Server Explorer, expand the **sea-dev11** data connection and then expand
     **Tables**.
 3.  Explain to students that they will be using this database for the labs from

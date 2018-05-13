@@ -43,14 +43,14 @@ DASM) to examine the metadata that the attribute generates.
 #### Task 1: Write the code for the IncludeInReportAttribute class.
 
 1.  In the **Apps** list, click **File Explorer**.
-2.  Navigate to the **E:\\Mod12\\Labfiles\\Databases** folder, and then
+2.  Navigate to the **[Repository Root]\\Mod12\\Labfiles\\Databases** folder, and then
     double-click **SetupSchoolGradesDB.cmd**.
 3.  Close File Explorer.
 4.  Click **Visual Studio 2017**.
 5.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 6. In the **Open Project** dialog box, browse to
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 1**, click **Grades.sln**, and then
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 1**, click **Grades.sln**, and then
     click **Open**.
 7. In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
@@ -139,7 +139,7 @@ DASM) to examine the metadata that the attribute generates.
 3.  Right-click **ildasm.exe,** and then click **Open**.
 4.  In the **IL DASM** window, on the **File** menu, click **Open**.
 5.  In the **Open** dialog box, browse to
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 1\\Grades.WPF\\bin\\Debug**, click
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 1\\Grades.WPF\\bin\\Debug**, click
     **Grades.WPF.exe**, and then click **Open**.
 6.  In the **IL DASM** application window, expand **Grades.WPF,** expand
     **Grades.WPF.LocalGrade**, and then double-click **Assessment : instance
@@ -197,7 +197,7 @@ appropriately.
 1.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 2.  In the **Open Project** dialog box, browse to
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 2**, click **Grades.sln**, and then
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 2**, click **Grades.sln**, and then
     click **Open**.
 3.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
@@ -302,12 +302,12 @@ appropriately.
 5.  Verify that the student report for Kevin Liu appears, and then click **save
     report**.
 6.  In the **Save As** dialog box, browse to the
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 2** folder.
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 2** folder.
 7.  In the **File name** box, type **KevinLiuGradesReport**, and then click
     **Save**.
 8.  Close the application.
 9.  In Visual Studio, on the **File** menu, click **Close Solution**.
-10. Open File Explorer, browse to **E:\\Mod12\\Labfiles\\Starter\\Exercise 2**,
+10. Open File Explorer, browse to **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 2**,
     and then verify that KevinLiuGradesReport.docx has been generated.
 11. Right-click **KevinLiuGradesReport.docx**, and then click **Open**.
 12. Verify that the document contains the grade report for Kevin Liu and that it
@@ -337,7 +337,7 @@ ensure that the reports are correctly generated.
 1.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 2.  In the **Open Project** dialog box, browse to
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 3**, click **Grades.sln**, and then
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 3**, click **Grades.sln**, and then
     click **Open**.
 3.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
@@ -358,7 +358,7 @@ ensure that the reports are correctly generated.
     ```
 12.	At the command prompt, type the following code, and then press Enter:
     ```cs
-    cd E:\Mod12\Labfiles\Starter
+    cd [Repository Root]\Mod12\Labfiles\Starter
     ```
 13.	At the command prompt, type the following code, and then press Enter:
     ```cs
@@ -370,12 +370,12 @@ ensure that the reports are correctly generated.
 16.  On the **Signing** tab, select **Sign the assembly**.
 17.  In the **Choose a strong name key file** list, click **Browse**.
 18.  In the **Select File** dialog box, browse to
-    **E:\\Mod12\\Labfiles\\Starter**, click **GradesKey.snk**, and then click
+    **[Repository Root]\\Mod12\\Labfiles\\Starter**, click **GradesKey.snk**, and then click
     **Open**.
 19.  On the **Build** menu, click **Build Solution**.
 20.	Switch to the command prompt, type the following code, and then press Enter:
     ```cs
-    cd E:\Mod12\Labfiles\Starter\Exercise 3\Grades.Utilities\bin\Debug
+    cd [Repository Root]\Mod12\Labfiles\Starter\Exercise 3\Grades.Utilities\bin\Debug
     ```
 21.	At the command prompt, type the following code, and then press Enter:
     ```cs
@@ -392,7 +392,7 @@ ensure that the reports are correctly generated.
 3.  In the **Reference Manager – Grades.WPF** dialog box, click the **Browse**
     button.
 4.  In the **Select the files to reference** dialog box, browse to
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 3\\Grades.Utilities\\bin\\Debug**,
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 3\\Grades.Utilities\\bin\\Debug**,
     click **Grades.Utilities.dll**, and then click **Add**.
 5.  In the **Reference Manager – Grades.WPF** dialog box, click **OK**.
 6.  On the **Build** menu, click **Build Solution**.
@@ -403,12 +403,12 @@ ensure that the reports are correctly generated.
 10.  Verify that the student report for Kevin Liu appears, and then click **save
     report**.
 11.  In the **Save As** dialog box, browse to the
-    **E:\\Mod12\\Labfiles\\Starter\\Exercise 3** folder.
+    **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 3** folder.
 12.  In the **File name** box, type **KevinLiuGradesReport**, and then click
     **Save**.
 13.  Close the application.
 14.  In Visual Studio, on the **File** menu, click **Close Solution**.
-15. Open File Explorer, browse to **E:\\Mod12\\Labfiles\\Starter\\Exercise 3**,
+15. Open File Explorer, browse to **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 3**,
     and then verify that KevinLiuGradesReport.docx has been generated.
 16. Right-click **KevinLiuGradesReport.docx**, and then click **Open**.
 17. Verify that the document contains the grade report for Kevin Liu and that it

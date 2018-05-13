@@ -68,7 +68,7 @@
 6.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 7.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod03\\Democode\\Starter** folder, click **EventsAndXAML.sln**, and
+    **[Repository Root]\\Mod03\\Democode\\Starter** folder, click **EventsAndXAML.sln**, and
     then click **Open**.
 8.  In Solution Explorer, expand **EventsAndXAML**, and then double-click
     **MainWindow.xaml**.
@@ -116,7 +116,7 @@ subscribes your event handler method to the **Click** event of the button.
 ### Demonstration: Writing Code for the Grades Prototype Application Lab
 
 1.  Open the **GradesPrototype.sln** solution from the
-    **E:\\Mod03\\Labfiles\\Solution\\Exercise 3** folder.
+    **[Repository Root]\\Mod03\\Labfiles\\Solution\\Exercise 3** folder.
 2.  Run the application and log on as **vallee** with a password of
     **password**.
 3.  Point out the **Welcome** message and class name to students. Explain that

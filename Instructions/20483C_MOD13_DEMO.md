@@ -124,7 +124,7 @@
 #### Demonstration Steps
 
 1.  Open the **Grades.sln** solution from the
-    **E:\\Mod13\\Labfiles\\Solution\\Exercise 1** folder.
+    **[Repository Root]\\Mod13\\Labfiles\\Solution\\Exercise 1** folder.
 2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set
@@ -142,23 +142,23 @@
 9.  Run the application, and then log on as **vallee** with a password of
     **password99**.
 10. Generate grade reports for George Li and Kevin Liu. Save each report in the
-    **E:\\Mod13\\Labfiles\\Reports** folder.
+    **[Repository Root]\\Mod13\\Labfiles\\Reports** folder.
 11. Close the application, and then attempt to open one of the reports that you
     created in the previous step by using Windows Internet Explorer® and Notepad
     to show the encrypted data.
 12. Open the **Schools-Reports.sln** solution from the
-    **E:\\Mod13\\Labfiles\\Solution\\Exercise 2** folder.
+    **[Repository Root]\\Mod13\\Labfiles\\Solution\\Exercise 2** folder.
 13. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
 14. Explain to students that during Exercise 2, they will add the code in this
     method to decrypt the reports.
 15. Run the application, and then print a composite report that contains the two
     reports that you generated earlier. Save the **CompositeReport.oxps** file
-    in the **E:\\Mod13\\Labfiles\\Reports\\ClassReport** folder.
+    in the **[Repository Root]\\Mod13\\Labfiles\\Reports\\ClassReport** folder.
 16. Close the application, and then close Visual Studio.
 17. Open the composite report in the XPS Viewer and review the contents of the
     report.
 18. Open File Explorer and delete the contents of th**e**
-    E:\\Mod13\\Labfiles\\Reports and E:\\Mod13\\Labfiles\\Reports\\ClassReport
+    [Repository Root]\\Mod13\\Labfiles\\Reports and [Repository Root]\\Mod13\\Labfiles\\Reports\\ClassReport
     folders and then close File Explorer.
 
 

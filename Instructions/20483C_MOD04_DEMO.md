@@ -67,7 +67,7 @@
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the
-    **E:\\Mod04\\Labfiles\\Solution\\Exercise 4** folder.
+    **[Repository Root]\\Mod04\\Labfiles\\Solution\\Exercise 4** folder.
 2. In the **Data** folder, open **Grade.cs** and explain to students that
     during Exercise 1 they will convert the structs that they created in the
     previous lab into the classes in this file.

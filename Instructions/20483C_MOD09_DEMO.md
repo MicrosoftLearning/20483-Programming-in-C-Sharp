@@ -72,7 +72,7 @@
 #### Demonstration Steps
 
 1.  Open the **Grades.sln** solution from the
-    **E:\\Mod09\\Labfiles\\Solution\\Exercise 3** folder.
+    **[Repository Root]\\Mod09\\Labfiles\\Solution\\Exercise 3** folder.
 2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set

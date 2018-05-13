@@ -43,10 +43,10 @@ A list of students is displayed in the user interface of the application. When t
 
 #### Task 1: Detect whether the user has pressed the Enter key.
 
-1.  Start File Explorer, navigate to the **E:\\Mod01\\Labfiles\\Databases**
+1.  Start File Explorer, navigate to the **[Repository Root]\\Mod01\\Labfiles\\Databases**
     folder, and then run **SetupSchoolDB.cmd**.
 2.  Close File Explorer.
-3.  Start Visual Studio and from the **E:\\Mod01\\Labfiles\\Starter\\Exercise
+3.  Start Visual Studio and from the **[Repository Root]\\Mod01\\Labfiles\\Starter\\Exercise
     1** folder, open the **School.sln** solution.
 4.  In the code for the **MainWindow.xaml.cs** window, find the
     **studentsList_KeyDown** method.
@@ -157,7 +157,7 @@ A list of students is displayed in the user interface of the application. When t
 
 #### Task 1: Add logic to the key down method to detect if the Insert key has been pressed.
 
-1.	In Visual Studio, from the **E:\Mod01\Labfiles\Starter\Exercise 2** folder, open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Mod01\Labfiles\Starter\Exercise 2** folder, open the **School.sln** solution.
 2.	In the code for the **MainWindow.xaml.cs** window, locate the **studentsList_KeyDown** method.
 3.	In this method, add a statement to detect whether the user has pressed Insert.
 
@@ -219,7 +219,7 @@ A list of students is displayed in the user interface of the application. If the
 
 #### Task 1: Add logic to the key down method to detect if the Delete key has been pressed.
 
-1.	In Visual Studio, from the **E:\Mod01\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Mod01\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
 2.	In the code for the **MainWindow.xaml.cs** window, find the **studentsList_KeyDown** method. 
 3.	In this method, add a statement to detect whether the user has pressed Delete. 
 
@@ -263,7 +263,7 @@ You will write code in the **AgeConverter** class that is linked to the grid col
 
 #### Task 1: Examine the MainWindow XAML.
 
-1.	In Visual Studio, open the **School.sln** solution from the **E:\Mod01\Labfiles\Starter\Exercise 4** folder.
+1.	In Visual Studio, open the **School.sln** solution from the **[Repository Root]\Mod01\Labfiles\Starter\Exercise 4** folder.
 2.	Build the solution. 
 3.	View the **MainWindow.xaml** code. 
 4.	Note how the **Age** column in the **GridView** uses databinding with a value converter (**AgeConverter**).

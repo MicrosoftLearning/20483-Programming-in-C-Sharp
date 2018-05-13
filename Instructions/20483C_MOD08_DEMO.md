@@ -98,7 +98,7 @@
 #### Demonstration Steps
 
 1.  Open the GradesPrototype.sln solution from the
-    E:\\Mod08\\Labfiles\\Solution\\Exercise 3 folder.
+    [Repository Root]\\Mod08\\Labfiles\\Solution\\Exercise 3 folder.
 2.  In Solution Explorer, right-click **Solution ‘GradesPrototype’**, and then
     click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set
