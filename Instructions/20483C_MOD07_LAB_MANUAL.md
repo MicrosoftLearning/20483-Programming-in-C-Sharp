@@ -35,10 +35,10 @@ In this exercise, you will use the Entity Data Model Wizard to generate an EDM f
 3. Start Visual Studio, and from the **[Repository Root]\\Mod07\\Labfiles\\Starter\\Exercise 1**
 folder, open the **GradesPrototype.sln** solution.
 4.  Add a new class library project named Grades.DataModel to the solution.
-5.  Add a new ADO.NET Entity Data Model named GradesModel to the
+5.  Add a new **ADO.NET Entity Data Model** named GradesModel to the
     Grades.DataModel project.
 6.  Generate the model from the **SchoolGradesDB** database on the
-    (localdb)\\v11.0 server and include the following tables:
+    **.\sqlexpress** server and include the following tables:
     -   **Grades**
     -   **Students**
     -   **Subjects**
