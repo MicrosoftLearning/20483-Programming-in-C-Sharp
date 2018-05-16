@@ -24,7 +24,7 @@
 4.  In the code editor, review the **DataContract** and **DataMember**
     attributes that decorate the type and type members.
 5.  In Microsoft Visual Studio®, on the **View** menu, click **Task List**.
-6.  In the **Task List** window, in the **Categories** list, click **Comments**.
+6.  In the **Task List** window, in the **Categories** list, choose **Entire Solution**.
 7. Double-click the **TODO: 01: Bring the System.Net namespace into scope.**
     task.
 8. In the code editor, click in the blank line below the comment, and then type
@@ -37,7 +37,7 @@
     ```cs
     HttpWebRequest _request;
     ```
-11.	In the **Task List** window, double-click the **TODO: 03: Instantiate the _request object.** task.
+11.	In the **Task List** window, double-click the **TODO: 03: Instantiate the *_request* object.** task.
 12.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     this._request = WebRequest.Create(
@@ -78,13 +78,14 @@
     stream.Close();
     ```
 23.	On the **Build** menu, click **Build Solution**.
-24.	In Solution Explorer, right-click **Fourth Coffee Contact Finder**, and then click **Set as StartUp Project**.
-25.	On the **Debug** menu, click **Start Debugging**.
-26.	In the Fourth Coffee Contract Finder application, in the **Search** box, type **jesper@fourthcoffee.com**, and then click **GO**.
-27.	In the **Search Successful** dialog box, click **OK**.
-28.	Verify that the details for Jesper Herp are displayed.
-29.	On the **Debug** menu, click **Stop Debugging**.
-30.	Close Visual Studio.
+24. Right click on **FourthCoffee.DataService** project, point to **Debug** and then click **Start new instance**.
+25. Locate the address bar in the browser, add **\SalesService.svc** to the end of the address and then press Enter.
+26.	In Solution Explorer, right-click **Fourth Coffee Contact Finder**, point to **Debug** and then click **Start new instance**.
+27.	In the Fourth Coffee Contract Finder application, in the **Search** box, type **jesper@fourthcoffee.com**, and then click **GO**.
+28.	In the **Search Successful** dialog box, click **OK**.
+29.	Verify that the details for Jesper Herp are displayed.
+30.	On the **Debug** menu, click **Stop Debugging**.
+31.	Close Visual Studio.
 
 
 # Lesson 2:  Accessing Data in the Cloud
@@ -97,15 +98,15 @@
 
 #### Demonstration Steps
 
-1.  Open the GradesPrototype.sln solution from the
-    [Repository Root]\\Mod08\\Labfiles\\Solution\\Exercise 3 folder.
+1.  Open the **GradesPrototype.sln** solution from the
+    **[Repository Root]\\Mod08\\Labfiles\\Solution\\Exercise 3** folder.
 2.  In Solution Explorer, right-click **Solution ‘GradesPrototype’**, and then
     click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set
     **Grades.Web** and **GradesPrototype** to **Start without debugging**, and
     then click **OK**.
 4.  Rebuild the solution.
-5.  View the properties of the Grades.Web project and show the **Web** tab.
+5.  View the properties of the **Grades.Web** project and show the **Web** tab.
     Explain to students that during Exercise 1, they will add this project to
     the solution and configure it as a data service.
 6.  In the **Grades.Web** project, in the **Services** folder, open
