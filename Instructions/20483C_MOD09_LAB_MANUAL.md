@@ -51,11 +51,11 @@ displayed correctly on the **StudentsPage** view.
 #### Task 1: Create the StudentPhoto user control.
 
 
-1.  Start File Explorer, navigate to the **E:\\Mod09\\Labfiles\\Databases**
+1.  Start File Explorer, navigate to the **[Repository Root]\\Mod09\\Labfiles\\Databases**
     folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
 3.  Start Visual Studio, and then open the Grades.sln solution from the
-    E:\\Mod09\\Labfiles\\Starter\\Exercise 1 folder.
+    [Repository Root]\\Mod09\\Labfiles\\Starter\\Exercise 1 folder.
 4.  Set the following projects to start without debugging at startup:
     -  **Grades.Web**
     -  **Grades.WPF**
@@ -272,7 +272,7 @@ that the styling of the text elements has changed throughout the application.
 
 #### Task 1: Define and apply styles for the LogonPage view.
 
-1.	In Visual Studio, open the Grades.sln solution from the E:\Mod09\Labfiles\Starter\Exercise 2 folder.
+1.	In Visual Studio, open the Grades.sln solution from the [Repository Root]\Mod09\Labfiles\Starter\Exercise 2 folder.
 2.	Set the following projects to start without debugging at startup:
     -	**Grades.Web**
     -	**Grades.WPF**
@@ -352,7 +352,7 @@ correctly.
 #### Task 1: Define animations for the StudentPhoto control.
 
 1.  In Visual Studio, open the Grades.sln solution from the
-    E:\\Mod09\\Labfiles\\Starter\\Exercise 3 folder.
+    [Repository Root]\\Mod09\\Labfiles\\Starter\\Exercise 3 folder.
 2.  Set the following projects to start without debugging at startup:
     -  **Grades.Web**
     -  **Grades.WPF**

@@ -10,13 +10,13 @@
 
 #### Demonstration Steps
 
-1.  Open **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **New**, and then click
+1. Open **Visual Studio 2017**.
+2. In Visual Studio, on the **File** menu, point to **New**, and then click
     **Project**.
-3.  In the **New Project** dialog box, in the **Templates** list, click **Visual
-    C\#**, and then in the **Project Type** list, click **Console Application**.
-4.  In the **Name** text box, type **ValuesAndReferences**
-5.  In the **Location** text box, set the location to **Allfiles\\Mod04\\Democode**,
+3. In the **New Project** dialog box, in the **Templates** list, click **Visual
+    C\#**, and then in the **Project Type** list, click **Console Application (.NET Framework)**.
+4. In the **Name** text box, type **ValuesAndReferences**
+5. In the **Location** text box, set the location to **[Repository Root]\\Allfiles\\Mod04\\Democode**,
     and then click **OK**.
 6. Within the **ValuesAndReferences** namespace, add the following code:
     ```cs
@@ -42,8 +42,8 @@
     MyClass class2 = class1;
     class2.Contents = 100;
 
-    Console.WriteLine("Value types: {0}, {1}", struct1.Contents, struct2.Contents);
-    Console.WriteLine("Reference types: {0}, {1}", class1.Contents, class2.Contents);
+    Console.WriteLine($"Value types: {struct1.Contents}, {struct2.Contents}");
+    Console.WriteLine($"Reference types: {class1.Contents}, {class2.Contents}");
     ```
 9.  On the **Debug** menu, click **Start without Debugging**. The console window
     shows the following output:
@@ -67,7 +67,7 @@
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the
-    **E:\\Mod04\\Labfiles\\Solution\\Exercise 4** folder.
+    **[Repository Root]\\Mod04\\Labfiles\\Solution\\Exercise 4** folder.
 2. In the **Data** folder, open **Grade.cs** and explain to students that
     during Exercise 1 they will convert the structs that they created in the
     previous lab into the classes in this file.
@@ -85,7 +85,7 @@
     enters is checked against the list of valid subject names before being
     saved.
 7. Explain that they will add similar validation code to ensure that the
-    assessment date is not in the future, and that the grade is in the range A+
+    **AssessmentDate** is not in the future, and that the grade is in the range A+
     to E-.
 8. In **Grade.cs**, locate the **Student** class definition, and explain to
     students that during Exercise 3 they will add code to implement the

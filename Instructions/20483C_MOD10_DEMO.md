@@ -104,7 +104,7 @@
 #### Demonstration Steps
 
 1.  Open the Grades.sln solution from the
-    E:\\Mod10\\Labfiles\\Solution\\Exercise 2 folder.
+    [Repository Root]\\Mod10\\Labfiles\\Solution\\Exercise 2 folder.
 
 2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.

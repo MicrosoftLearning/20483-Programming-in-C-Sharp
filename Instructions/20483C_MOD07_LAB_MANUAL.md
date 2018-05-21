@@ -29,16 +29,16 @@ In this exercise, you will use the Entity Data Model Wizard to generate an EDM f
 
 #### Task 1: Build and generate an EDM by using a table from the SchoolGradesDB database.
 
-1.  Start File Explorer, navigate to the **E:\\Mod07\\Labfiles\\Databases**
+1.  Start File Explorer, navigate to the **[Repository Root]\\Mod07\\Labfiles\\Databases**
     folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
-3. Start Visual Studio, and from the **E:\\Mod07\\Labfiles\\Starter\\Exercise 1**
+3. Start Visual Studio, and from the **[Repository Root]\\Mod07\\Labfiles\\Starter\\Exercise 1**
 folder, open the **GradesPrototype.sln** solution.
 4.  Add a new class library project named Grades.DataModel to the solution.
-5.  Add a new ADO.NET Entity Data Model named GradesModel to the
+5.  Add a new **ADO.NET Entity Data Model** named GradesModel to the
     Grades.DataModel project.
 6.  Generate the model from the **SchoolGradesDB** database on the
-    (localdb)\\v11.0 server and include the following tables:
+    **.\sqlexpress** server and include the following tables:
     -   **Grades**
     -   **Students**
     -   **Subjects**
@@ -73,7 +73,7 @@ In this exercise, you will add functionality to the prototype application to dis
 
 #### Task 1: Display grades for the current student.
 
-1.	In Visual Studio, from the E:\Mod07\Labfiles\Starter\Exercise 2 folder, open the GradesPrototype.sln solution.
+1.	In Visual Studio, from the [Repository Root]\Mod07\Labfiles\Starter\Exercise 2 folder, open the GradesPrototype.sln solution.
 2.	Set the **GradesPrototype** project to be the startup project.
 3.	In the Views folder, in **StudentProfile.xaml.cs**, in the **Refresh** method, add code to the end of the method to:
     -	Iterate through the grades in the session context object and, if they belong to the current student, add them to a new list of grades.
@@ -143,7 +143,7 @@ First, you will add code to check whether a class is full before enrolling a stu
 #### Task 1: Throw the ClassFullException exception.
 
 1.  In Visual Studio, open the GradesPrototype.sln solution from the
-    E:\\Mod07\\Labfiles\\Starter\\Exercise 3 folder.
+    [Repository Root]\\Mod07\\Labfiles\\Starter\\Exercise 3 folder.
 2. Set the **GradesPrototype** project to be the startup project.
 3.  Add a new class named **customTeacher.cs** to the Grades.DataModel project.
 4.  Modify the class declaration to make it a public partial class named

@@ -71,7 +71,7 @@ constructor in the base class.
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the
-    **E:\\Mod05\\Labfiles\\Solution\\Exercise 3** folder.
+    **[Repository Root]\\Mod05\\Labfiles\\Solution\\Exercise 3** folder.
 2. In the **Data** folder, open **Grade.cs**, and locate the **User** class.
 3. Explain to students that during Exercise 1 they will add this class and add
     the **UserName** and **Password** properties and the **VerifyPassword**
