@@ -90,22 +90,22 @@
     ```cs
     Click="btnGetTime_Click"
     ```
-This attribute subscribes the **btnGetTime_Click** method to the **Click**
-event.
-15. In Solution Explorer, expand **obj**, expand **Debug**, and then
+    This attribute subscribes the **btnGetTime_Click** method to the **Click** event.
+15. On the **Build** menu, click **Build Solution**.
+16. In Solution Explorer, expand **obj**, expand **Debug**, and then
     double-click **MainWindow.g.i.cs**.
-16. Near the bottom of the file, notice that Visual Studio has added the
+17. Near the bottom of the file, notice that Visual Studio has added the
     following line of code:
     ```cs
     this.btnGetTime.Click += new System.Windows.RoutedEventHandler(this.btnGetTime_Click);
     ```
-17. This demonstrates that Visual Studio parses the XAML to create the code that
+18. This demonstrates that Visual Studio parses the XAML to create the code that
 subscribes your event handler method to the **Click** event of the button.
-18.  On the **File** menu, click **Close**.
-19.  On the **Debug** menu, click **Start Without Debugging**.
-20.  Click **What's the time?** button several times.
-21.  Notice that the label displays the current time.
-22.  Close the application, close the solution, and then close Visual Studio.
+19.  On the **File** menu, click **Close**.
+20.  On the **Debug** menu, click **Start Without Debugging**.
+21.  Click **What's the time?** button several times.
+22.  Notice that the label displays the current time.
+23.  Close the application, close the solution, and then close Visual Studio.
 
 
 ### Demonstration: Writing Code for the Grades Prototype Application Lab
