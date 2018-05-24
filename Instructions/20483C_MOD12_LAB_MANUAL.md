@@ -59,35 +59,34 @@ DASM) to examine the metadata that the attribute generates.
     click **OK**.
 9.	In Solution Explorer, expand **Grades.Utilities**, and then double-click **IncludeInReport.cs**.
 10.	On the **View** menu, click **Task List**.
-11.	In the **Task List** window, in the **Categories** list, click **Comments**.
-12.	Double-click the **TODO: Exercise 1: Task 1a: Specify that IncludeInReportAttribute is an attribute class** task.
-13.	In the code editor, below the comment, click at the end of the public **public class IncludeInReportAttribute** code, and then type the following code:
+11.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1a: Specify that IncludeInReportAttribute is an attribute class** task.
+12.	In the code editor, below the comment, click at the end of the public **public class IncludeInReportAttribute** code, and then type the following code:
     ```cs
     : Attribute
     ```
-14.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1b: Specify the possible targets to which the IncludeInReport attribute can be applied** task.
-15.	In the code editor, click in the blank line below the comment, and then type the following code:
+13.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1b: Specify the possible targets to which the IncludeInReport attribute can be applied** task.
+14.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple   = false)]
     ```
-16.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1c: Define a private field to hold the value of the attribute** task.
-17.	In the code editor, click in the blank line below the comment, and then type the following code:
+15.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1c: Define a private field to hold the value of the attribute** task.
+16.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     private bool _include;
     ```
-18.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1d: Add public properties that specify how an included item should be formatted** task.
-19.	In the code editor, click in the blank line below the comment, and then type the following code:
+17.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1d: Add public properties that specify how an included item should be formatted** task.
+18.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     public bool Underline { get; set; }
     public bool Bold { get; set; }
     ```
-20.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1e: Add a public property that specifies a label (if any) for the item** task.
-21.	In the code editor, click in the blank line below the comment, and then type the following code:
+19.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1e: Add a public property that specifies a label (if any) for the item** task.
+20.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     public string Label { get; set; }
     ```
-22.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1f: Define constructors** task.
-23.	In the code editor, click at the end of the comment, press Enter, and then type the following code:
+21.	In the **Task List** window, double-click the **TODO: Exercise 1: Task 1f: Define constructors** task.
+22.	In the code editor, click at the end of the comment, press Enter, and then type the following code:
     ```cs
     public IncludeInReportAttribute()
     {
@@ -105,7 +104,6 @@ DASM) to examine the metadata that the attribute generates.
         this.Label = string.Empty;
     }
     ```
-
 
 #### Task 2: Apply the IncludeInReportAttribute attribute to the appropriate properties.
 

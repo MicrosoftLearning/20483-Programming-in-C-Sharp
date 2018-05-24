@@ -12,9 +12,8 @@
 #### Demonstration Steps
 
 1.	In Visual Studio, on the **View** menu, click **Task List**.
-2.	In the **Task List** window, in the **Categories** list, click **Comments**.
-3.	Double-click the **TODO: 01: Define the Initialize method.** task.
-4.	In the code editor, click in the blank line below the comment, and then type the following code:
+2.	In the **Task List** window, double-click the **TODO: 01: Define the Initialize method.** task.
+3.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     bool Initialize()
     {
@@ -24,23 +23,23 @@
         !string.IsNullOrEmpty(path);
     } 
     ```
-5.	In the **Task List** window, double-click the **TODO: 02: Invoke the Initialize method.** task.
-6.	In the code editor, click in the blank line below the comment, and then type the following code:
+4.	In the **Task List** window, double-click the **TODO: 02: Invoke the Initialize method.** task.
+5.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var isInitialized= Initialize();
     ```
-7.	Right-click the call to the **Initialize** method, point to **Breakpoint**, and then click **Insert Breakpoint**.
-8.	On the **Build** menu, click **Build Solution**.
-9.	On the **Debug** menu, click Start **Debugging**.
-10.	Press F11 to step into the **Initialize** method.
-11.	Press F10 to step to the **GetApplicationPath** method call.
-12.	Press F10 to step over the **GetApplicationPath** method call.
-13.	Press Shift+F11 to step out of the **Initialize** method.
-14.	Press F10 to step over the **Initialize** method call.
-15.	Hover over the **isInitialized** variable, 
+6.	Right-click the call to the **Initialize** method, point to **Breakpoint**, and then click **Insert Breakpoint**.
+7.	On the **Build** menu, click **Build Solution**.
+8.	On the **Debug** menu, click Start **Debugging**.
+9.	Press F11 to step into the **Initialize** method.
+10.	Press F10 to step to the **GetApplicationPath** method call.
+11.	Press F10 to step over the **GetApplicationPath** method call.
+12.	Press Shift+F11 to step out of the **Initialize** method.
+13.	Press F10 to step over the **Initialize** method call.
+14.	Hover over the **isInitialized** variable, 
 and verify that the value returned is **true**.
-16.	On the **Debug** menu, click **Stop Debugging**.
-17.	On the **File** menu, click **Close Solution**.
+15.	On the **Debug** menu, click **Stop Debugging**.
+16.	On the **File** menu, click **Close Solution**.
 
 
 # Lesson 4: Monitoring Applications

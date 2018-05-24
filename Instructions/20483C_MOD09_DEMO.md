@@ -10,10 +10,10 @@
 
 #### Demonstration Steps
 
-1.  Open **Visual Studio 2017**.
-2.  In Visual Studio, on the **File** menu, point to **New**, and then click
+1. Open **Visual Studio 2017**.
+2. In Visual Studio, on the **File** menu, point to **New**, and then click
     **Project**.
-3.  In the **New Project** dialog box, in the **Templates** list, click **Visual
+3.  In the **New Project** dialog box, in the **Installed** list, click **Visual
     C\#**, and then in the **Project Type** list, click **WPF App(.NET Framework)**.
 4.  In the **Name** box, type **DesignView**.
 5.  In the **Location** text box, set the location to **Allfiles\\Mod09\\Democode**,
@@ -104,7 +104,7 @@
     application.
 14. Run the application and point out the styling of the labels and text boxes
     on the Log on page.
-15. Log on as **vallee** with a password of **password**.
+15. Log on as **valleE** with a password of **password99**.
 16. Hover over one of the students in the student list and point out that the
     photograph animates.
 17. Hover over a remove button and point out that the photograph dims.
