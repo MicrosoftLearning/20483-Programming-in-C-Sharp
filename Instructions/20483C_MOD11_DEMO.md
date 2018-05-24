@@ -19,42 +19,41 @@
     -	In the **Search** box, type **Word**.
     -	In the assembly list, select **Microsoft Word 14.0 Object Library**, and then select the **Microsoft Word 14.0 Object Library** check box.
 3.	In Visual Studio, on the **View** menu, click **Task List**.
-4.	In the **Task List** window, in the **Categories** list, click **Comments**.
-5.	Double-click the **TODO: 01: Bring the Microsoft.Office.Interop.Word namespace into scope.** task.
-6.	In the code editor, click in the blank line below the comment, and then type the following code:
+4.	In the **Task List** window, double-click the **TODO: 01: Bring the Microsoft.Office.Interop.Word namespace into scope.** task.
+5.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     using Microsoft.Office.Interop.Word;
     ```
-7.	Double-click the **TODO: 02: Declare a global object to encapsulate Microsoft Word**. task.
-8.	In the code editor, click in the blank line below the comment, and then type the following code:
+6.	Double-click the **TODO: 02: Declare a global object to encapsulate Microsoft Word**. task.
+7.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     dynamic _word;
     ```
-9.	Double-click the **TODO: 03: Instantiate the _word object**. task.
-10.	In the code editor, click in the blank line below the comment, and then type the following code:
+8.	Double-click the **TODO: 03: Instantiate the _word object**. task.
+9.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     this._word = new Application();
     ```
-11.	Double-click the **TODO: 04: Create a blank Word document**. task.
-12.	In the code editor, click in the blank line below the comment, and then type the following code:
+10.	Double-click the **TODO: 04: Create a blank Word document**. task.
+11.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     this._word.Documents.Add().Activate();
     ```
-13.	In the code editor, look at the following helper methods that wrap the Word COM API:
+12.	In the code editor, look at the following helper methods that wrap the Word COM API:
     -	The **GetEndOfDocument** method places the cursor at the end of the document. The **-1** converts the **End** property to a 0-based index value. Without the **-1**, the CLR will throw an IndexOutOfRange exception. 
     -	The **AppendText** method adds text to the end of the document, in the bold and/or italic style.
     -	The **InsertCarriageReturn** method inserts a carriage return at the end of the document.
     -	The **Save** method deletes any file with the same name and then saves the current Word document.
-14.	On the **Build** menu, click **Build Solution**.
-15.	On the **Debug** menu, click **Start Without Debugging**.
-16.	In the **Exception Logger** application, click **Export**.
-17.	In the **Export Successful** dialog box, click **OK**.
-18.	Close the Exception Logger application.
-19.	Open File Explorer, and browse to the **[Repository Root]\Mod11\Democode\Data\Exceptions** folder.
-20.	Double-click **Exceptions.docx**, and then view the combined exception report in the Word document.
-21.	Close Microsoft Word.
-22.	Close File Explorer.
-23.	Close Visual Studio.
+13.	On the **Build** menu, click **Build Solution**.
+14.	On the **Debug** menu, click **Start Without Debugging**.
+15.	In the **Exception Logger** application, click **Export**.
+16.	In the **Export Successful** dialog box, click **OK**.
+17.	Close the Exception Logger application.
+18.	Open File Explorer, and browse to the **[Repository Root]\Mod11\Democode\Data\Exceptions** folder.
+19.	Double-click **Exceptions.docx**, and then view the combined exception report in the Word document.
+20.	Close Microsoft Word.
+21.	Close File Explorer.
+22.	Close Visual Studio.
 
 
 # Lesson 2:  Managing the Lifetime of Objects and Controlling Unmanaged Resoures
