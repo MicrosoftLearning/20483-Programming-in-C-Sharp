@@ -124,7 +124,12 @@
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles.
+2.  Initialize Database.
+    -  In the **Apps** list, click **File Explorer**.
+    -  In File Explorer, navigate to the **[Repository Root]\\Mod13\\Labfiles\\Databases** folder,
+    and then double-click **SetupSchoolGradesDB.cmd**.
+    -  Close File Explorer.
 
 #### Demonstration Steps
 
@@ -162,12 +167,11 @@
 16. Close the application, and then close Visual Studio.
 17. Open the composite report in the XPS Viewer and review the contents of the
     report.
-18. Open File Explorer and delete the contents of th**e**
-    [Repository Root]\\Mod13\\Labfiles\\Reports and [Repository Root]\\Mod13\\Labfiles\\Reports\\ClassReport
+18. Open File Explorer and delete the contents of the **[Repository Root]\\Mod13\\Labfiles\\Reports** and **[Repository Root]\\Mod13\\Labfiles\\Reports\\ClassReport**
     folders and then close File Explorer.
 
 
-©2017 Microsoft Corporation. All rights reserved.
+©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the  [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are  **not**  included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 
