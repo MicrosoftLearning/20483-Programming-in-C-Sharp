@@ -98,13 +98,11 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
-2. Navigate to **Allfiles\Mod10\Democode\Starter**, and then open the **Locking.sln** file.
-
 
 #### Demonstration Steps
 
 1.  Open the Grades.sln solution from the
-    E:\\Mod10\\Labfiles\\Solution\\Exercise 2 folder.
+    **[Repository Root]\\Mod10\\Labfiles\\Solution\\Exercise 2** folder.
 
 2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.

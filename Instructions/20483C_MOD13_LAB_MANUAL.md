@@ -54,14 +54,14 @@ the reports are now encrypted.
 
 #### Task 1: Create an asymmetric certificate.
 
-1.	Start File Explorer, navigate to the **E:\Mod13\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.	Start File Explorer, navigate to the **[Repository Root]\Mod13\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.	Close File Explorer.
-3.	Start Visual Studio, and then open the **Grades.sln** solution from the **E:\Mod13\Labfiles\Starter\Exercise 1** folder.
+3.	Start Visual Studio, and then open the **Grades.sln** solution from the **[Repository Root]\Mod13\Labfiles\Starter\Exercise 1** folder.
 4.	Set the following projects to start without debugging at startup:
     -	**Grades.Web**
     -	**Grades.WPF**
 5.	In the Grades.Utilities project, review the contents of the CreateCertificate.cmd file.
-6.	In a command window running as Administrator, navigate to the **E:\Mod13\Labfiles\Starter\Exercise 1\Grades.Utilities** folder and then run **CreateCertificate.cmd**.
+6.	In a command window running as Administrator, navigate to the **[Repository Root]\Mod13\Labfiles\Starter\Exercise 1\Grades.Utilities** folder and then run **CreateCertificate.cmd**.
 7.	Verify that the command returns a success message, and then close the command window.
 
 
@@ -123,7 +123,7 @@ file path passed to the method.
 2.  Run the application.
 3.  Log on as **vallee** with a password of **password99**.
 4.  Generate grade reports for George Li and Kevin Liu, saving each report in
-    the E:\\Mod13\\Labfiles\\Reports folder.
+    the [Repository Root]\\Mod13\\Labfiles\\Reports folder.
 5.  Close the application, and then close the solution.
 6.	Attempt to open one of the reports that you created in the previous step by using Internet Explorer and Notepad.
 
@@ -155,7 +155,7 @@ that a printed version of the composite report has been generated.
 
 #### Task 1: Decrypt the data.
 
-1.	In Visual Studio, open the School-Reports.sln solution from the E:\Mod13\Labfiles\Starter\Exercise 2 folder.
+1.	In Visual Studio, open the School-Reports.sln solution from the [Repository Root]\Mod13\Labfiles\Starter\Exercise 2 folder.
 2.  In the **WordWrapper** class, locate the **DecryptWithX509** method.
 3.  Add code to this method to get the private key from the X509 certificate by
     using the **PrivateKey** property, cast it to a **RSACryptoServiceProvider**
@@ -202,7 +202,7 @@ that a printed version of the composite report has been generated.
 #### Task 2: Build and test the solution.
 
 1.	Build the solution, and then resolve any compilation errors.
-2.	Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the .oxps file in the E:\Mod13\Labfiles\Reports\ClassReport folder.
+2.	Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the .oxps file in the [Repository Root]\Mod13\Labfiles\Reports\ClassReport folder.
 3.	Close the application, close the solution, and then close Visual Studio.
 4.	Open the composite report in the XPS Viewer and verify that the data has printed correctly.
 

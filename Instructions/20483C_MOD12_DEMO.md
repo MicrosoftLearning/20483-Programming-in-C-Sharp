@@ -13,38 +13,37 @@
 
 1.	Click **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.	In the **Open Project** dialog box, browse to **E:\Mod12\Democode\Starter\FourthCoffee.TypeInspector** folder, click **FourthCoffee.TypeInspector.sln**, and then click **Open**.
+3.	In the **Open Project** dialog box, browse to **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.TypeInspector** folder, click **FourthCoffee.TypeInspector.sln**, and then click **Open**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
-5.	In the **Task List** window, in the **Categories** list, click **Comments**.
-6.	Double-click the **TODO: 01: Bring the System.Reflection namespace into scope**. task.
-7.	In the code editor, click in the blank line below the comment, and then type the following code:
+5.	In the **Task List** window, double-click the **TODO: 01: Bring the System.Reflection namespace into scope**. task.
+6.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     using System.Reflection;
     ```
-8.	In the **Task List** window, double-click the **TODO: 02: Create an Assembly object**. task.
-9.	In the code editor, click in the blank line below the comment, and then type the following code:
+7.	In the **Task List** window, double-click the **TODO: 02: Create an Assembly object**. task.
+8.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     return Assembly.ReflectionOnlyLoadFrom(path);
     ```
-10.	In the **Task List** window, double-click the **TODO: 03: Get all the types from the current assembly**. task.
-11.	In the code editor, click in the blank line below the comment, and then type the following code:
+9.	In the **Task List** window, double-click the **TODO: 03: Get all the types from the current assembly**. task.
+10.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     return assembly.GetTypes();
     ```
-12.	In the **Task List** window, double-click the **TODO: 04: Get a specific type from the current assembly**. task.
-13.	In the code editor, click in the blank line below the comment, and then type the following code:
+11.	In the **Task List** window, double-click the **TODO: 04: Get a specific type from the current assembly**. task.
+12.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     return assembly.GetType(typeName);
     ```
-14.	In the code editor, locate the **RenderMethods** method, and then review the use of the **IsPublic, IsStatic, ReturnType,** and **Name** properties of the **MethodInfo** class.
-15.	Locate the **RenderProperties** method, and then review the use of the **DeclaringType** and **Name** properties of the **PropertyInfo** class.
-16.	On the **Build** menu, click **Build Solution**.
-17.	On the **Debug** menu, click **Start Without Debugging**.
-18.	In the **Fourth Coffee Type Inspector** application, click **Load Assembly**.
-19.	In the **Open** dialog box, browse to **E:\Mod12\Democode\Starter\FourthCoffee.TypeInspector\FourthCoffee.Core\bin\Debug** folder, click **FourthCoffee.Core.dll**, and then click **Open**. The **Types** list now contains a list of all of the types that the assembly exposes.
-20.	In the **Types** list, click **FourthCoffee.Core.Encryptor**, and then click **Inspect Type**. The **Members** list now shows all of the methods that the type exposes.
-21.	Close Fourth Coffee Type Inspector.
-22.	In Visual Studio, close the solution.
+13.	In the code editor, locate the **RenderMethods** method, and then review the use of the **IsPublic, IsStatic, ReturnType,** and **Name** properties of the **MethodInfo** class.
+14.	Locate the **RenderProperties** method, and then review the use of the **DeclaringType** and **Name** properties of the **PropertyInfo** class.
+15.	On the **Build** menu, click **Build Solution**.
+16.	On the **Debug** menu, click **Start Without Debugging**.
+17.	In the **Fourth Coffee Type Inspector** application, click **Load Assembly**.
+18.	In the **Open** dialog box, browse to **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.TypeInspector\FourthCoffee.Core\bin\Debug** folder, click **FourthCoffee.Core.dll**, and then click **Open**. The **Types** list now contains a list of all of the types that the assembly exposes.
+19.	In the **Types** list, click **FourthCoffee.Core.Encryptor**, and then click **Inspect Type**. The **Members** list now shows all of the methods that the type exposes.
+20.	Close Fourth Coffee Type Inspector.
+21.	In Visual Studio, close the solution.
 
 
 # Lesson 2:  Creating and Using Custom Attributes
@@ -59,7 +58,7 @@
 
 1.	Click **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.	In the **Open Project** dialog box, browse to **E:\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click Open.
+3.	In the **Open Project** dialog box, browse to **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click Open.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
 5.	In the **Task List** window, in the **Categories** list, click **Comments**.
 6.	Double-click the **TODO: 01: Invoke the Type.GetCustomAttribute method**. task.
@@ -99,7 +98,7 @@
 6.  In the **User Account Control** dialog box, in the **Password** box, type
     **Pa\$\$w0rd**, and then click **Yes**.
 7.  In the **VS2012 x64 Cross Tools Command Prompt** window, change to the
-    **E:\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
+    **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
     directory.
 8.  Run the **generateKeyFile.cmd** file. The generateKeyFile.cmd file uses the
     Sn application to generate a key file.
@@ -108,7 +107,7 @@
 11. In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
 12. In the **Open Project** dialog box, browse to the
-    **E:\\Mod12\\Democode\\Starter\\FourthCoffee.Core** folder, click
+    **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core** folder, click
     **FourthCoffee.Core.sln**, and then click **Open**.
 13. In Solution Explorer, right-click the **FourthCoffee.Core** project, and
     then click **Open Folder in File Explorer**.
@@ -124,7 +123,7 @@
 20. On the **Build** menu, click **Build Solution**.
 21. Switch to File Explorer.
 22. In the
-    **E:\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
+    **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
     folder, right-click the **installAssemblyInGac.cmd** file, and then click
     **Edit**.
 23. In Notepad, view the Gacutil command.
@@ -146,7 +145,7 @@
 #### Demonstration Steps
 
 1.  Open the Grades.sln solution from the
-    E:\\Mod12\\Labfiles\\Solution\\Exercise 2 folder.
+    [Repository Root]\\Mod12\\Labfiles\\Solution\\Exercise 2 folder.
 
 2.  In the **Grades.Utilities** project, open IncludeInReport.cs.
 

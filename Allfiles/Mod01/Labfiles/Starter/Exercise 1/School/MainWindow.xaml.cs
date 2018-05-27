@@ -6,7 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
 using School.Data;
-
+using System.Globalization;
 
 namespace School
 {

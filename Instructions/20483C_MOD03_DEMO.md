@@ -14,10 +14,10 @@
 1.  Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **New**, and then click
     **Project**.
-3.  In the **New Project** dialog box, in the **Templates** list, click **Visual
-    C\#**, and then in the **Project Type** list, click **Console Application**.
+3.  In the **New Project** dialog box, in the **Installed** list, click **Visual
+    C\#**, and then in the **Project Type** list, click **Console App(.NET Framework)**.
 4.  In the **Name** box, type **UsingStructs**
-5.  In the **Location** box, set the location to **Allfiles\\Mod03\\Democode**, and
+5.  In the **Location** box, set the location to **[Repository Root]\\Allfiles\\Mod03\\Democode**, and
     then click **OK**.
 6.  In the **UsingStructs** namespace, add the following code:
     ```cs
@@ -59,64 +59,59 @@
 
 ### Demonstration: Working with Events in XAML
 
-1.  Start the MSL-TMG1 virtual machine if it is not already running.
-2.  Start the 20483B-SEA-DEV11 virtual machine.
-3.  Log on to Windows 8 as **Student** with the password **Pa\$\$w0rd**. If
-    necessary, click **Switch User** to display the list of users.
-4.  Switch to the Windows 8 **Start** window.
-5.  Click **Visual Studio 2012**.
-6.  In Visual Studio, on the **File** menu, point to **Open**, and then click
+1.  Open **Visual Studio 2017**.
+2.  In Visual Studio, on the **File** menu, point to **Open**, and then click
     **Project/Solution**.
-7.  In the **Open Project** dialog box, browse to the
-    **E:\\Mod03\\Democode\\Starter** folder, click **EventsAndXAML.sln**, and
+3.  In the **Open Project** dialog box, browse to the
+    **[Repository Root]\\Mod03\\Democode\\Starter** folder, click **EventsAndXAML.sln**, and
     then click **Open**.
-8.  In Solution Explorer, expand **EventsAndXAML**, and then double-click
+4.  In Solution Explorer, expand **EventsAndXAML**, and then double-click
     **MainWindow.xaml**.
-9.  Notice that the window includes a button named **btnGetTime** and a label
+5.  Notice that the window includes a button named **btnGetTime** and a label
     named **lblShowTime**.
-10. In the **Design** window, click the button to select it.
-11. In the **Properties** window, ensure that **btnGetTime** is selected, and
+6. In the **Design** window, click the button to select it.
+7. In the **Properties** window, ensure that **btnGetTime** is selected, and
     then click **Events**. The **Events** button is marked with a lightning
     button.
-12. Notice that the **Properties** window now displays a list of the events to
+8. Notice that the **Properties** window now displays a list of the events to
     which you can subscribe.
-13. In the **Properties** window, double-click inside the **Click** text box.
-14. Notice that Visual Studio creates an event handler method for you and
+9. In the **Properties** window, double-click inside the **Click** text box.
+10. Notice that Visual Studio creates an event handler method for you and
     switches to the code behind page.
-15. In the **btnGetTime_Click** method, add the following code:
+11. In the **btnGetTime_Click** method, add the following code:
     ```cs
     lblShowTime.Content = DateTime.Now.ToLongTimeString();
     ```
-16. In Solution Explorer, expand **MainWindow.xaml**, expand
+12. In Solution Explorer, expand **MainWindow.xaml**, expand
     **MainWindow.xaml.cs**, and then double-click **MainWindow**.
-17. Switch back to the **MainWindow.xaml** window.
-18. In the **Button** element, note that the designer has added the following
+13. Switch back to the **MainWindow.xaml** window.
+14. In the **Button** element, note that the designer has added the following
     attribute:
     ```cs
     Click="btnGetTime_Click"
     ```
-This attribute subscribes the **btnGetTime_Click** method to the **Click**
-event.
-20. In Solution Explorer, expand **obj**, expand **Debug**, and then
+    This attribute subscribes the **btnGetTime_Click** method to the **Click** event.
+15. On the **Build** menu, click **Build Solution**.
+16. In Solution Explorer, expand **obj**, expand **Debug**, and then
     double-click **MainWindow.g.i.cs**.
-21. Near the bottom of the file, notice that Visual Studio has added the
+17. Near the bottom of the file, notice that Visual Studio has added the
     following line of code:
     ```cs
     this.btnGetTime.Click += new System.Windows.RoutedEventHandler(this.btnGetTime_Click);
     ```
-22. This demonstrates that Visual Studio parses the XAML to create the code that
+18. This demonstrates that Visual Studio parses the XAML to create the code that
 subscribes your event handler method to the **Click** event of the button.
-23.  On the **File** menu, click **Close**.
-24.  On the **Debug** menu, click **Start Without Debugging**.
-25.  Click **What's the time?** button several times.
-26.  Notice that the label displays the current time.
-27.  Close the application, close the solution, and then close Visual Studio.
+19.  On the **File** menu, click **Close**.
+20.  On the **Debug** menu, click **Start Without Debugging**.
+21.  Click **What's the time?** button several times.
+22.  Notice that the label displays the current time.
+23.  Close the application, close the solution, and then close Visual Studio.
 
 
 ### Demonstration: Writing Code for the Grades Prototype Application Lab
 
 1.  Open the **GradesPrototype.sln** solution from the
-    **E:\\Mod03\\Labfiles\\Solution\\Exercise 3** folder.
+    **[Repository Root]\\Mod03\\Labfiles\\Solution\\Exercise 3** folder.
 2.  Run the application and log on as **vallee** with a password of
     **password**.
 3.  Point out the **Welcome** message and class name to students. Explain that

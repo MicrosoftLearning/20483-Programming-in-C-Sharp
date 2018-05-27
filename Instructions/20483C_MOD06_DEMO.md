@@ -138,7 +138,7 @@
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the
-    **E:\\Mod06\\Labfiles\\Solution\\Exercise 3** folder.
+    **[Repository Root]\\Mod06\\Labfiles\\Solution\\Exercise 3** folder.
 2. In the **Views** folder, open **StudentProfile.xaml** and point out that the
     user interface has been updated to include a **Save Report** button.
 3. In the **Views** folder, open **StudentProfile.xaml.cs**, and locate the

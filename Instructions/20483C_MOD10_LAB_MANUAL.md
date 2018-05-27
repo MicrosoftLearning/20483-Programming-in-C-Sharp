@@ -30,9 +30,9 @@ In this exercise, you will modify the functionality that retrieves data for teac
 
 #### Task 1: Build and run the application.
 
-1.	Start File Explorer, navigate to the **E:\Mod10\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.	Start File Explorer, navigate to the **[Repository Root]\Mod10\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.	Close File Explorer.
-3.	Start Visual Studio, and then open the Grades.sln solution from the E:\Mod10\Labfiles\Starter\Exercise 1 folder.
+3.	Start Visual Studio, and then open the Grades.sln solution from the [Repository Root]\Mod10\Labfiles\Starter\Exercise 1 folder.
 4.	Set the following projects to start without debugging at startup:
 5.	**Grades.Web**
 6.	**Grades.WPF**
@@ -105,7 +105,7 @@ In this exercise, you will create a user control that displays a progress indica
 #### Task 1: Create the BusyIndicator user control.
 
 1.  In Visual Studio, and then open the Grades.sln solution from the
-    E:\\Mod10\\Labfiles\\Starter\\Exercise 2 folder.
+    [Repository Root]\\Mod10\\Labfiles\\Starter\\Exercise 2 folder.
 2.  Set the following projects to start without debugging at startup:
     -  **Grades.Web**
     -  **Grades.WPF**

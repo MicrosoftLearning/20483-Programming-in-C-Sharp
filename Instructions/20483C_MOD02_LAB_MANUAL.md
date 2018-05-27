@@ -33,9 +33,9 @@ The application currently enables a user to edit a student’s details by pressi
 
 1.	Start the MSL-TMG1 virtual machine if it is not already running. 
 2.	Start the 20483B-SEA-DEV11 virtual machine and log on as **Student** with the password **Pa$$w0rd**.
-3.	Start File Explorer, navigate to the **E:\Mod02\Labfiles\Databases** folder, and then run **SetupSchoolDB.cmd**.
+3.	Start File Explorer, navigate to the **[Repository Root]\Mod02\Labfiles\Databases** folder, and then run **SetupSchoolDB.cmd**.
 4.	Close File Explorer.
-5.	Start Visual Studio and from the **E:\Mod02\Labfiles\Starter\Exercise 1** folder, open the **School.sln** solution. 
+5.	Start Visual Studio and from the **[Repository Root]\Mod02\Labfiles\Starter\Exercise 1** folder, open the **School.sln** solution. 
 6.	In the code for the **MainWindow.xaml.cs** window, in the **studentsList_KeyDown** event, locate the code for editing student details which is in the **case Key.Enter** block.
 7.	Copy the code in this block to the clipboard and then paste it into the **StudentsList_MouseDoubleClick** method.
 
@@ -107,7 +107,7 @@ You will write code to check that when adding or editing a student, the first na
 
 #### Task 1: Run the application and observe that student details that are not valid can be entered.
 
-1.	In Visual Studio, from the **E:\Mod02\Labfiles\Starter\Exercise 2** folder,       open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Mod02\Labfiles\Starter\Exercise 2** folder,       open the **School.sln** solution.
 2.	Build the solution and resolve any compilation errors.
 3.	Run the application.
 4.	Press Insert to display the new student window.
@@ -160,7 +160,7 @@ Every time the user closes and opens the application, they are presented with th
 
 #### Task 1: Verify that data changes are not persisted to the database
 
-1.	In Visual Studio, from the **E:\Mod02\Labfiles\Starter\Exercise 3** folder,       open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Mod02\Labfiles\Starter\Exercise 3** folder,       open the **School.sln** solution.
 2.	Build the solution and resolve any compilation errors.
 3.	Run the application.
 4.	Change **Kevin Liu’s** last name to **Cook** by pressing Enter in the main        application window.

@@ -41,7 +41,7 @@ application and view the data held in the memory stream.
 
 #### Task 1: Prompt the user for a filename and retrieve the grade data.
 
-1.  Start Visual Studio and from the **E:\\Mod06\\Labfiles\\Starter\\Exercise
+1.  Start Visual Studio and from the **[Repository Root]\\Mod06\\Labfiles\\Starter\\Exercise
     1** folder, open the **GradesPrototype.sln** solution.
 2. In the **Views** folder, open the **StudentProfile.xaml** user interface, and
 note that it has been updated to include a **Save Report** button that users
@@ -121,7 +121,7 @@ expected by running the application and previewing the contents of a report.
 
 #### Task 1: Display the string to the user in a message box.
 
-1.	In Visual Studio, from the **E:\Mod06\Labfiles\Starter\Exercise 2** folder, open the **GradesPrototype.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Mod06\Labfiles\Starter\Exercise 2** folder, open the **GradesPrototype.sln** solution.
 2. In **StudentProfile.xaml.cs**, in the **SaveReport_Click** method, add code to
 the end of the **if** block that calls the **FormatXMLData** method, passing the
 **MemoryStream** object that you created in the previous task, and storing the
@@ -178,7 +178,7 @@ format.
 
 #### Task 1: Save the XML document to disk.
 
-1.	In Visual Studio, from the **E:\Mod06\Labfiles\Starter\Exercise 3** folder, open the **GradesPrototype.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Mod06\Labfiles\Starter\Exercise 3** folder, open the **GradesPrototype.sln** solution.
 2.  In **StudentProfile.xaml.cs**, in the **SaveReport_Click** method, locate
     the line of code that displays the report data to the user in a message box.
 3.  Modify this line of code as follows:

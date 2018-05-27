@@ -24,62 +24,62 @@
 4.  In the code editor, review the **DataContract** and **DataMember**
     attributes that decorate the type and type members.
 5.  In Microsoft Visual Studio®, on the **View** menu, click **Task List**.
-6.  In the **Task List** window, in the **Categories** list, click **Comments**.
-7. Double-click the **TODO: 01: Bring the System.Net namespace into scope.**
+6.  In the **Task List** window, double-click the **TODO: 01: Bring the System.Net namespace into scope.**
     task.
-8. In the code editor, click in the blank line below the comment, and then type
+7. In the code editor, click in the blank line below the comment, and then type
     the following code:
     ```cs
     using System.Net;
     ```
-9.	In the **Task List** window, double-click the **TODO: 02: Declare a global object to encapsulate an HTTP request**. task.
-10.	In the code editor, click in the blank line below the comment, and then type the following code:
+8.	In the **Task List** window, double-click the **TODO: 02: Declare a global object to encapsulate an HTTP request**. task.
+9.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     HttpWebRequest _request;
     ```
-11.	In the **Task List** window, double-click the **TODO: 03: Instantiate the _request object.** task.
-12.	In the code editor, click in the blank line below the comment, and then type the following code:
+10.	In the **Task List** window, double-click the **TODO: 03: Instantiate the *_request* object.** task.
+11.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     this._request = WebRequest.Create(
        this._serviceUri.AbsoluteUri) as 
        HttpWebRequest;
     ```
-13.	In the **Task List** window, double-click the **TODO: 04: Configure the request to send JSON data.** task.
-14.	In the code editor, click in the blank line below the comment, and then type the following code:
+12.	In the **Task List** window, double-click the **TODO: 04: Configure the request to send JSON data.** task.
+13.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     this._request.Method = "POST";
     this._request.ContentType = "application/json";
     this._request.ContentLength = rawData.Length;
     ```
-15.	In the **Task List** window, double-click the **TODO: 05: Write data to the request stream.** task.
-16.	In the code editor, click in the blank line below the comment, and then type the following code:
+14.	In the **Task List** window, double-click the **TODO: 05: Write data to the request stream.** task.
+15.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var dataStream = this._request.GetRequestStream();
     dataStream.Write(data, 0, data.Length);
     dataStream.Close();
     ```
-17.	In the **Task List** window, double-click the **TODO: 06: Create an HttpWebResponse object.** task.
-18.	In the code editor, click in the blank line below the comment, and then type the following code:
+16.	In the **Task List** window, double-click the **TODO: 06: Create an HttpWebResponse object.** task.
+17.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var response = this._request.GetResponse() 
        as HttpWebResponse;
     ```
-19.	In the **Task List** window, double-click the **TODO: 07: Check to see if the response contains any data.** task.
-20.	In the code editor, click in the blank line below the comment, and then type the following code:
+18.	In the **Task List** window, double-click the **TODO: 07: Check to see if the response contains any data.** task.
+19.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     if (response.ContentLength == 0)
        return null;
     ```
-21.	In the **Task List** window, double-click the **TODO: 08: Read and process the response data.** task.
-22.	In the code editor, click in the blank line below the comment, and then type the following code:
+20.	In the **Task List** window, double-click the **TODO: 08: Read and process the response data.** task.
+21.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var stream = new StreamReader(response.GetResponseStream());
     var result = SalesPerson.FromJson(stream.BaseStream);
     stream.Close();
     ```
-23.	On the **Build** menu, click **Build Solution**.
-24.	In Solution Explorer, right-click **Fourth Coffee Contact Finder**, and then click **Set as StartUp Project**.
-25.	On the **Debug** menu, click **Start Debugging**.
+22.	On the **Build** menu, click **Build Solution**.
+13. Right click on **FourthCoffee.DataService** project, point to **Debug** and then click **Start new instance**.
+24. Locate the address bar in the browser, add **\SalesService.svc** to the end of the address and then press Enter.
+25.	In Solution Explorer, right-click **Fourth Coffee Contact Finder**, point to **Debug** and then click **Start new instance**.
 26.	In the Fourth Coffee Contract Finder application, in the **Search** box, type **jesper@fourthcoffee.com**, and then click **GO**.
 27.	In the **Search Successful** dialog box, click **OK**.
 28.	Verify that the details for Jesper Herp are displayed.
@@ -97,15 +97,15 @@
 
 #### Demonstration Steps
 
-1.  Open the GradesPrototype.sln solution from the
-    E:\\Mod08\\Labfiles\\Solution\\Exercise 3 folder.
+1.  Open the **GradesPrototype.sln** solution from the
+    **[Repository Root]\\Mod08\\Labfiles\\Solution\\Exercise 3** folder.
 2.  In Solution Explorer, right-click **Solution ‘GradesPrototype’**, and then
     click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set
     **Grades.Web** and **GradesPrototype** to **Start without debugging**, and
     then click **OK**.
 4.  Rebuild the solution.
-5.  View the properties of the Grades.Web project and show the **Web** tab.
+5.  View the properties of the **Grades.Web** project and show the **Web** tab.
     Explain to students that during Exercise 1, they will add this project to
     the solution and configure it as a data service.
 6.  In the **Grades.Web** project, in the **Services** folder, open

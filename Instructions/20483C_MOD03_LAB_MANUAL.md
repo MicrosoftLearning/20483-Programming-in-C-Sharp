@@ -53,7 +53,7 @@ successful log on.
 #### Task 1: Examine the window and views in the application
 
 1.  Start Visual Studio and open the **GradesPrototype.sln** solution from the
-    **E:\\Mod03\\Labfiles\\Starter\\Exercise 1** folder.
+    **[Repository Root]\\Mod03\\Labfiles\\Starter\\Exercise 1** folder.
 2. Build the solution.
 3.	Review **MainWindow.xaml**, which is the main window for the application and will host the following views:
     -	LogonPage.xaml
@@ -175,7 +175,7 @@ In this exercise, you will define basic structs that will hold the teacher, stud
 #### Task 1: Define basic structs for holding Grade, Student, and Teacher information
 
 1. Open the **GradesPrototype** solution from the
-**E:\\Mod03\\Labfiles\\Starter\\Exercise 2** folder.
+**[Repository Root]\\Mod03\\Labfiles\\Starter\\Exercise 2** folder.
 1.  In the **Data** folder, open **Grade.cs**.
 
 2.  In the **GradesPrototype.Data** namespace, create a **struct** named
@@ -246,7 +246,7 @@ to their role.
 #### Task 1: Add the LogonFailed event
 
 1.  Open the **GradesPrototype** solution from the
-    **E:\\Mod03\\Labfiles\\Starter\\Exercise 3** folder.
+    **[Repository Root]\\Mod03\\Labfiles\\Starter\\Exercise 3** folder.
 2.  In the **LogonPage.xaml.cs** file, in the **Event Members** region, define a
     public event handler named **LogonFailed**.
 3.  In the **Logon_Click** event, add code to do the following:

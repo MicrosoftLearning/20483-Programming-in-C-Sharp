@@ -12,7 +12,7 @@
 #### Demonstration Steps
 
 1.	In Visual Studio, on the **View** menu, click **Task List**.
-2.	Double-click the **TODO: 01: Define the Initialize method.** task.
+2.	In the **Task List** window, double-click the **TODO: 01: Define the Initialize method.** task.
 3.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     bool Initialize()
@@ -53,7 +53,7 @@ and verify that the value returned is **true**.
 #### Demonstration Steps
 
 1.  Open the **School.sln** solution from the
-    [repository root]\\Mod02\\Labfiles\\Solution\\Exercise 3 folder.
+    [Repository Root]\\Mod02\\Labfiles\\Solution\\Exercise 3 folder.
 2.  Open **MainWindow.xaml.cs** and locate the **studentsList_KeyDown** method.
 3.  Explain to students that in Exercise 1 they will refactor the code that they
     added to this method in Lab 1 into separate methods that can be called from
