@@ -11,7 +11,7 @@
 
 1.  Navigate to the **[Repository Root]\\Allfiles\\Mod07\\Democode\\Databases** folder, and then
     double-click **SetupFourthCoffeeDB.cmd**.
-2. Locate **[Repository Root]\\Allfiles\\Mod07\\Democode\\Databases** folder again, and right-click on **FourthCoffee.sql**. Point to **Open With** and choose **Visual Studio 2017**, then click **Open**.
+2. Locate **[Repository Root]\\Allfiles\\Mod07\\Democode\\Databases** folder again, and right-click on **FourthCoffee.sql**. Point to **Open With** and choose **Microsoft Visual Studio Version Selector**, then click **Open**.
 3. On the **SQL** menu, click **Execute**.
 4. In the **Connect** dialog box, in the **Server Name** box, type
     **.\\sqlexpress**, and then click **Connect**.
