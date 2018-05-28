@@ -60,22 +60,21 @@
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.	In the **Open Project** dialog box, browse to **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click Open.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
-5.	In the **Task List** window, in the **Categories** list, click **Comments**.
-6.	Double-click the **TODO: 01: Invoke the Type.GetCustomAttribute method**. task.
-7.	In the code editor, click in the blank line below the comment, and then type the following code:
+5.	In the **Task List** window, double-click the **TODO: 01: Invoke the Type.GetCustomAttribute method**. task.
+6.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var typeAttribute = type.GetCustomAttribute<DeveloperInfo>(false);
     ```
-8.	In the **Task List** window, double-click the **TODO: 02: Invoke the MemberInfo.GetCustomAttribute method**. task.
-9.	In the code editor, click in the blank line below the comment, and then type the following code:
+7.	In the **Task List** window, double-click the **TODO: 02: Invoke the MemberInfo.GetCustomAttribute method**. task.
+8.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     var memberAttribute = member.GetCustomAttribute<DeveloperInfo>(false);
     ```
-10.	On the **Build** menu, click **Build Solution**.
-11.	On the **Debug** menu, click **Start Without Debugging**.
-12.	In the **Fourth Coffee Metadata Extractor** application, click **Load**. The list box now contains a list of all of the members in the **Encryptor** type and the details from any **DeveloperInfo** attributes that were found.
-13.	Close Fourth Coffee Metadata Extractor.
-14.	In Visual Studio, close the solution.
+9.	On the **Build** menu, click **Build Solution**.
+10.	On the **Debug** menu, click **Start Without Debugging**.
+11.	In the **Fourth Coffee Metadata Extractor** application, click **Load**. The list box now contains a list of all of the members in the **Encryptor** type and the details from any **DeveloperInfo** attributes that were found.
+12.	Close Fourth Coffee Metadata Extractor.
+13.	In Visual Studio, close the solution.
 
 
 # Lesson 4: Versioning, Signing,and Deploying Assemblies
@@ -88,53 +87,36 @@
 
 #### Demonstration Steps
 
-1.  Start the MSL-TMG1 virtual machine if it is not already running.
-2.  Start the 20483B-SEA-DEV11 virtual machine.
-3.  Log on to Windows 8 as **Student** with the password **Pa\$\$w0rd**. If
-    necessary, click **Switch User** to display the list of users.
-4.  Switch to the Windows 8 **Start** window.
-5.  In the **Search** box, type **command**, right-click **VS2012 x64 Cross
-    Tools Command Prompt**, and then click **Run as administrator**.
-6.  In the **User Account Control** dialog box, in the **Password** box, type
-    **Pa\$\$w0rd**, and then click **Yes**.
-7.  In the **VS2012 x64 Cross Tools Command Prompt** window, change to the
-    **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
-    directory.
-8.  Run the **generateKeyFile.cmd** file. The generateKeyFile.cmd file uses the
-    Sn application to generate a key file.
-9.  Switch to the Windows 8 **Start** window.
-10. Click **Visual Studio 2012**.
-11. In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **Project/Solution**.
-12. In the **Open Project** dialog box, browse to the
+1.	Click **Visual Studio 2017**.
+2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
+3. In the **Open Project** dialog box, browse to the
     **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core** folder, click
     **FourthCoffee.Core.sln**, and then click **Open**.
-13. In Solution Explorer, right-click the **FourthCoffee.Core** project, and
+4. In Solution Explorer, right-click the **FourthCoffee.Core** project, and
     then click **Open Folder in File Explorer**.
-14. In File Explorer, highlight the FourthCoffeeKeyFile.snk file that the Sn
+5. In File Explorer, highlight the **FourthCoffeeKeyFile.snk** file that the Sn
     application generated.
-15. Switch to Visual Studio 2012.
-16. In Solution Explorer, right-click **FourthCoffee.Core**, and then click
+6. Switch to Visual Studio 2017.
+7. In Solution Explorer, right-click **FourthCoffee.Core**, and then click
     **Properties**.
-17. On the **Signing** tab, select **Sign the assembly**.
-18. In the **Choose a strong name key file** list, click **Browse**.
-19. In the **Select File** dialog box, click **FourthCoffeeKeyFile.snk**, and
+8. On the **Signing** tab, select **Sign the assembly**.
+9. In the **Choose a strong name key file** list, click **Browse**.
+10. In the **Select File** dialog box, click **FourthCoffeeKeyFile.snk**, and
     then click **Open**.
-20. On the **Build** menu, click **Build Solution**.
-21. Switch to File Explorer.
-22. In the
-    **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
+11. On the **Build** menu, click **Build Solution**.
+12. Switch to File Explorer.
+13. In the **[Repository Root]\\Mod12\\Democode\\Starter\\FourthCoffee.Core\\FourthCoffee.Core**
     folder, right-click the **installAssemblyInGac.cmd** file, and then click
     **Edit**.
-23. In Notepad, view the Gacutil command.
-24. Close Notepad, and then close File Explorer.
-25. Switch to the **VS2012 x64 Cross Tools Command Prompt** window, and then run
+14. In Notepad, view the Gacutil command.
+15. Close Notepad, and then close File Explorer.
+16. Switch to the **x64 Cross Tools Command Prompt for VS2017** window as **administrator**, and then run
     the **installAssemblyInGac** command. Verify that the command ran
     successfully.
-26. Run the **verifyGacInstall** command, and then ensure that the number of
+17. Run the **verifyGacInstall** command, and then ensure that the number of
     items found equals one.
-27. Close the VS2012 x64 Cross Tools Command Prompt window.
-28. In Visual Studio, close the solution.
+18. Close the **x64 Cross Tools Command Prompt for VS2017** window.
+19. In Visual Studio, close the solution.
 
 ### Demonstration: Specifying the Data to Include in the Grades Report Lab
 
@@ -147,19 +129,19 @@
 1.  Open the Grades.sln solution from the
     [Repository Root]\\Mod12\\Labfiles\\Solution\\Exercise 2 folder.
 
-2.  In the **Grades.Utilities** project, open IncludeInReport.cs.
+2.  In the **Grades.Utilities** project, open **IncludeInReport.cs**.
 
 3.  Locate the **IncludeInReportAttribute** class definition, and then explain
     to students that in Exercise 1, they will make this class an attribute class
     and define its members.
 
-4.  In the **Grades.WPF** project, open Data.cs.
+4.  In the **Grades.WPF** project, open **Data.cs**.
 
 5.  Locate the **LocalGrade** class, and then point out to students the
     **IncludeInReport** attributes on the **SubjectName**, **AssessmentDate**,
     **Assessment**, and **Comments** properties.
 
-6.  In the **Grades.Utilities** project, open IncludeInReport.cs.
+6.  In the **Grades.Utilities** project, open **IncludeInReport.cs**.
 
 7.  Locate the **FormatField** struct, and then explain to students that in
     Exercise 2, they will define this struct to specify the formatting to apply
@@ -172,8 +154,7 @@
     each item that is tagged with the **IncludeInReport** attribute to format it
     correctly and include it in the report.
 
-10. In the **Grades.WPF** project, in the **Views** folder, open
-    StudentProfile.xaml.cs.
+10. In the **Grades.WPF** project, in the **Views** folder, open **StudentProfile.xaml.cs**.
 
 11. Locate the **GenerateStudentReport** method, and then explain to students
     that they add code to this method to use the **IncludeProcessor** class to
