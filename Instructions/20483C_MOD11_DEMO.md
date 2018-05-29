@@ -63,7 +63,7 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
-
+    
 #### Demonstration Steps
 
 1.  Open the Grades.sln solution from the

@@ -9,9 +9,15 @@
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
 2. Navigate to **Allfiles\Mod13\Democode\FourthCoffee.MessageSafe**, and then open the **FourthCoffee.MessageSafe.sln** file.
-
+3. In Solution Explorer, expand **FourthCoffee.MessageSafe** project, double click on **App.config**.
+4. located the following line. 
+    ```xml
+   <add key="EncryptedFilePath" value="[Repository Root]\Allfiles\Mod13\Democode\Data"/>
+    ```
+5. Replace **[Repository Root]** with your **Repository Pash**.
 
 #### Demonstration Steps
+
 
 1.	In Visual Studio, on the **View** menu, click **Task List**.
 2.	In the **Task List** window, double-click the **TODO: 01: Instantiate the _algorithm object**. task.
@@ -100,7 +106,7 @@
 30.	On the **Build** menu, click **Build Solution**.
 31.	On the **Debug** menu, click **Start Without Debugging**.
 32.	In the **Fourth Coffee Message Safe** application, in the **Password** box, type **Pa$$w0rd**.
-33.	In the **Message** box, type This is my **secure message**, and then click **Save**.
+33.	In the **Message** box, type **This is my secure message**, and then click **Save**.
 34.	Close the Fourth Coffee Message Safe application.
 35.	Open File Explorer, and browse to the **Allfiles\Mod13\Democode\Data** folder.
 36.	Double-click **protected_message.txt**, and then view the encrypted text in Notepad.
@@ -118,7 +124,12 @@
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles.
+2.  Initialize Database.
+    -  In the **Apps** list, click **File Explorer**.
+    -  In File Explorer, navigate to the **[Repository Root]\\Mod13\\Labfiles\\Databases** folder,
+    and then double-click **SetupSchoolGradesDB.cmd**.
+    -  Close File Explorer.
 
 #### Demonstration Steps
 
@@ -156,12 +167,11 @@
 16. Close the application, and then close Visual Studio.
 17. Open the composite report in the XPS Viewer and review the contents of the
     report.
-18. Open File Explorer and delete the contents of th**e**
-    [Repository Root]\\Mod13\\Labfiles\\Reports and [Repository Root]\\Mod13\\Labfiles\\Reports\\ClassReport
+18. Open File Explorer and delete the contents of the **[Repository Root]\\Mod13\\Labfiles\\Reports** and **[Repository Root]\\Mod13\\Labfiles\\Reports\\ClassReport**
     folders and then close File Explorer.
 
 
-©2017 Microsoft Corporation. All rights reserved.
+©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the  [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are  **not**  included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 

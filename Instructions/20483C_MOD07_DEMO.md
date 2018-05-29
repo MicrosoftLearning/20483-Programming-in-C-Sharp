@@ -11,59 +11,54 @@
 
 1.  Navigate to the **[Repository Root]\\Allfiles\\Mod07\\Democode\\Databases** folder, and then
     double-click **SetupFourthCoffeeDB.cmd**.
-2.  Open **Visual Studio 2017**.
-3. In Visual Studio, on the **File** menu, point to **Open**, and then click
-    **File**.
-4. In the **Open File** dialog box, browse to the
-    **[Repository Root]\\Allfiles\\Mod07\\Democode\\Databases** folder, click **FourthCoffee.sql**, and
-    then click **Open**.
-5. On the **SQL** menu, click **Execute**.
-6. In the **Connect** dialog box, in the **Server Name** box, type
+2. Locate **[Repository Root]\\Allfiles\\Mod07\\Democode\\Databases** folder again, and right-click on **FourthCoffee.sql**. Point to **Open With** and choose **Microsoft Visual Studio Version Selector**, then click **Open**.
+3. On the **SQL** menu, click **Execute**.
+4. In the **Connect** dialog box, in the **Server Name** box, type
     **.\\sqlexpress**, and then click **Connect**.
     >**Note :** If the query times out, in the **Connect to Server** dialog box, click **OK**,
 and then in the **Connect to Server** dialog box, click **Connect**.
-7.  When the query has completed, on the **File** menu, click **Close**.
-8.  On the **File** menu, point to **New**, and then click **Project**.
-9.  In the **New Project** dialog box, expand **Templates**, click **Visual
+5.  When the query has completed, on the **File** menu, click **Close**.
+6.  On the **File** menu, point to **New**, and then click **Project**.
+7.  In the **New Project** dialog box, expand **Templates**, click **Visual
     C\#**, and then in the **Template** list, click **Console App(.NET Framework)**.
-10.  In the **Name** box, type **FourthCoffee.Employees**, in the **Location**
+8.  In the **Name** box, type **FourthCoffee.Employees**, in the **Location**
     box, type **[Repository Root]\\Mod07\\Democode\\Demo1\\Starter**, and then click **OK**.
-11.  In Solution Explorer, right-click **FourthCoffee.Employees**, point to
+9.  In Solution Explorer, right-click **FourthCoffee.Employees**, point to
     **Add**, and then click **New Item**.
-12.  In the **Add New Item – FourthCoffee.Employees** dialog box, click **ADO.NET
+10.  In the **Add New Item – FourthCoffee.Employees** dialog box, click **ADO.NET
     Entity Data Model**, in the **Name** box, type
     **FourthCoffeeEmployeesModel**, and then click **Add**.
-13.  In the Entity Data Model Wizard, on the **Choose Model Contents** page,
+11.  In the Entity Data Model Wizard, on the **Choose Model Contents** page,
     click **EF Designer from database**, and then click **Next**.
-14.  On the **Choose Your Data Connection** page, click **New Connection**.
-15. In the **Server name** box, type **.\\sqlexpress**, in the **Select or enter a database name** list,
+12.  On the **Choose Your Data Connection** page, click **New Connection**.
+13. In the **Server name** box, type **.\\sqlexpress**, in the **Select or enter a database name** list,
     click **FourthCoffee**, and then click **OK**.
-16.  In the Entity Data Model Wizard, on the **Choose Your Data Connection**
+14.  In the Entity Data Model Wizard, on the **Choose Your Data Connection**
     page, click **Next**.
-17. In the **Choose Your Version** page, choose **Entity Framework 6.x** and then click **Next**.
-18.  On the **Choose Your Database Objects and Settings** page, expand
+15. In the **Choose Your Version** page, choose **Entity Framework 6.x** and then click **Next**.
+16.  On the **Choose Your Database Objects and Settings** page, expand
     **Tables**, expand **dbo**, select **Branches**, **Employees**, and
     **JobTitles**, and then click **Finish**.
-19. If a **Security Warning** dialog box appears, select **Do not show this message
+17. If a **Security Warning** dialog box appears, select **Do not show this message
     again**, and then click **OK**.
-20. On the **Build** menu, click **Build Solution**.
-21. Review the three entities that have been generated and the associations
+18. On the **Build** menu, click **Build Solution**.
+19. Review the three entities that have been generated and the associations
     between them.
-22. Right-click the designer surface, and then click **Mapping Details**.
-23. In the **Mapping Details** window, click on **Model Browser** link and then ,in the **Model Browser** window, expend **FourthCoffeeModel**, expend **Entity Types** and click on **Employees**.
-24. In the Designer pane, click **Employee**.
-25. In the Mapping Details pane, review the mappings between the entity and the
+20. Right-click the designer surface, and then click **Mapping Details**.
+21. In the **Mapping Details** window, click on **Model Browser** link and then ,in the **Model Browser** window, expend **FourthCoffeeModel**, expend **Entity Types** and click on **Employees**.
+22. In the Designer pane, click **Employee**.
+23. In the Mapping Details pane, review the mappings between the entity and the
     data source.
-26. In Solution Explorer, expand **FourthCoffeeEmployeesModel.edmx**, expand
+24. In Solution Explorer, expand **FourthCoffeeEmployeesModel.edmx**, expand
     **FourthCoffeeEmployeesModel.Context.tt**, and then double-click
     **FourthCoffeeEmployeesModel.Context.cs**.
-27. In the code editor, review the code in the **FourthCoffeeEntities** partial
+25. In the code editor, review the code in the **FourthCoffeeEntities** partial
     class.
-28. In Solution Explorer, expand **FourthCoffeeEmployeesModel.tt**, and then
+26. In Solution Explorer, expand **FourthCoffeeEmployeesModel.tt**, and then
     double-click **Employee.cs**.
-29. Review the **Employee** partial class and the properties that have been
+27. Review the **Employee** partial class and the properties that have been
     generated.
-30.	Leave the solution open so that you can refer to it in the following topics. 
+28.	Leave the solution open so that you can refer to it in the following topics. 
 
 
 
