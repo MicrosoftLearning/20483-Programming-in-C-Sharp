@@ -60,7 +60,9 @@ namespace School
             switch (e.Key)
             {
                 // If the user pressed Enter, edit the details for the currently selected student
-                case Key.Enter: Student student = this.studentsList.SelectedItem as Student;
+                case Key.Enter:
+                    // TODO: Exercise 1: Task 1a: Copy code for editing the details for that student
+                    Student student = this.studentsList.SelectedItem as Student;
                     
                     // TODO: Exercise 1: Task 3a: Refactor as the editStudent method
  
@@ -141,7 +143,7 @@ namespace School
             }
         }
 
-        // TODO: Exercise 1: Task 1a: If the user double-clicks a student, edit the details for that student
+        // TODO: Exercise 1: Task 1b: If the user double-clicks a student, edit the details for that student
         private void studentsList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
 
