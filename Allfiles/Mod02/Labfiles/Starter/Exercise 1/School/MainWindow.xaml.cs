@@ -60,9 +60,11 @@ namespace School
             switch (e.Key)
             {
                 // If the user pressed Enter, edit the details for the currently selected student
-                case Key.Enter: Student student = this.studentsList.SelectedItem as Student;
+                case Key.Enter:
+                    // TODO: Exercise 1: Task 1a: Copy code for editing the details for that student
+                    Student student = this.studentsList.SelectedItem as Student;
                     
-                    // TODO: Exercise 1: Task 3a: Refactor as the editStudent method
+                    // TODO: Exercise 1: Task 3d: Refactor as the EditStudent method
  
                     // Use the StudentsForm to display and edit the details of the student
                     StudentForm sf = new StudentForm();
@@ -89,7 +91,7 @@ namespace School
                 // If the user pressed Insert, add a new student
                 case Key.Insert: 
 
-                    // TODO: Exercise 1: Task 4a: Refactor as the addNewStudent method
+                    // TODO: Exercise 1: Task 3a: Refactor as the addNewStudent method
 
                     // Use the StudentsForm to get the details of the student from the user
                     sf = new StudentForm();
@@ -121,7 +123,7 @@ namespace School
                 // If the user pressed Delete, remove the currently selected student
                 case Key.Delete: student = this.studentsList.SelectedItem as Student;
 
-                    // TODO: Exercise 1: Task 4b: Refactor as the removeStudent method
+                    // TODO: Exercise 1: Task 3b: Refactor as the removeStudent method
 
                     // Prompt the user to confirm that the student should be removed
                     MessageBoxResult response = MessageBox.Show(
@@ -141,7 +143,11 @@ namespace School
             }
         }
 
-        // TODO: Exercise 1: Task 1a: If the user double-clicks a student, edit the details for that student
+        // TODO: Exercise 1: Task 3c: create Edit student method
+
+
+
+        // TODO: Exercise 1: Task 1b: If the user double-clicks a student, edit the details for that student
         private void studentsList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
 

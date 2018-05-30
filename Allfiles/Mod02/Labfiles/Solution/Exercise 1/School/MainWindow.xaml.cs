@@ -61,16 +61,16 @@ namespace School
             {
                 // If the user pressed Enter, edit the details for the currently selected student
                 case Key.Enter: Student student = this.studentsList.SelectedItem as Student;
-                    editStudent(student);
+                    EditStudent(student);
                     break;
 
                 // If the user pressed Insert, add a new student
-                case Key.Insert: addnewStudent();
+                case Key.Insert: AddnewStudent();
                     break;
 
                 // If the user pressed Delete, remove the currently selected student
                 case Key.Delete: student = this.studentsList.SelectedItem as Student;
-                    removeStudent(student);
+                    RemoveStudent(student);
                     break;
             }
         }
@@ -78,11 +78,11 @@ namespace School
         // If the user double-clicks a student, edit the details for that student
         private void studentsList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            editStudent(this.studentsList.SelectedItem as Student);
+            EditStudent(this.studentsList.SelectedItem as Student);
         }
 
         // Remove the details of a student
-        private void removeStudent(Student student)
+        private void RemoveStudent(Student student)
         {
             // Prompt the user to confirm that the student should be removed
             MessageBoxResult response = MessageBox.Show(
@@ -101,7 +101,7 @@ namespace School
         }
 
         // Add a new student. 
-        private void addnewStudent()
+        private void AddnewStudent()
         {
             // Use the StudentsForm to get the details of the student from the user
             StudentForm sf = new StudentForm();
@@ -131,7 +131,7 @@ namespace School
         }
 
         // Edit the details of a student
-        private void editStudent(Student student)
+        private void EditStudent(Student student)
         {
             // Use the StudentsForm to display and edit the details of the student
             StudentForm sf = new StudentForm();
