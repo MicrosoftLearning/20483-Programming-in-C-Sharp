@@ -64,7 +64,7 @@ namespace School
                     // TODO: Exercise 1: Task 1a: Copy code for editing the details for that student
                     Student student = this.studentsList.SelectedItem as Student;
                     
-                    // TODO: Exercise 1: Task 3a: Refactor as the editStudent method
+                    // TODO: Exercise 1: Task 4d: Refactor as the EditStudent method
  
                     // Use the StudentsForm to display and edit the details of the student
                     StudentForm sf = new StudentForm();
@@ -142,6 +142,10 @@ namespace School
                     break;
             }
         }
+
+        // TODO: Exercise 1: Task 4c: create Edit student method
+
+
 
         // TODO: Exercise 1: Task 1b: If the user double-clicks a student, edit the details for that student
         private void studentsList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
