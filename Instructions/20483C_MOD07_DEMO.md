@@ -45,20 +45,19 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 19. Review the three entities that have been generated and the associations
     between them.
 20. Right-click the designer surface, and then click **Mapping Details**.
-21. In the **Mapping Details** window, click on **Model Browser** link and then ,in the **Model Browser** window, expend **FourthCoffeeModel**, expend **Entity Types** and click on **Employees**.
-22. In the Designer pane, click **Employee**.
-23. In the Mapping Details pane, review the mappings between the entity and the
+21. In the Designer pane, click **Employee**.
+22. In the Mapping Details pane, review the mappings between the entity and the
     data source.
-24. In Solution Explorer, expand **FourthCoffeeEmployeesModel.edmx**, expand
+23. In Solution Explorer, expand **FourthCoffeeEmployeesModel.edmx**, expand
     **FourthCoffeeEmployeesModel.Context.tt**, and then double-click
     **FourthCoffeeEmployeesModel.Context.cs**.
-25. In the code editor, review the code in the **FourthCoffeeEntities** partial
+24. In the code editor, review the code in the **FourthCoffeeEntities** partial
     class.
-26. In Solution Explorer, expand **FourthCoffeeEmployeesModel.tt**, and then
+25. In Solution Explorer, expand **FourthCoffeeEmployeesModel.tt**, and then
     double-click **Employee.cs**.
-27. Review the **Employee** partial class and the properties that have been
+26. Review the **Employee** partial class and the properties that have been
     generated.
-28.	Leave the solution open so that you can refer to it in the following topics. 
+27.	Leave the solution open so that you can refer to it in the following topics. 
 
 
 
@@ -71,7 +70,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 #### Demonstration Steps
 
 1.	Open **Visual Studio 2017**.
-2.	In Visual Studio, on the File menu, point to Open, and then click Project/Solution.
+2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open File** dialog box to, browse to the **[RepositoryRoot]\Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
 4.  In Solution Explorer, expand **FourthCoffee.Employees**, and then
     double-click **Program.cs**.
@@ -112,7 +111,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 7.  On the **Debug** menu, click **Start Without Debugging**.
 8. In the console window, review the output of the **QueryingData** method, and
     then press Enter.
-9. Repeat step 9 for each of the following methods:
+9. Repeat step 8 for each of the following methods:
     -  **FilteringDataByRow**
     -  **FilteringDataByColumn**
 10. Press Enter to close the application.
@@ -140,7 +139,7 @@ and then in the **Connect to Server** dialog box, click **Connect**.
 7.  On the **Debug** menu, click **Start Without Debugging**.
 8. In the console window, review the output of the **UsingAnonymousTypes**
     method, and then press Enter.
-9. Repeat step 12 for each of the following methods:
+9. Repeat step 8 for each of the following methods:
     -  **GroupingData**
     -  **AggregatingData**
     -  **NavigatingData**
