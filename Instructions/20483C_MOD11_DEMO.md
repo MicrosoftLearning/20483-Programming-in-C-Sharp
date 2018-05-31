@@ -64,25 +64,29 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+2. Initialize database:
+    - In the **Apps list**, click **File Explorer**.
+    - In **File Explorer**, navigate to the **[Repository Root]\Mod11\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+    - Close **File Explorer**.
     
 #### Demonstration Steps
 
 1.  Open the Grades.sln solution from the
-    [Repository Root]\\Mod11\\Labfiles\\Solution\\Exercise 2 folder.
+    **[Repository Root]\\Mod11\\Labfiles\\Solution\\Exercise 2** folder.
 2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click
     **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set
     **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then
     click **OK**.
 4.  Build the solution.
-5.  In the Grades.Utilities project, open **WordWrapper.cs**.
+5.  In the **Grades.Utilities** project, open **WordWrapper.cs**.
 6.  Review the code in this class and explain to students that in Exercise 1,
     they will write some of the code to start Word and create and save a
     document.
 7.  Review the class definition and the dispose pattern implementation and
     explain to students that in Exercise 2, they will write this code to control
     the lifetime of the **Word** object.
-8.  In the Grades.WPF project, in the Views folder, open
+8.  In the **Grades.WPF** project, in the **Views** folder, open
     **StudentProfile.xaml.cs**, and then locate the **GenerateStudentReport**
     method.
 9.  Review the code in this method and explain to students that in Exercise 1,
@@ -92,10 +96,10 @@
 10. Open Task Manager.
 11. In the **Task Manager** window, click **More details**.
 12. Run the application and log on as **vallee** with a password of
-    **password99**.
-13. Generate a grade report for **Kevin Liu**. When you click **Save**, in the
-    **Task Manager** window, verify that **Microsoft Word (32 bit)** appears and
-    then disappears from the **Background processes** group.
+    **password**.
+13. Generate a grade report for **Kevin Liu**. When you click **save report**, in the
+    **Task Manager** window, verify that **Microsoft Word** appears and
+    then disappears from the **Processes** group.
 14. Close the application, and then close Task Manager.
 15. Open Kevin Liu’s grade report in Word, review the report, and then close
     Word.
