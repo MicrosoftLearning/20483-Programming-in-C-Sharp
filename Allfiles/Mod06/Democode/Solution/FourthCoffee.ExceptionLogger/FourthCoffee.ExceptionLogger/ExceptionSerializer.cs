@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Soap;
 using System.Text;
 using System.Threading.Tasks;
+// TODO: 01: Add Using for Newtonsoft.Json
+using Newtonsoft.Json;
 
 namespace FourthCoffee.ExceptionLogger
 {
@@ -23,14 +25,9 @@ namespace FourthCoffee.ExceptionLogger
             if (entry == null)
                 throw new NullReferenceException("entry");
 
-            var stream = File.Create(path);
-
-            // TODO: 04: Create a SoapFormatter object and serialize the entry object.
-            var formatter = new SoapFormatter();
-            formatter.Serialize(stream, entry);
-
-            stream.Close();
-            stream.Dispose();
+            // TODO 02: Convert object to JSON string
+            var jsonAsString = JsonConvert.SerializeObject(entry);
+            File.WriteAllText(path,jsonAsString);
         }
 
         /// <summary>
@@ -44,15 +41,11 @@ namespace FourthCoffee.ExceptionLogger
                 throw new FileNotFoundException();
 
             var entry = default(ExceptionEntry);
-            var stream = File.OpenRead(path);
+            var jsonAsStriong = File.ReadAllText(path);
 
-            // TODO: 05: Create a SoapFormatter object and deserialize the stream to the entry object.
-            var formatter = new SoapFormatter();
-            entry = formatter.Deserialize(stream) as ExceptionEntry;
-
-            stream.Close();
-            stream.Dispose();
-
+            // TODO: 03: Convert JSON string to an object 
+            entry = JsonConvert.DeserializeObject<ExceptionEntry>(jsonAsStriong);
+            
             return entry;
         }
     }
