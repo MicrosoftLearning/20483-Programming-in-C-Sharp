@@ -116,7 +116,7 @@ namespace FourthCoffee.ExceptionLogger
         {
             if (string.IsNullOrEmpty(this._filePath))
             {
-                var fileName = string.Format("Exception_{0:MM_dd_yy H_mm_ss}.txt", DateTime.Now);
+                var fileName = string.Format("Exception_{0:MM_dd_yy H_mm_ss}.json", DateTime.Now);
 
                 return System.IO.Path.Combine(this._exceptionsRootPath, fileName);
             }

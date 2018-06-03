@@ -7,21 +7,21 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
-2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor**, and then open the **FourthCoffee.LogProcessor.sln** file.
 
 #### Demonstration Steps
 
-1.  In Visual Studio, on the **View** menu, click **Task List**.
-2.  In the **Task List** window, in the **Categories** list, click **Comments**.
-3.  Double-click the **TODO: 01: Ensure log file directory exists.** task.
-4.  In the code editor, click in the blank line below the comment, and then type
+1. Open **Visual Studio 2017**.
+2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor**, and then open the **FourthCoffee.LogProcessor.sln** file.
+3. In Visual Studio, on the **View** menu, click **Task List**.
+4. In the **Task List** window, double-click the **TODO: 01: Ensure log file directory exists.** task.
+5. In the code editor, click in the blank line below the comment, and then type
     the following code:
     ```cs
     if (!Directory.Exists(logDirectoryRoot))
        throw new DirectoryNotFoundException();
     ```
-5.	In the **Task List** window, double-click the **TODO: 02: Get all log file paths.** task.
-6.	In the code editor, click in the blank line below the comment, and then type the following code:
+6. In the **Task List** window, double-click the **TODO: 02: Get all log file paths.** task.
+7. In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
     return Directory.GetFiles(this._logDirectoryPath,   "*.txt");       
     ```
@@ -39,8 +39,7 @@
 11.	In the **Task List** window, double-click the **TODO: 05: Get the log file name without the file extension.** task.
 12.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
-    var logName = 
-       Path.GetFileNameWithoutExtension(logPath);
+    var logName = Path.GetFileNameWithoutExtension(logPath);
     ```
 13.	In the **Task List** window, double-click the **TODO: Task 06: Read the contents of the existing log file.** task.
 14.	In the code editor, click in the blank line below the comment, and then type the following code:
@@ -52,79 +51,64 @@
     ```cs
     File.AppendAllLines(combinedLogPath, logContent);
     ```
-17.	On the **Build** menu, click **Build Solution**.
-18.	On the **Debug** menu, click **Start Without Debugging**.
-19.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
-20.	Open File Explorer and browse to the **Allfiles\Mod06\Democode\Data\Logs** folder.
-21.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
-22.	Close Notepad, close File Explorer, and then close Visual Studio.
+17. In the **Task List** window, double-click the **//TODO 09: Replace [Repository Root] with your folder path.** task.
+18. Replace **[Repository Root]** with your folder path. 
+19.	On the **Build** menu, click **Build Solution**.
+20.	On the **Debug** menu, click **Start Without Debugging**.
+21.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
+22.	Open File Explorer and browse to the **Allfiles\Mod06\Democode\Data\Logs** folder.
+23.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
+24.	Close Notepad, close File Explorer, and then close Visual Studio.
 
 
 # Lesson 2:  Serializing and Deserializing Data
 
-### Demonstration: Serializing to XML
+### Demonstration: Serializing Objects as JSON using JSON.Net
 
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
-2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
 
 #### Demonstration Steps
 
-1.	In Visual Studio, on the **View** menu, click **Task List**.
-2.	In the **Task List** window, in the **Categories** list, click **Comments**.
-3.	Double-click the **TODO: 01: Decorate the type with the Serializable attribute.** task.
-4.	In the code editor, click in the blank line below the comment, and then type the following code:
+1. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
+2.  Right click on **FourthCoffee.ExceptionLogger** project, and select **Manage NuGet Packages**.
+    - In **NeGet: FourthCoffee.ExceptionLogger**, click on **Browse**.
+    - Click on Search box and type **Newtonsoft.Json**
+    - Select the result for **Newtonsoft.Json** and click on left side of the window **Install**.
+    -  Close the window.
+3.	In Visual Studio, on the **View** menu, click **Task List**.
+4.	In the **Task List** window, double-click the **TODO: 01:  Add Using for Newtonsoft.Json.** task.
+5.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
-    [Serializable]
+    using Newtonsoft.Json;
     ```
-5.	In the **Task List** window, double-click the **TODO: 02: Implement the ISerializable interface.** task.
-6.	In the code editor, click in the blank line below the comment, and then type the following code:
+6.	In the **Task List** window, double-click the **TODO: 02: Convert object to JSON string.** task.
+7.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
-    : ISerializable
+    var jsonAsString = JsonConvert.SerializeObject(entry);
+    File.WriteAllText(path,jsonAsString);
     ```
-7.	Right-click the text **ISerializable**, point to **Implement Interface**, and then click **Implement Interface**.
-8.	In the **GetObjectData** method, replace the existing code to throw a new **NotImplementedException** object with the following code:
+8.	In the **Task List** window, double-click the **TODO: 03: Convert JSON string to an object.** task.
+9.	In the code editor, click in the blank line below the comment, and then type the following code:
     ```cs
-    info.AddValue("Title", this.Title);
-    info.AddValue("Details", this.Details);
+    entry = JsonConvert.DeserializeObject<ExceptionEntry>(jsonAsStriong);
     ```
-9.	In the **Task List** window, double-click the **TODO: 03: Add a deserialization constructor.** task.
-10.	In the code editor, click in the blank line below the comment, and then type the following code:
-    ```cs
-    public ExceptionEntry(
-       SerializationInfo info, 
-       StreamingContext context)
-       {
-          this.Title = info.GetString("Title");
-          this.Details = info.GetString("Details");
-       }
-    ```
-11.	In the **Task List** window, double-click the **TODO: 04: Create a SoapFormatter object and serialize the entry object.** task.
-12.	In the code editor, click in the blank line below the comment, and then type the following code:
-    ```cs
-    var formatter = new SoapFormatter();
-    formatter.Serialize(stream, entry);
-    ```
-13.	In the **Task List** window, double-click the **TODO: 05: Create a SoapFormatter object and deserialize the stream to the entry object.** task.
-14.	In the code editor, click in the blank line below the comment, and then type the following code:
-    ```cs
-    var formatter = new SoapFormatter();
-    entry = formatter.Deserialize(stream) as ExceptionEntry;
-    ```
-15.	On the **Build** menu, click **Build Solution**.
-16.	On the **Debug** menu, click **Start Without Debugging**.
-17.	In the **Exception Logger** window, create a new exception entry by using the following information, and then click **Save**:
+10. Expand  **FourthCoffee.ExceptionLogger** project and double-click on **App.config** file.
+11. Replace **[Repository Root]** with your folder path.
+12.	On the **Build** menu, click **Build Solution**.
+13.	On the **Debug** menu, click **Start Without Debugging**.
+14.	In the **Exception Logger** window, create a new exception entry by using the following information, and then click **Save**:
     -	Title: Critical database error
     -	Details: Could not find database server
-18.	In the **Save Successful** message box, click **OK**. The exception entry has now been serialized.
-19.	Close the Exception Logger application.
-20.	Open File Explorer and browse to the **Allfiles\Mod06\Democode\Data\Exceptions** folder.
-21.	In the **Allfiles\Mod06\Democode\Data\Exceptions** folder, double-click the Exception_\<date and time\>.txt file.  
-22.	In Notepad, find the **Title** and **Details** XML elements.
-23.	Switch to Visual Studio, and on the **Debug** menu, click **Start Without Debugging**.
-24.	In the **Exception Logger** window, in the File list, click **Allfiles\Mod06\Democode\Data\Exceptions\Exception_\<date and time\>.txt**, and then click Load. The ExceptionEntry object has now been deserialized.
-25.	Close the application, close Visual Studio, and then close File Explorer.
+15.	In the **Save Successful** message box, click **OK**. The exception entry has now been serialized.
+16.	Close the Exception Logger application.
+17.	Open File Explorer and browse to the **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions** folder.
+18.	In the **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions** folder, double-click the Exception_\<date and time\>.json file.  
+19.	In Notepad, find the **Title** and **Details** JSON elements.
+20.	Switch to Visual Studio, and on the **Debug** menu, click **Start Without Debugging**.
+21.	In the **Exception Logger** window, in the File list, click **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions\Exception_\<date and time\>.json**, and then click Load. The ExceptionEntry object has now been deserialized.
+22.	Close the application, close Visual Studio, and then close File Explorer.
 
 
 # Lesson 3:  Performing I/O by Using Streams

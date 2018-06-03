@@ -6,12 +6,10 @@ namespace FourthCoffee.ExceptionLogger
     /// <summary>
     /// Represents the <see cref="FourthCoffee.ExceptionLogger.ExceptionEntry" /> class in the object model.
     /// </summary>
-    // TODO: 01: Decorate the type with the Serializable attribute.
-
+  
     public class ExceptionEntry
-        // TODO: 02: Implement the ISerializable interface.
-     
     {
+        
         /// <summary>
         /// Represents the exception title.
         /// </summary>
@@ -29,8 +27,12 @@ namespace FourthCoffee.ExceptionLogger
         {
         }
 
-        // TODO: 03: Add a deserialization constructor.
-
+        public ExceptionEntry(string title, string details)
+        {
+            Title = title;
+            Details = details;
+        }
+      
 
 
     }
