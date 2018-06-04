@@ -14,7 +14,7 @@ namespace Fourth_Coffee_Contact_Finder
         {
             InitializeComponent();
             this._dataLoader = new SalesDataLoader(
-                new Uri("http://localhost:8090/SalesService.svc/GetSalesPerson"));
+                new Uri("http://localhost:1030/SalesService.svc/GetSalesPerson"));
         }
 
         private void go_Click(object sender, RoutedEventArgs e)
