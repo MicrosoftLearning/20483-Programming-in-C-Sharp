@@ -6,38 +6,22 @@
 
 #### Preparation Steps
 
-1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles
+Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 
 #### Demonstration Steps
 
-1. Open the **School.sln** solution from the
-    **[Repository Root]\\Mod01\\Labfiles\\Solution\\Exercise 4** folder.
-2. Run the application, select a student name, and then press Enter to edit
-    that student’s details.
-3. Update the **First Name** and **Last Name** boxes to contain your name, and
-    then click **OK**. Point out to students that this has updated the
-    information in the main application window.
-4. Press **Insert**, enter information for a new student (ensuring that you type a
-    valid date of birth in the following format: mm/dd/yyyy), and then click
-    **OK**.
-5. Point out to students that this has added a new student to the student list
-    for the class, and that the application has correctly translated their date
-    of birth into the age that is displayed.
-6. In the student list, click the student that you just added, and press
-    **Delete**.
-7. In the **Confirm** dialog box, click **Yes**, and then point out to students
-    that the student has been removed from the class.
+1. From the **[Repository Root]\\Mod01\\Labfiles\\Solution\\Exercise 4** folder, open the **School.sln** solution.
+2. Run the application, select a student name, and then press Enter to edit that student’s details.
+3. Update the **First Name** and **Last Name** text boxes to contain your name, and then click **OK**. Point out to students that this has updated the information in the main application window.
+4. Press **Insert**. Enter information for a new student (ensuring that you type a valid date of birth in the following format: mm/dd/yyyy), and then click **OK**.
+5. Point out to students that this has added a new student to the student list for the class, and that the application has correctly translated their date of birth into the age that is displayed.
+6. In the student list, click the student that you just added, and then press **Delete**.
+7. In the **Confirm** dialog box, click **Yes**, and then point out to students that the student has been removed from the list of students in the class.
 8. Close the application.
 9. Open **MainWindow.xaml.cs** and locate the **studentsList_KeyDown** method.
-10. Explain to students that during Exercises 1, 2, and 3, they will add the
-    code in this method to test which key a user pressed, and then enable the
-    user to edit a student’s details, insert a new student into the class, or
-    remove a student from the class.
-11. In **MainWindow.xaml.cs**, locate the **Convert** method in the
-    **AgeConverter** class.
-12. Explain to students that during Exercise 4, they will add code to this
-    method to convert the date of birth that a user enters into the age to be
-    displayed in the list of students.
+10. Explain to students that in Exercises 1, 2, and 3, they will add the code in this method to test which key a user pressed, and then enable the user to edit a student’s details, insert a new student into the class, or remove a student from the class.
+11. In **MainWindow.xaml.cs**, locate the **Convert** method in the **AgeConverter** class.
+12. Explain to students that during Exercise 4, they will add code to this method to convert the date of birth that a user provides into the age to be displayed in the list of students.
 13. Close Visual Studio.
 
 ©2018 Microsoft Corporation. All rights reserved.
