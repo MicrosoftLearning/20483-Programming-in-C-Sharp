@@ -20,6 +20,7 @@ using Microsoft.Win32;
 using GradesPrototype.Controls;
 using GradesPrototype.Data;
 using GradesPrototype.Services;
+using Newtonsoft.Json;
 
 namespace GradesPrototype.Views
 {
@@ -126,37 +127,40 @@ namespace GradesPrototype.Views
             }
         }
 
-        // Generate the grades report for the currently selected student
+        //  Generate the grades report for the currently selected student
         private void SaveReport_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Use a SaveFileDiaolog to prompt the user for a filename to save the report as (must be an XML file)
                 SaveFileDialog dialog = new SaveFileDialog();
-                dialog.Filter = "XML documents|*.xml";
-
-                // Set the default filename to Grades.txt
+                dialog.Filter = "JSON documents|*.json";
                 dialog.FileName = "Grades";
-                dialog.DefaultExt = ".xml";
+                dialog.DefaultExt = ".json";
 
-                // Display the dialog and get a filename from the user
-                Nullable<bool> result = dialog.ShowDialog();
-
-                // If the user selected a file, then generate the report
+                bool? result = dialog.ShowDialog();
                 if (result.HasValue && result.Value)
                 {
-                    // Get the grades for the currently selected student
                     List<Grade> grades = (from g in DataSource.Grades
                                           where g.StudentID == SessionContext.CurrentStudent.StudentID
                                           select g).ToList();
 
-                    // Serialize the grades to a MemoryStream. 
-                    MemoryStream ms = FormatAsXMLStream(grades);
+                    var gradesAsJson = JsonConvert.SerializeObject(grades, Newtonsoft.Json.Formatting.Indented);
 
-                    // TODO: Exercise 2: Task 1a: Generate a string representation of the report data
+                    MessageBoxResult reply = MessageBox.Show(gradesAsJson, "Save Report?", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-                    // TODO: Exercise 2: Task 1b: Preview the string version of the report data in a MessageBox
+                    if (reply == MessageBoxResult.Yes)
+                    {
+                        FileStream file = new FileStream(dialog.FileName, FileMode.Create, FileAccess.Write);
+                        StreamWriter streamWriter = new StreamWriter(file);
+                        streamWriter.Write(gradesAsJson);
+                        file.Position = 0;
 
+                        streamWriter.Close();
+                        streamWriter.Dispose();
+
+                        file.Close();
+                        file.Dispose();
+                    }
                 }
             }
             catch (Exception ex)
@@ -166,60 +170,6 @@ namespace GradesPrototype.Views
         }
         #endregion
 
-        #region Utility and Helper Methods
-
-        // Format the list of grades as an XML document and write it to a MemoryStream
-        private MemoryStream FormatAsXMLStream(List<Grade> grades)
-        {
-            // Save the XML document to a MemoryStream by using an XmlWriter
-            MemoryStream ms = new MemoryStream();
-            XmlWriter writer = XmlWriter.Create(ms);
-
-            // The document root has the format <Grades Student="Eric Gruber">
-            writer.WriteStartDocument();
-            writer.WriteStartElement("Grades");
-            writer.WriteAttributeString("Student", String.Format("{0} {1}", SessionContext.CurrentStudent.FirstName, SessionContext.CurrentStudent.LastName));
-
-            // Format the grades for the student and add them as child elements of the root node
-            // Grade elements have the format <Grade Date="01/01/2012" Subject="Math" Assessment="A-" Comments="Good" />
-            foreach (Grade grade in grades)
-            {
-                writer.WriteStartElement("Grade");
-                writer.WriteAttributeString("Date", grade.AssessmentDate);
-                writer.WriteAttributeString("Subject", grade.SubjectName);
-                writer.WriteAttributeString("Assessment", grade.Assessment);
-                writer.WriteAttributeString("Comments", grade.Comments);
-                writer.WriteEndElement();
-            }
-
-            // Finish the XML document with the appropriate end elements
-            writer.WriteEndElement();
-            writer.WriteEndDocument();
-
-            // Flush the XmlWriter and close it to ensure that all the data is written to the MemoryStream
-            writer.Flush();
-            writer.Close();
-
-            // The MemoryStream now contains the formatted data
-            // Reset the MemoryStream so it can be read from the start and then return it
-            ms.Seek(0, SeekOrigin.Begin);
-            return ms;
-        }
-
-        // Format the XML data in the stream as a neatly constructed string
-        private string FormatXMLData(Stream stream)
-        {
-            // TODO: Exercise 2: Task 2a: Use a StringBuilder to construct the string
-
-            // TODO: Exercise 2: Task 2b: Use an XmlTextReader to read the XML data from the stream
-
-            // TODO: Exercise 2: Task 2c: Read and process the XML data a node at a time
-
-            // TODO: Exercise 2: Task 2d: Reset the stream and return the string containing the formatted data
-
-            throw new NotImplementedException();
-        }
-        #endregion
 
         // Display the details for the current student (held in SessionContext.CurrentStudent), including the grades for the student
         public void Refresh()
@@ -251,9 +201,23 @@ namespace GradesPrototype.Views
                     grades.Add(grade);
                 }
             }
-            
+
             // Display the grades in the studentGrades ItemsControl by using databinding
             studentGrades.ItemsSource = grades;
+        }
+
+        private void LoadReport_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: 02: Task 1: Define the File Dialog settings to load the report file
+            
+            //TODO: 02: Task 2a: Check the user file selection
+
+            //TODO: 02: Task 2b: Read the report data from Disk
+            
+            //TODO: 02: Task 2c: Desirialize the JSON data to grades list
+            
+            //TODO: 02: Task 2d: Display the saved report to the user
+            
         }
     }
 }
