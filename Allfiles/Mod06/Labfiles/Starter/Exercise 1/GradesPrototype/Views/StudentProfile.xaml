@@ -67,12 +67,15 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <Button x:Name="btnSaveReport" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="15,0,0,0" Click="SaveReport_Click">
                     <TextBlock Text="Save Report" FontSize="24"/>
                 </Button>
-            
-                <Button x:Name="btnAddGrade" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="15,0,0,0" Click="AddGrade_Click">
+                <Button x:Name="btnLoadReport" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="15,0,0,0" Click="LoadReport_Click">
+                    <TextBlock Text="Load Report" FontSize="24"/>
+                </Button>
+                <Button x:Name="btnAddGrade" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="15,0,0,0" Click="AddGrade_Click">
                     <TextBlock Text="Add Grade" FontSize="24"/>
                 </Button>
             </Grid>

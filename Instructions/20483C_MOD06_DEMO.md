@@ -122,33 +122,33 @@
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the
-    **[Repository Root]\\Mod06\\Labfiles\\Solution\\Exercise 3** folder.
+    **[Repository Root]\\Mod06\\Labfiles\\Solution\\Exercise 2** folder.
 2. In the **Views** folder, open **StudentProfile.xaml** and point out that the
-    user interface has been updated to include a **Save Report** button.
+    user interface has been updated to include a **Save Report** and **Load Report** buttons.
 3. In the **Views** folder, open **StudentProfile.xaml.cs**, and locate the
     **SaveReport_Click** method.
 4. Explain to students that during the lab they will add the code in this
     method to prompt the user for a filename to save the report as, and to call
     methods to generate, preview, and save the report.
-5. In **StudentProfile.xaml.cs**, locate the **FormatAsXMLStream** method.
-6. Explain to students that during Exercise 1 they will add the code in this
-    method to generate an XML document in a **MemoryStream** object.
-7. In **StudentProfile.xaml.cs**, locate the **FormatXMLData** method.
-8. Explain to students that during Exercise 2 they will add the code in this
-    method to format the XML data as a string and display it to the user.
-9. Run the application, and log on as **vallee** with a password of
+5. In the **Views** folder, open **StudentProfile.xaml.cs**, and locate the
+    **LoadReport_Click** method.
+6. Explain to students that during the lab they will add the code in this
+    method to prompt the user for a filename to load the report, and to call
+    methods to display the report to the user.
+7. Explain to students that during the lab they will add the code that generates a JSON document and load it from the Disk.
+8. Run the application, and log on as **vallee** with a password of
     **password99**.
-10. View **Kevin Liu’s** report card and then click **Save Report** to generate
-    the XML document.
-11. Specify to save the file in the Documents folder by using the default name.
-12. Review the XML data displayed in the message box, and then confirm that you
+9. View **Kevin Liu’s** report card and then click **Save Report** to generate
+    the JSON document.
+10. Specify to save the file in the Documents folder by using the default name.
+11. Review the JSON data displayed in the message box, and then confirm that you
     want to save the file.
-13. Close the application, and then close Visual Studio.
-14. Open the saved report in Internet Explorer and review the content.
-15. Close Internet Explorer.
+12. Go to the file and change some properties inside the report.
+13. View **Kevin Liu’s** report card and then click **Load Report** to load the JSON document and display it in the **Report Card** view.
+14. Close the application, and then close Visual Studio.
 
 
-©2017 Microsoft Corporation. All rights reserved.
+©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the  [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are  **not**  included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 
