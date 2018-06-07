@@ -4,15 +4,22 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.ServiceModel.Web;
+using System.Data.Services.Common;
+using System.Data.Services;
 
 namespace Grades.Web.Services
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "GradesWebDataService" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select GradesWebDataService.svc or GradesWebDataService.svc.cs at the Solution Explorer and start debugging.
-    public class GradesWebDataService : IGradesWebDataService
+    //TODO: Excersice 1: Task 2a: Replace the object keyword with your data source class name.
+    public class GradesWebDataService : DataService<object>
     {
-        public void DoWork()
+        public static void InitializeService(DataServiceConfiguration config)
         {
+            //TODO: Excersice 1: Task 2b: set rules to indicate which entity sets and service operations are visible, updatable, etc
+
         }
+
     }
+
+
 }
