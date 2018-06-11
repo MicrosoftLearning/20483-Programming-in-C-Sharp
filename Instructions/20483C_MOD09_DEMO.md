@@ -65,7 +65,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1.  from the **[Repository Root]\Mod09\Labfiles\Solution\Exercise 3** folder, open the **Grades.sln** solution.
 2.  In **Solution Explorer**, right-click **Solutions ‘Grades’**, and then click **Properties**.
-3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then click **OK**. 
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**. 
       Explain to the students that they will have to perform this step whenever they open lab starter files because the startup project information is stored in the .suo user options file for a solution which is not included in the Allfiles for this course.
 4.  Build the solution.
 5.  In the **Grades.WPF** project, in the **Controls** folder, open **StudentPhoto.xaml**.
