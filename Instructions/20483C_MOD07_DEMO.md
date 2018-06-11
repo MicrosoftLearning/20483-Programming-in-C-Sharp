@@ -129,6 +129,8 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 2.  In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open Project** dialog box, browse to the **[Repository Root]\Allfiles\Mod07\Labfiles\Solution\Exercise 3** folder, click **GradesPrototype.sln**, and then click **Open**.
 4.  In **Server Explorer**, expand **Data Connection**, expend **{YourName}\sqlexpress.SchoolGradesDB.dbo** data connection and then expand **Tables**.
+    >**Note :** If **SchoolGradesDB** wasn't appearing in Server Explorer, you can add it manually
+by clicking on **Add New Database** button.
 5.  Explain to students that they will be using this database for the labs from this point onwards and show them the data in the following tables:
     - **Students**
     - **Teachers**
