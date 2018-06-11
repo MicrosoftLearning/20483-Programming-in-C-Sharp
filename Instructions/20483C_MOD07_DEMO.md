@@ -13,7 +13,7 @@
 
 1.  Navigate to the **[Repository Root]\Allfiles\Mod07\Democode\Databases** folder, and then double-click **SetupFourthCoffeeDB.cmd**.
 2. Locate **[Repository Root]\Allfiles\Mod07\Democode\Databases** folder again, right-click **FourthCoffee.sql**, point to **Open With**, click **Microsoft Visual Studio Version Selector**, then click **Open**.
-3. Review the SQL query that you have just ran.
+3. Review the SQL query.
 4. On the **File** menu, click **Close**.
 4.  On the **File** menu, point to **New**, and then click **Project**.
 5.  In the **New Project** dialog box, expand **Templates**, click **Visual C\#**, and then in the **Template** list, click **Console App(.NET Framework)**.
