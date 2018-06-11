@@ -75,7 +75,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 9.  Explain to the students that they will add this code to raise the **StudentSelected** event when a user clicks a photograph.
 10. In the **Views** folder, open **StudentProfile.xaml**.
 11. Locate the **StudentPhoto** element and explain to the students that they will add the user control to this view.
-12. Open **LogonPage.xaml** and explain to the students that in Exercise 2 they will define two styles: one for the **username** text box and one for the **password** text box. Also, show the students the markup where the style is applied to a control.
+12. Open **LogonPage.xaml** and explain to the students that in Exercise 2 they will define two styles: one for the **Login** button and one for the **password** text box. Also, show the students the markup where the style is applied to a control.
 13. In the **Themes** folder, open **Generic.xaml**. Explain to the students that here they will define properties for labels and text throughout the application.
 14. Run the application and point out the styling of the labels and text boxes on the **Log on** page.
 15. Log on as **valleE** with the password **password99**.
