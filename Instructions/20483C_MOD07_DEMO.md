@@ -116,14 +116,19 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Preparation Steps
 
-Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
+2. Initialize database:
+    - In the **Apps list**, click **File Explorer**.
+    - In **File Explorer**, navigate to the **[Repository Root]\Mod07\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+    - Close **File Explorer**.
+
 
 #### Demonstration Steps
 
 1. Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open Project** dialog box, browse to the **[Repository Root]\Allfiles\Mod07\Labfiles\Solution\Exercise 3** folder, click **GradesPrototype.sln**, and then click **Open**.
-4.  In **Server Explorer**, expand **Data Connection**, expend **{YourName}.SchoolGradesDB.dbo** data connection and then expand **Tables**.
+4.  In **Server Explorer**, expand **Data Connection**, expend **{YourName}\sqlexpress.SchoolGradesDB.dbo** data connection and then expand **Tables**.
 5.  Explain to students that they will be using this database for the labs from this point onwards and show them the data in the following tables:
     - **Students**
     - **Teachers**
