@@ -15,7 +15,7 @@ Finally, you have been asked to write code that displays student images by retri
 
 After completing this lab, you will be able to:
 -	Create a WCF Data Service.
--	Use a WCF Data Service.
+-	Use an OData Connected Service.
 -	Retrieve data over the web.
 
 
@@ -110,11 +110,11 @@ First, you will add a new ASP.NET Web Application project to the solution and co
 
 #### Scenario
 
-In this exercise, you will integrate the WCF Data Service into the Grades Prototype application.
-First, you will add a service reference in the GradesPrototype project that references the running WCF Data Service. You will then modify the code that accesses the local EDM to use the WCF Data Service instead. Next, you will modify the code that saves changes back to the database to do so through the data service. Finally, you will test the application to verify that it runs the same as if the data was being called locally.
+In this exercise, you will integrate an OData Connected Service into the Grades Prototype application.
+First, you will add a connected service in the GradesPrototype project that references the running WCF Data Service. You will then modify the code that accesses the local EDM to use the WCF Data Service instead. Next, you will modify the code that saves changes back to the database to do so through the data service. Finally, you will test the application to verify that it runs the same as if the data was being called locally.
 
 
-#### Task 1: Add a service reference for the WCF Data Service to the GradesPrototype application.
+#### Task 1: Add an OData Connected Service for the WCF Data Service to the GradesPrototype application.
 
 1.  In Visual Studio, open the GradesPrototype.sln solution from the
     [Repository Root]\\Mod08\\Labfiles\\Starter\\Exercise 2 folder.
@@ -126,12 +126,10 @@ First, you will add a service reference in the GradesPrototype project that refe
     project.
 5.  Add a service reference to http://localhost:1650, using the namespace of
     **Grades.DataModel**.
-6.  Update the namespace declaration in the Reference.cs file for the service
-    reference to Grades.DataModel. The Reference.cs file is generated in the
-    Service References\\Grades.DataModel\\Reference.datasvcmap folder in
-    Solution Explorer. You need to enable Solution Explorer to show all files to
-    see this folder.
-    >**Note :** The Add Service Reference Wizard prepends the namespace that you specify with
+6.  Update the namespace declaration in the Reference.cs file for the OData Connected service to Grades.DataModel. The Reference.cs file     is generated in the
+    ConnectedServices\\Grades.DataModel folder in
+    Solution Explorer.
+    >**Note :** The Add Connected Service Wizard prepends the namespace that you specify with
     the namespace of the project, so the result in this case is
     **GradesPrototype.Grades.DataModel**. The existing code in the GradesPrototype
     project expects the various entity classes to be located in the
@@ -152,10 +150,10 @@ First, you will add a service reference in the GradesPrototype project that refe
     -  customTeacher.cs
     >**Note :** The Classes.cs, Grade.cs, and Teacher.cs files contain custom functionality for
     the **Grade** and **Teacher** classes that you implemented in an earlier lab.
-    WCF Data Services does not propagate any custom functionality that is defined
+    The Data Services does not propagate any custom functionality that is defined
     for a data model, so you must manually copy these files to the Grades.DataModel
     project. You will also have to make some small changes to this code to access
-    data through the WCF Data Service rather than by referencing the entities
+    data through the OData Connected Service rather than by referencing the entities
     themselves. You will do this in the next task.
 
 
@@ -171,16 +169,16 @@ http://localhost:1650/Services/GradesWebDataService.svc to the
     ```cs
     static SessionContext()
     {
-        DBContext.MergeOption =     System.Data.Services.Client.MergeOption.PreserveChanges;
+        DBContext.MergeOption = System.Data.Services.Client.MergeOption.PreserveChanges;
     }
     ```
-This constructor ensures that any changes made by the user are not lost if multiple users try and make simultaneous changes
+This constructor ensures that any changes made by the user are not lost if multiple users try and make simultaneous changes.
 
 3.  In the Views folder, in StudentsPage.xaml.cs, locate the **Refresh** method.
 4.  Modify the code in the **foreach** loop that populates the **list
     ItemsControl** with the details of the students for the current teacher. The
     user and grades data for a student are held in separate entities and they
-    are not fetched automatically by WCF Data Services (this is to save network
+    are not fetched automatically by the Data Service (this is to save network
     resources by not retrieving data unnecessarily). Your code should retrieve
     the related data in the **User** and **Grades** properties for each student
     by using the **LoadProperty** method of the data context (available in
@@ -208,7 +206,7 @@ property. You should also use the **Expand** method to retrieve the **User** and
     code that uses the **Add** method of the **Grades** collection to add a
     grade to a student. Modify this code to use the **AddToGrades** method of
     the **DBContext** class. This change is necessary because the **Grades**
-    collection implemented by WCF Data Services does not provide the **Add**
+    collection implemented by the Data Services does not provide the **Add**
     method.
 11.  In the **SaveReport_Click** method, modify the LINQ query that retrieves the
     grades for the report to also fetch the **Subject** details by using the
@@ -219,13 +217,13 @@ student. Modify this code to use the **AddToStudents** method of the
 **DBContext** class.
 
 
-#### Task 3: Modify the code that saves changes back to the database to use the WCF Data Service.
+#### Task 3: Modify the code that saves changes back to the database to use the Data Service.
 
 1. In the code for the **AssignStudentDialog** view, in the **Student_Click**
 method, add code to specify that the selected student has been changed by using
 the **UpdateObject** method before the call to the **SessionContext.Save**
 method.
-    >**Note :** WCF Data Services requires that you explicitly mark an entity as updated, otherwise any changes will not be saved.
+    >**Note :** The data service requires that you explicitly mark an entity as updated, otherwise any changes will not be saved.
 2. In the **StudentProfile** view, in the **Remove_Click** method, add code to
 specify that the current student has been changed before the call to the
 **SessionContext.Save** method.
@@ -251,7 +249,7 @@ call to the **SessionContext.Save** method.
 
 
 
->**Result :** After completing this exercise, you should have updated the Grades Prototype application to use the WCF Data Service.
+>**Result :** After completing this exercise, you should have updated the Grades Prototype application to use the Data Service.
 
 
 ### Exercise 3: Retrieving Student Photographs Over the Web (If Time Permits)
@@ -317,7 +315,7 @@ shown in the following code
     the height of the control to **100**. The markup for the control should look
     like this:
     ```xml
-    <Image Height="100" Source="{Binding ImageName, Converter={StaticResource   ImageNameConverter}}" />
+    <Image Height="100" Source="{Binding ImageName, Converter={StaticResource ImageNameConverter}}" />
     ```
 
 #### Task 3: Add an Image control to the StudentProfile view and bind it to the ImageName property.
