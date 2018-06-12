@@ -65,7 +65,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1.  from the **[Repository Root]\Mod09\Labfiles\Solution\Exercise 3** folder, open the **Grades.sln** solution.
 2.  In **Solution Explorer**, right-click **Solutions ‘Grades’**, and then click **Properties**.
-3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then click **OK**. 
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**. 
       Explain to the students that they will have to perform this step whenever they open lab starter files because the startup project information is stored in the .suo user options file for a solution which is not included in the Allfiles for this course.
 4.  Build the solution.
 5.  In the **Grades.WPF** project, in the **Controls** folder, open **StudentPhoto.xaml**.
@@ -75,7 +75,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 9.  Explain to the students that they will add this code to raise the **StudentSelected** event when a user clicks a photograph.
 10. In the **Views** folder, open **StudentProfile.xaml**.
 11. Locate the **StudentPhoto** element and explain to the students that they will add the user control to this view.
-12. Open **LogonPage.xaml** and explain to the students that in Exercise 2 they will define two styles: one for the **username** text box and one for the **password** text box. Also, show the students the markup where the style is applied to a control.
+12. Open **LogonPage.xaml** and explain to the students that in Exercise 2 they will define two styles: one for the **Login** button and one for the **password** text box. Also, show the students the markup where the style is applied to a control.
 13. In the **Themes** folder, open **Generic.xaml**. Explain to the students that here they will define properties for labels and text throughout the application.
 14. Run the application and point out the styling of the labels and text boxes on the **Log on** page.
 15. Log on as **valleE** with the password **password99**.

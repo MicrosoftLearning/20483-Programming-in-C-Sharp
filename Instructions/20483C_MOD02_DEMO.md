@@ -47,7 +47,11 @@
 
 #### Preparation Steps
 
-Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
+1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
+2. Initialize database:
+    - In the **Apps list**, click **File Explorer**.
+    - In **File Explorer**, navigate to the **[Repository Root]\Mod02\Labfiles\Databases** folder, and then double-click **SetupSchoolDB.cmd**.
+    - Close **File Explorer**.
 
 #### Demonstration Steps
 
