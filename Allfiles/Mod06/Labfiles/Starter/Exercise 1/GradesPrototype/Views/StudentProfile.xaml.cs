@@ -20,6 +20,8 @@ using Microsoft.Win32;
 using GradesPrototype.Controls;
 using GradesPrototype.Data;
 using GradesPrototype.Services;
+// TODO: Exercise 1: Task 1a: Add Using for Newtonsoft.Json
+
 
 namespace GradesPrototype.Views
 {
@@ -130,16 +132,26 @@ namespace GradesPrototype.Views
         private void SaveReport_Click(object sender, RoutedEventArgs e)
         {
             try
-            {   
+            {
                 SaveFileDialog dialog = new SaveFileDialog();
-                dialog.Filter = "XML documents|*.xml";
+                dialog.Filter = "JSON documents|*.json";
                 dialog.FileName = "Grades";
-                dialog.DefaultExt = ".xml";
-                // TODO: Exercise 1: Task 1a: Store the return value from the SaveFileDialog in a nullable Boolean variable.
-                
-                // TODO: Exercise 1: Task 1b: Get the grades for the currently selected student.
+                dialog.DefaultExt = ".json";
 
-                // TODO: Exercise 1: Task 1c: Serialize the grades to a MemoryStream. 
+                // TODO: Exercise 1: Task 1b: Store the return value from the SaveFileDialog in a nullable Boolean variable.
+                
+                // TODO: Exercise 1: Task 1c: Get the grades for the currently selected student.
+
+                // TODO: Exercise 1: Task 2: Serialize the grades to a JSON.
+
+                //TODO: Exercise 1: Task 3a: Modify the message box and ask the user whether they wish to save the report
+                
+                //TODO: Exercise 1: Task 3b: Check if the user what to save the report or not
+                
+                //TODO: Exercise 1: Task 3c: Save the data to the file by using FileStream
+                    
+                //TODO: Exercise 1: Task 3d: Release all the stream resources
+                
             }
             catch (Exception ex)
             {
@@ -148,30 +160,6 @@ namespace GradesPrototype.Views
         }
         #endregion
 
-        #region Utility and Helper Methods
-
-        // Format the list of grades as an XML document and write it to a MemoryStream
-        private MemoryStream FormatAsXMLStream(List<Grade> grades)
-        {
-            // TODO: Exercise 1: Task 2a: Save the XML document to a MemoryStream by using an XmlWriter
-
-            // TODO: Exercise 1: Task 2b: Create the root node of the XML document.
-            // The document root has the format <Grades Student="Eric Gruber">
-            
-            // TODO: Exercise 1: Task 2c: Format the grades for the student and add them as child elements of the root node
-            // Grade elements have the format <Grade Date="01/01/2012" Subject="Math" Assessment="A-" Comments="Good" />
-
-            // TODO: Exercise 1: Task 2d: Finish the XML document with the appropriate end elements
-
-            // TODO: Exercise 1: Task 2e: Flush the XmlWriter and close it to ensure that all the data is written to the MemoryStream
-
-            // The MemoryStream now contains the formatted data
-
-            // TODO: Exercise 1: Task 2f: Reset the MemoryStream so it can be read from the start and then return it
-
-            throw new NotImplementedException();
-        }
-        #endregion
 
         // Display the details for the current student (held in SessionContext.CurrentStudent), including the grades for the student
         public void Refresh()
@@ -206,6 +194,11 @@ namespace GradesPrototype.Views
             
             // Display the grades in the studentGrades ItemsControl by using databinding
             studentGrades.ItemsSource = grades;
+        }
+
+        private void LoadReport_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
