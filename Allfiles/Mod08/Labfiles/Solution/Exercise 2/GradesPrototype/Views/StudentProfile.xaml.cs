@@ -118,7 +118,7 @@ namespace GradesPrototype.Views
                     newGrade.Assessment = gd.assessmentGrade.Text;
                     newGrade.Comments = gd.comments.Text;
                     newGrade.StudentUserId = SessionContext.CurrentStudent.UserId;
-                    
+
                     // Save the grade.
                     // TODO: Exercise 2: Task 2g: Use the AddToGrades method to add a new grade
                     SessionContext.DBContext.AddToGrades(newGrade);

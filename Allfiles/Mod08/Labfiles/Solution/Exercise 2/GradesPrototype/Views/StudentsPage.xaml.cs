@@ -34,21 +34,21 @@ namespace GradesPrototype.Views
         {
             list.Items.Clear();
 
-                // Find students for the current teacher
-                foreach (Grades.DataModel.Student student in SessionContext.DBContext.Students)
+            // Find students for the current teacher
+            foreach (Grades.DataModel.Student student in SessionContext.DBContext.Students)
+            {
+                if (student.TeacherUserId == SessionContext.CurrentTeacher.UserId)
                 {
-                    if (student.TeacherUserId == SessionContext.CurrentTeacher.UserId)
-                    {
-                        // TODO: Exercise 2: Task 2b: Load User and Grades data with Students
-                        SessionContext.DBContext.LoadProperty(student, "User");
-                        SessionContext.DBContext.LoadProperty(student, "Grades");
-                        list.Items.Add(student);
-                    }
+                    // TODO: Exercise 2: Task 2b: Load User and Grades data with Students
+                    SessionContext.DBContext.LoadProperty(student, "User");
+                    SessionContext.DBContext.LoadProperty(student, "Grades");
+                    list.Items.Add(student);
                 }
+            }
 
-                // Display the class name
-                txtClass.Text = String.Format("Class {0}", SessionContext.CurrentTeacher.Class);
-            
+            // Display the class name
+            txtClass.Text = String.Format("Class {0}", SessionContext.CurrentTeacher.Class);
+
         }
         #endregion
 
