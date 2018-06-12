@@ -116,16 +116,15 @@
     **GradesWebDataService.svc**, and then explain to students that during
     Exercise 1, they will set rules to indicate which entity sets and service
     operations are visible and add a new service operation to the class.
-7.  In Solution Explorer, in the **GradesPrototype** project, view the **Service
-    References** folder.
-8.  Explain to students that in Exercise 2, they will add a service reference to
+7.  In Solution Explorer, in the **GradesPrototype** project, view the **Connected Services** folder.
+8.  Explain to students that in Exercise 2, they will add a **OData Connected Service** to
     the data service so that data is retrieved from the data service, not
     directly from the data source.
 9.  In Solution Explorer, in the **GradesPrototype** project, view the
     **DataModel** folder.
 10. Explain to students that in Exercise 2, they will copy the partial classes
     from the original EDM into the client application because the partial types
-    that are contained in them are not propagated by WCF Data Services.
+    that are contained in them are not propagated by **OData Connected Service**.
 11. In the **GradesPrototype** project, in the **Services** folder, in
     **SessionContext.cs**, locate the **DBContext** declaration.
 12. Explain to students that in Exercise 2, they will specify the URL of the
@@ -144,7 +143,7 @@
     and the **Image** element, and then explain to students that in Exercise 3,
     they will bind **Image** controls to the images of students to display them
     in the UI.
-17. Run the application, log on as **vallee** with a password of **password99**,
+17. Run the application, log on as **vallee** with a password of **password88**,
     and then point out to students that the students list now includes images.
 18. View a student’s profile and point out that this also includes an image.
 19. Remove a student from the class and then enroll that student again to show
