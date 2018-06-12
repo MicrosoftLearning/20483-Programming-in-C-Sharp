@@ -2,7 +2,7 @@
 
 # Module 8: Accessing Remote Data
 
-# Lab: Retrieving and Modifying Grade Data in the Cloud
+# Lab: Retrieving and Modifying Grade Data Remotely
 
 #### Scenario
 
