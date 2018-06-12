@@ -98,7 +98,11 @@
     - In the **Apps list**, click **File Explorer**.
     - In **File Explorer**, navigate to the **[Repository Root]\Mod08\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
     - Close **File Explorer**.
-
+3. Ensure that you have did the following steps before starting working on this Module:
+    - Install **Microsoft.OData.ConnectedService.vsix** from **[Repository Root]\AllFiles\Assets**.
+    - Install WcfDataServices.exe from **[Repository Root]\AllFiles\Assets**.
+    - Run **WCF.reg** file from **[Repository Root]\AllFiles\Assets**.
+    
 #### Demonstration Steps
 
 1.  Open the **GradesPrototype.sln** solution from the
