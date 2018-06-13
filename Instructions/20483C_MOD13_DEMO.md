@@ -132,21 +132,30 @@
 1.  From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 1** folder, open the **Grades.sln** solution.
 2.  In **Solution Explorer**, right-click **Solutions ‘Grades’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then click **OK**.
-4.  In the **Grades.Utilities** project, open **CreateCertificate.cmd**.
-5.  Explain that this command file creates a new certificate that the students will use to encrypt the grade report.
-6.  Point out that the students need to run the command prompt window as an administrator for the command to succeed.
-7.  In the **Grades.Utilities** folder, open **WordWrapper.cs**, and then locate the **EncryptWithX509** method.
-8.  Explain to the students that during Exercise 1, they will add the code in this method to encrypt the grade report.
-9.  Run the application, and then log on as **vallee** with the password **password99**.
-10. Generate grade reports for **George Li** and **Kevin Liu**. Save each report in the **[Repository Root]\Mod13\Labfiles\Reports** folder.
-11. Close the application, and then attempt to open one of the reports that you created in the previous step by using Windows Internet Explorer and Notepad to show the encrypted data.
-12. From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 2** folder, open the **Schools-Reports.sln** solution.
-13. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
-14. Explain to the students that during Exercise 2, they will add the code in this method to decrypt the reports.
-15. Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the **CompositeReport.oxps** file in the **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folder.
-16. Close the application, and then close Visual Studio.
-17. Open the composite report in the XPS Viewer and review the contents of the report.
-18. Open File Explorer and delete the contents of the **[Repository Root]\Mod13\Labfiles\Reports** and **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folders and then close File Explorer.
+4.  Open **Windows Menu** and type **developer Command Prompt for VS 2017**, right click on the app
+    then select **Run as adiministrator**.
+5.  Paste the following command and then press **Enter**:
+    ```cs
+         cd [Repository Root]\Mod13\Labfiles\Solution\Exercise 1\Grades.Utilities
+    ```
+6.  Paste the following command and then press **Enter**:
+    ```cs
+         CreateCertificate.cmd
+    ```
+7.  Explain that this command file creates a new certificate that the students will use to encrypt the grade report.
+8.  Point out that the students need to run the command prompt window as an administrator for the command to succeed.
+9.  In the **Grades.Utilities** folder, open **WordWrapper.cs**, and then locate the **EncryptWithX509** method.
+10.  Explain to the students that during Exercise 1, they will add the code in this method to encrypt the grade report.
+11.  Run the application, and then log on as **vallee** with the password **password99**.
+12. Generate grade reports for **George Li** and **Kevin Liu**. Save each report in the **[Repository Root]\Mod13\Labfiles\Reports** folder.
+13. Close the application, and then attempt to open one of the reports that you created in the previous step by using Windows Internet Explorer and Notepad to show the encrypted data.
+14. From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 2** folder, open the **Schools-Reports.sln** solution.
+15. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
+16. Explain to the students that during Exercise 2, they will add the code in this method to decrypt the reports.
+17. Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the **CompositeReport.oxps** file in the **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folder.
+18. Close the application, and then close Visual Studio.
+19. Open the composite report in the XPS Viewer and review the contents of the report.
+20. Open File Explorer and delete the contents of the **[Repository Root]\Mod13\Labfiles\Reports** and **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folders and then close File Explorer.
 
 
 ©2018 Microsoft Corporation. All rights reserved.
