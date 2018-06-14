@@ -11,7 +11,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1.	Click **Visual Studio 2017**.
+1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.	In the **Open Project** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.TypeInspector** folder, click **FourthCoffee.TypeInspector.sln**, and then click **Open**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
@@ -56,7 +56,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1.	Click **Visual Studio 2017**.
+1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.	In the **Open Project** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click **Open**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
@@ -87,12 +87,20 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1.	Click **Visual Studio 2017**.
+1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3. In the **Open Project** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.Core** folder, click **FourthCoffee.Core.sln**, and then click **Open**.
-4. In **Solution Explorer**, right-click the **FourthCoffee.Core** project, and then click **Open Folder in File Explorer**.
-5. In File Explorer, highlight the **FourthCoffeeKeyFile.snk** file that the Sn application generated.
-6. Switch to Visual Studio 2017.
+4  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
+    then select **Run as adiministrator**.
+5.  Paste the following command and then press **Enter**:
+    ```cs
+         cd [Repository Root]\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core
+    ```
+6.  Paste the following command and then press **Enter**:
+    ```cs
+         generateKeyFile.cmd
+    ```
+7. Switch to Visual Studio 2017.
 7. In **Solution Explorer**, right-click **FourthCoffee.Core**, and then click **Properties**.
 8. On the **Signing** tab, select **Sign the assembly**.
 9. In the **Choose a strong name key file** list, click **Browse**.
@@ -102,9 +110,9 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 13. In the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core** folder, right-click the **installAssemblyInGac.cmd** file, and then click **Edit**.
 14. In Notepad, view the **Gacutil** command.
 15. Close Notepad, and then close File Explorer.
-16. Switch to the **x64 Cross Tools Command Prompt for VS2017** window as administrator, and then run the **installAssemblyInGac** command. Verify that the command completes successfully.
+16. Switch back to **Developer Command Prompt for VS 2017** and then run the **installAssemblyInGac** command. Verify that the command completes successfully.
 17. Run the **verifyGacInstall** command, and then ensure that the number of items found equals one.
-18. Close the **x64 Cross Tools Command Prompt for VS2017** window.
+18. Close the **Developer Command Prompt for VS 2017** window.
 19. In Visual Studio, close the solution.
 
 ### Demonstration: Specifying the Data to Include in the Grades Report Lab
