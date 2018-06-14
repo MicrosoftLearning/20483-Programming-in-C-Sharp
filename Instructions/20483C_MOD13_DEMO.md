@@ -132,11 +132,11 @@
 1.  From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 1** folder, open the **Grades.sln** solution.
 2.  In **Solution Explorer**, right-click **Solutions ‘Grades’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then click **OK**.
-4.  Open **Windows Menu** and type **developer Command Prompt for VS 2017**, right click on the app
+4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
     then select **Run as adiministrator**.
 5.  Paste the following command and then press **Enter**:
     ```cs
-         cd [Repository Root]\Mod13\Labfiles\Solution\Exercise 1\Grades.Utilities
+         cd [Repository Root]\Allfiles\Mod13\Labfiles\Solution\Exercise 1\Grades.Utilities
     ```
 6.  Paste the following command and then press **Enter**:
     ```cs
@@ -148,7 +148,7 @@
 10.  Explain to the students that during Exercise 1, they will add the code in this method to encrypt the grade report.
 11.  Run the application, and then log on as **vallee** with the password **password99**.
 12. Generate grade reports for **George Li** and **Kevin Liu**. Save each report in the **[Repository Root]\Mod13\Labfiles\Reports** folder.
-13. Close the application, and then attempt to open one of the reports that you created in the previous step by using Windows Internet Explorer and Notepad to show the encrypted data.
+13. Close the application, and then attempt to open one of the reports that you created in the previous step by using Notepad to show the encrypted data.
 14. From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 2** folder, open the **Schools-Reports.sln** solution.
 15. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
 16. Explain to the students that during Exercise 2, they will add the code in this method to decrypt the reports.
