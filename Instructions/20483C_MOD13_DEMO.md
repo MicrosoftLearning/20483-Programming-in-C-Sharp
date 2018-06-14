@@ -131,7 +131,7 @@
 
 1.  From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 1** folder, open the **Grades.sln** solution.
 2.  In **Solution Explorer**, right-click **Solutions ‘Grades’**, and then click **Properties**.
-3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then click **OK**.
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**.
 4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
     then select **Run as adiministrator**.
 5.  Paste the following command and then press **Enter**:
@@ -153,7 +153,7 @@
 15. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
 16. Explain to the students that during Exercise 2, they will add the code in this method to decrypt the reports.
 17. Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the **CompositeReport** file in the **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folder.
-18. Close the application, and then close Visual Studio.
+18.Close the application, click Stop Debugging and then close Visual Studio.
 19. Open the composite report in the XPS Viewer and review the contents of the report.
 20. Open File Explorer and delete the contents of the **[Repository Root]\Mod13\Labfiles\Reports** and **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folders and then close File Explorer.
 
