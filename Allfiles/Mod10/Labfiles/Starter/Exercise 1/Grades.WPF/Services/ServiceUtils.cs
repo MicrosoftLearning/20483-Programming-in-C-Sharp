@@ -47,19 +47,19 @@ namespace Grades.WPF.Services
             return teacher;
         }
 
-        // TODO: Exercise 1: Task 3d: Convert GetStudentsByTeacher into an async method that invokes a callback
+        // TODO: Exercise 1: Task 3e: Convert GetStudentsByTeacher into an async method that invokes a callback
         public List<Student> GetStudentsByTeacher(string teacherName)
         {
             if (!IsConnected())
                 return null;
 
             // Fetch students by using the GradesService service
-            // TODO: Exercise 1: Task 3e: Perform the LINQ query to fetch Student data asynchronously
+            // TODO: Exercise 1: Task 3f: Perform the LINQ query to fetch Student data asynchronously
             var students = (from s in DBContext.Students
                             where s.Teacher.User.UserName == teacherName
                             select s).OrderBy(s => s.LastName).ToList();
 
-            // TODO: Exercise 1: Task 3f: Run the callback by using a new task rather than returning a list of students
+            // TODO: Exercise 1: Task 3g: Run the callback by using a new task rather than returning a list of students
             return students;
         }
 
