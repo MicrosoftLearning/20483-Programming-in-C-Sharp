@@ -99,7 +99,7 @@
 
 1.  Open the **GradesPrototype.sln** solution from the **[Repository Root]\\Mod08\\Labfiles\\Solution\\Exercise 3** folder.
 2.  In **Solution Explorer**, right-click **Solution ‘GradesPrototype’**, and then click **Properties**.
-3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **GradesPrototype** to **Start without debugging**, and then click **OK**.
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **GradesPrototype** to **Start**, and then click **OK**.
 4.  Rebuild the solution.
 5.  View the properties of the **Grades.Web** project and show the **Web** tab. Explain to the students that during Exercise 1, they will add this project to the solution and configure it as a data service.
 6.  In the **Grades.Web** project, in the **Services** folder, open **GradesWebDataService.svc**, and then explain to the students that during Exercise 1, they will set rules to indicate which entity sets and service operations are visible and add a new service operation to the class.
