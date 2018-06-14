@@ -237,12 +237,17 @@ namespace Grades.Utilities
                     }
                 }
 
-                // Release unmanaged resources here
-                if (this._word != null)
+                 try
                 {
-                    System.Runtime.InteropServices.Marshal.ReleaseComObject(this._word);
-                }
+                    // Release unmanaged resources here
+                    if (this._word != null)
+                    {
+                        System.Runtime.InteropServices.Marshal.ReleaseComObject(this._word);
+                    }
+                }catch(Exception ex)
+                {
 
+                }
                 this.isDisposed = true;
             }
         }
