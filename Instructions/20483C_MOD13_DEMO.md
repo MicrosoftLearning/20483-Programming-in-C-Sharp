@@ -154,7 +154,7 @@
 16. Explain to the students that during Exercise 2, they will add the code in this method to decrypt the reports.
 17. Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the **CompositeReport** file in the **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folder.
 18. Close the application, click Stop Debugging and then close Visual Studio.
-19. Open the composite report in the XPS Viewer and review the contents of the report.
+19. Open the composite report by double click on the file.
 20. Open File Explorer and delete the contents of the **[Repository Root]\Mod13\Labfiles\Reports** and **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folders and then close File Explorer.
 
 
