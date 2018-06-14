@@ -32,10 +32,10 @@ namespace Grades.WPF
         {
             ServiceUtils utils = new ServiceUtils();
 
-            // TODO: Exercise 1: Task 3g: Invoke GetStudentsByTeacher asychronously and pass the OnGetStudentsByTeacherComplete callback as the second argument
+            // TODO: Exercise 1: Task 3h: Invoke GetStudentsByTeacher asychronously and pass the OnGetStudentsByTeacherComplete callback as the second argument
             var students = utils.GetStudentsByTeacher(SessionContext.UserName);
 
-            // TODO: Exercise 1: Task 3b: Relocate the remaining code in this method to create the OnGetStudentsByTeacherComplete callback (in the Callbacks region)
+            // TODO: Exercise 1: Task 3c: Relocate the remaining code in this method to create the OnGetStudentsByTeacherComplete callback (in the Callbacks region)
             // Iterate through the returned set of students, construct a local student object list
             // and then data bind this to the list item template
             List<LocalStudent> resultData = new List<LocalStudent>();
@@ -50,7 +50,7 @@ namespace Grades.WPF
                 resultData.Add(student);
             }
 
-            // TODO: Exercise 1: Task 3c: Use a Dispatcher object to update the UI
+            // TODO: Exercise 1: Task 3d: Use a Dispatcher object to update the UI
             list.ItemsSource = resultData;
             txtClass.Text = String.Format("Class {0}", SessionContext.CurrentTeacher.Class);
  
