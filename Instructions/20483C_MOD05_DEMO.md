@@ -8,7 +8,8 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
-2. Navigate to **Allfiles\Mod05\Democode**, and then open the **BaseConstructors.sln** file.
+2. Navigate to **[Repository Root]\Allfiles\Mod05\Democode**, and then open the **BaseConstructors.sln** file.
+3. If any security warning window appears, click **OK**.
 
 #### Demonstration Steps
 
@@ -51,14 +52,14 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\\Mod05\\Labfiles\\Solution\\Exercise 3** folder.
+1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod05\Labfiles\Solution\Exercise 3** folder.
 2. In the **Data** folder, open **Grade.cs**, and locate the **User** class.
 3. Explain to the students that during Exercise 1 they will add this class and add the **UserName** and **Password** properties and the **VerifyPassword** method.
 4. Locate the **Student** class and explain to the students that during Exercise 1 they will modify this class to inherit from the new **User** class and to use the member implementations that it provides.
 5. Locate the **User** class again and explain to the students that during Exercise 2 they will add the abstract **SetPassword** method and use it from the set accessor of the **Password** property.
 6. In the **Student** class, locate the **SetPassword** property and explain to the students that they will add code here to override the abstract property in the **User** class to ensure that student passwords are at least six characters long.
 7. In the **Teacher** class, locate the **SetPassword** property and explain to the students that they will add code here to override the abstract property in the **User** class to ensure that teacher passwords contain at least two numeric characters and are at least eight characters long.
-8. In the **Controls** folder, open **ChangePasswordDialog.xaml.cs**, and locate the **ok_Click** method.
+8. In the **Controls** folder, open **ChangePasswordDialog.xaml**, and locate the **ok_Click** method.
 9. Explain to the students that during Exercise 2 they will add this code to call the appropriate implementation of the **SetPassword** method according to the role of the current user.
 10. In the **Services** folder, open **ClassFullException.cs**.
 11. Explain to the students that during Exercise 3 they will add **ClassName** property and custom constructors to this class.
