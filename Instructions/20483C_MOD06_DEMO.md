@@ -3,15 +3,14 @@
 # Lesson 1:  Reading and Writing Files
 
 ### Demonstration: Manipulating Files, Directories, and Paths
-### !!!__Lesson 3 demo steps were not imported from docx__!!! ###
 #### Preparation Steps
 
 Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 
 #### Demonstration Steps
 
-1. Open **Microsoft Visual Studio 2017**.
-2. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor**, and then open the **FourthCoffee.LogProcessor.sln** file.
+1. Open **Visual Studio 2017**.
+2. Navigate to **[Repository Root]\Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor**, and then open the **FourthCoffee.LogProcessor.sln** file.
 3. In **Visual Studio**, on the **View** menu, click **Task List**.
 4. In the **Task List** window, double-click the **TODO: 01: Ensure log file directory exists.** task.
 5. In the code editor, click the blank line below the comment, and then type the following code:
@@ -55,7 +54,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 19.	On the **Build** menu, click **Build Solution**.
 20.	On the **Debug** menu, click **Start Without Debugging**.
 21.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
-22.	Open **File Explorer** and browse to the **Allfiles\Mod06\Democode\Data\Logs** folder.
+22.	Open **File Explorer** and browse to the **[Repository Root]\Allfiles\Mod06\Democode\Data\Logs** folder.
 23.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
 24.	Close **Notepad**, close **File Explorer**, and then close **Visual Studio**.
 
@@ -70,9 +69,9 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1. Navigate to **Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
+1. Navigate to **[Repository Root]\Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
 2. Right-click **FourthCoffee.ExceptionLogger** project, and then select **Manage NuGet Packages**.
-3. In **NeGet: FourthCoffee.ExceptionLogger**, click **Browse**.
+3. In **NuGet: FourthCoffee.ExceptionLogger**, click **Browse**.
 4. Click the **Search** text box and type **Newtonsoft.Json**
 5. Select the result for **Newtonsoft.Json** and click in the left side of the **Install** window.
 6. Close the **Install** window.
@@ -83,7 +82,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
     using Newtonsoft.Json;
  ```
 10.	In the **Task List** window, double-click the **TODO: 02: Convert object to JSON string.** task.
-11.	In the code editor, click the blank line below the comment, and then type the following code:
+11.	In the code editor, At the end of the comment press **Enter**, and then type the following code:
  ```cs
     var jsonAsString = JsonConvert.SerializeObject(entry);
     File.WriteAllText(path,jsonAsString);
@@ -103,7 +102,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 19.	In the **Save Successful** message box, click **OK**. The exception entry has now been serialized.
 20.	Close the **Exception Logger** application.
 21.	Open **File Explorer** and browse to the **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions** folder.
-22.	In the **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions** folder, double-click the **Exception_\<date and time\>.json** file.  
+22.	In the **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions** folder, double-click the **Exception_\<date and time\>.json** file, If JSON file was not opening, then Right-click on the file and then open with Notepad.
 23.	In **Notepad**, find the **Title** and **Details** JSON elements.
 24.	Switch to **Visual Studio**, and on the **Debug** menu, click **Start Without Debugging**.
 25.	In the **Exception Logger** window, in the **File** list, click **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions\Exception_\<date and time\>.json**, and then click **Load**. The **ExceptionEntry** object has now been deserialized.
@@ -120,7 +119,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod06\Labfiles\Solution\Exercise 2** folder.
+1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod06\Labfiles\Solution\Exercise 2** folder.
 2. In the **Views** folder, open **StudentProfile.xaml** and verify that the user interface has been updated to include the **Save Report** button and the **Load Report** button.
 3. In the **Views** folder, open **StudentProfile.xaml.cs**, and locate the **SaveReport_Click** method.
 4. Explain to the students that during the lab they will add the code in this method to prompt the user for a file name to save the report as, and to call methods to generate, preview, and save the report.
