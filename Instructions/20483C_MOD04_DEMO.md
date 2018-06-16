@@ -62,7 +62,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1. From the **[Repository Root]\Mod04\Labfiles\Solution\Exercise 4** folder, open the **GradesPrototype.sln** solution.
+1. From the **[Repository Root]\Allfiles\Mod04\Labfiles\Solution\Exercise 4** folder, open the **GradesPrototype.sln** solution.
 2. In the **Data** folder, open **Grade.cs** and explain to the students that during Exercise 1 they will convert the structs that they created in the previous lab into the classes in this file.
 3. In the **Teacher** class, locate the **VerifyPassword** method and explain to the students that they will add this method to both the **Teacher** and **Student** classes to compare the password that the user enters with the password for that user that is currently held in the **DataSource.cs** class.
 4. In the **Data** folder, open **DataSource.cs**, and expand the **Sample Data** region.
@@ -75,7 +75,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 11. Explain to the students that during Exercise 4 they will add this code to enroll a student in a particular teacher’s class.
 12. Locate the **RemoveFromClass** method and explain to the students that they will add this code to remove a student from the user’s class.
 13. In the **Controls** folder, open **GradeDialog.xaml**, and then explain to the students that this dialog box is provided for them, but they will add code to take the data entered by the user and add it as a new grade for the student.
-14. In the **Views** folder, open **StudentProfile.xaml.cs**, locate the **AddGrade_Click** method, and explain to the students that they will add this code to take the data that the user enters in the **GradeDialog** dialog box and save it to the student’s list of grades. Remind them that the data validation code that they add in Exercise 2 will validate the user input here.
+14. In the **Views** folder,Expand **StudentProfile.xaml** and then open **StudentProfile.xaml.cs**, locate the **AddGrade_Click** method, and explain to the students that they will add this code to take the data that the user enters in the **GradeDialog** dialog box and save it to the student’s list of grades. Remind them that the data validation code that they add in Exercise 2 will validate the user input here.
 15. Run the application and log on as **vallee** with the password **password**.
 16. Click **New Student** and add a student named **Darren Parker** with the password **password**.
 17. Point out that the student now exists in the data source, but is not yet a member of Class 3C.
