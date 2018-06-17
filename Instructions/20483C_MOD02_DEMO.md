@@ -7,7 +7,8 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
-2. Navigate to **Allfiles/Mod02/Democode/Starter/FourthCoffee.MethodTestHarness**, and then open the **FourthCoffee.MethodTestHarness.sln** file.
+2. Navigate to **[Repository Root]Allfiles/Mod02/Democode/Starter/FourthCoffee.MethodTestHarness**, and then open the **FourthCoffee.MethodTestHarness.sln** file.
+    >**Note:** If any security warning appears, click **OK**.
 
 #### Demonstration Steps
 
@@ -50,12 +51,13 @@
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2. Initialize database:
     - In the **Apps list**, click **File Explorer**.
-    - In **File Explorer**, navigate to the **[Repository Root]\Mod02\Labfiles\Databases** folder, and then double-click **SetupSchoolDB.cmd**.
+    - In **File Explorer**, navigate to the **[Repository Root]\AllFiles\Mod02\Labfiles\Databases** folder, and then double-click **SetupSchoolDB.cmd**.
+        >**Note:** If a Windows protected your PC dialog appears, click More info and then click Run Anyway.
     - Close **File Explorer**.
 
 #### Demonstration Steps
 
-1.  From the **[Repository Root]\Mod02\Labfiles\Solution\Exercise 3** folder, open the **School.sln** solution.
+1.  From the **[Repository Root]\Allfiles\Mod02\Labfiles\Solution\Exercise 3** folder, open the **School.sln** solution.
 2.  Open **MainWindow.xaml.cs** and locate the **studentsList_KeyDown** method.
 3.  Explain to students that in Exercise 1 they will refactor the code that they added to this method in Lab 1 into separate methods that can be called from multiple locations.
 4.  Show students the refactored code in the **EditStudent**, **AddNewStudent**, and **RemoveStudent** methods.
