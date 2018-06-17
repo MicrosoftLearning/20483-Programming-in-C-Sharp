@@ -8,7 +8,7 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
-2. Navigate to **Allfiles\Mod13\Democode\FourthCoffee.MessageSafe**, and then open the **FourthCoffee.MessageSafe.sln** file.
+2. Navigate to **[Repository Root]\Allfiles\Mod13\Democode\FourthCoffee.MessageSafe**, and then open the **FourthCoffee.MessageSafe.sln** file.
 3. In **Solution Explorer**, expand **FourthCoffee.MessageSafe** project, double-click **App.config**.
 4. Locate the following line:
 ```xml
@@ -125,12 +125,14 @@
 2.  Initialize the database.
     -  In the **Apps** list, click **File Explorer**.
     -  In File Explorer, navigate to the **[Repository Root]\Allfiles\Mod13\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+    
+    >**NOTE :** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
     -  Close File Explorer.
 
 #### Demonstration Steps
 
 1.  From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 1** folder, open the **Grades.sln** solution.
-2.  In **Solution Explorer**, right-click **Solutions ‘Grades’**, and then click **Properties**.
+2.  In **Solution Explorer**, right-click Solution **‘Grades’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**.
 4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
     then select **Run as adiministrator**.
@@ -147,7 +149,7 @@
 9.  In the **Grades.Utilities** folder, open **WordWrapper.cs**, and then locate the **EncryptWithX509** method.
 10.  Explain to the students that during Exercise 1, they will add the code in this method to encrypt the grade report.
 11.  Run the application, and then log on as **vallee** with the password **password99**.
-12. Generate grade reports for **George Li** and **Kevin Liu**. Save each report in the **[Repository Root]\Mod13\Labfiles\Reports** folder.
+12. Generate grade reports for **George Li** and **Kevin Liu**. Save each report in the **[Repository Root]\AllFiles\\Mod13\Labfiles\Reports** folder.
 13. Close the application, and then attempt to open one of the reports that you created in the previous step by using Notepad to show the encrypted data.
 14. From the **[Repository Root]\Allfiles\Mod13\Labfiles\Solution\Exercise 2** folder, open the **Schools-Reports.sln** solution.
 15. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
