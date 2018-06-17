@@ -8,7 +8,7 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
-2. Navigate to **Allfiles\Mod10\Democode\Starter**, and then open the **APMTasks.sln** file.
+2. Navigate to **[Repository Root]\Allfiles\Mod10\Democode\Starter**, and then open the **APMTasks.sln** file.
 
 #### Demonstration Steps
 
@@ -51,7 +51,7 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos.(**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
-2. Navigate to **Allfiles\Mod10\Democode\Starter**, and then open the **Locking.sln** file.
+2. Navigate to **[Repository Root]\Allfiles\Mod10\Democode\Starter**, and then open the **Locking.sln** file.
 
 
 #### Demonstration Steps
@@ -84,11 +84,11 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1.  Open the Grades.sln solution from the **[Repository Root]\Mod10\Labfiles\Solution\Exercise 2** folder.
-2.  In Solution Explorer, right-click **Solutions ‘Grades’**, and then click **Properties**.
-3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start without debugging**, and then click **OK**.
+1.  Open the **Grades.sln** solution from the **[Repository Root]\Allfiles\Mod10\Labfiles\Solution\Exercise 2** folder.
+2.  In Solution Explorer, right-click **Solution ‘Grades’**, and then click **Properties**.
+3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**.
 4.  Build the solution.
-5.  In the **Grades.WPF** project, open **MainWindow.xaml.cs** and then locate the **Refresh** method.
+5.  In the **Grades.WPF** project, Expand **MainWindow.xaml** and then open **MainWindow.xaml.cs** and then locate the **Refresh** method.
 6.  Explain to the students that during Exercise 1, they will convert the **Refresh** method to an **async** method.
 7.  In the **Refresh** method, in the **case "Teacher"** block, locate the call to **utils.GetTeacher**.
 8.  Explain to the students that they will convert the **GetTeacher** method into an awaitable method, so that it waits for the method to return without blocking the UI thread.
@@ -98,7 +98,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
     -  Change the return type of the method from **Teacher** to **Task\<Teacher\>**.
     -  Use a task to run the LINQ query.
     -  Use an **await** operator to get the query result.
-11. In the **Views** folder, open **StudentsPage.xaml.cs**, and then locate the **Refresh** method.
+11. In the **Views** folder, Expand **StudentsPage.xaml** and then open **StudentsPage.xaml.cs**, and then locate the **Refresh** method.
 12. In the **Refresh** method, locate the call to **utils.GetStudentsByTeacher**.
 13. Explain to the students that they will convert the **GetStudentsByTeacher** method into an asynchronous method that uses a callback method to update the UI.
 14. On the statement that calls **utils.GetStudentsByTeacher**, right-click **GetStudentsByTeacher**, and then click **Go To Definition**.
@@ -122,7 +122,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 29. Run the application, and then log on as **vallee** with the password **password99**.
 30. Point out that the application displays the **BusyIndicator** control while waiting for the list of students to load.
 31. Click **Log off**, and then close the application.
-32. Close Visual Studio.
+32. Close **Visual Studio** and in Microsoft Visual Studio dialog box, click **Yes**.
 
 
 
