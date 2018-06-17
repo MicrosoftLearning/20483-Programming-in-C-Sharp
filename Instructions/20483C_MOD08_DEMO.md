@@ -28,7 +28,7 @@
  ```cs
     HttpWebRequest _request;
  ```
-10.	In the **Task List** window, double-click the **TODO: 03: Instantiate the***_request***object** task.
+10.	In the **Task List** window, double-click the **TODO: 03: Instantiate the _request object** task.
 11.	In the code editor, click in the blank line below the comment, and then type the following code:
  ```cs
     this._request = WebRequest.Create(
@@ -89,6 +89,7 @@
 2. Initialize the database:
    - In the **Apps list**, click **File Explorer**.
    - In **File Explorer**, navigate to the **[Repository Root]\Mod08\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+    >**Note:** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
    - Close **File Explorer**.
 3. Ensure that you have completed the following steps before starting working on this module:
    - Install **Microsoft.OData.ConnectedService.vsix** from **[Repository Root]\AllFiles\Assets**.
@@ -103,21 +104,21 @@
 4.  Rebuild the solution.
 5.  View the properties of the **Grades.Web** project and show the **Web** tab. Explain to the students that during Exercise 1, they will add this project to the solution and configure it as a data service.
 6.  In the **Grades.Web** project, in the **Services** folder, open **GradesWebDataService.svc**, and then explain to the students that during Exercise 1, they will set rules to indicate which entity sets and service operations are visible and add a new service operation to the class.
-7.  In **Solution Explorer**, in the **GradesPrototype** project, view the **Connected Services** folder.
+7.  In **Solution Explorer**, in the **Grades.Web** project, view the **Connected Services** folder.
 8.  Explain to the students that in Exercise 2, they will add a **OData Connected Service** to the data service so that the data is retrieved from the data service, not directly from the data source.
 9.  In **Solution Explorer**, in the **GradesPrototype** project, view the **DataModel** folder.
 10. Explain to the students that in Exercise 2, they will copy the partial classes from the original Entity Data Manager (EDM) into the client application because the partial types that are contained in them are not propagated by **OData Connected Service**.
 11. In the **GradesPrototype** project, in the **Services** folder, in **SessionContext.cs**, locate the **DBContext** declaration.
 12. Explain to the students that in Exercise 2, they will specify the URL of the **GradesWebDataService** data service here.
-13. In the **Views** folder, in **StudentsPage.xaml.cs**, locate the **Refresh** method, and then explain to the students that in Exercise 2, they will use eager loading to load related data.
-14. In the **Controls** folder, in **AssignStudentDialog.xaml.cs**, locate the **Student_Click** method, and then explain to the students that in Exercise 2, they will add code to the application to detect when student data has been changed.
+13. In the **Views** folder, expand **StudentsPage.xaml** and then open **StudentsPage.xaml.cs**, locate the **Refresh** method, and then explain to the students that in **Exercise 2**, they will use eager loading to load related data.
+14. In the **Controls** folder, expand **AssignStudentDialog.xaml** and then open **AssignStudentDialog.xaml.cs**, locate the **Student_Click** method, and then explain to the students that in **Exercise 2**, they will add code to the application to detect when student data has been changed.
 15. In **StudentsPage.xaml.cs**, locate the **ImageNameConverter** class, and then explain to the students that in Exercise 3, they will create this class and implement the **IValueConverter** interface.
 16. In **StudentsPage.xaml**, point out the **UserControl.Resources** element and the **Image** element, and then explain to the students that in Exercise 3, they will bind **Image** controls to the images of students to display them in the UI.
-17. Run the application, log on as **vallee** with a password of **password88**, and then point out to students that the students list now includes images.
+17. Run the application, log on as **vallee** with a password of **password99**, and then point out to students that the students list now includes images.
 18. View a student’s profile and point out that this also includes an image.
 19. Remove a student from the class and then enroll that student again to show images in the **Assign Student** dialog box and for new students who are added to a class.
 20. Click **Log off**, and then close the application.
-21. Close Visual Studio.
+21. On **Debug menu**, click **Stop Debugging** and then close Visual Studio.
 
 
 
