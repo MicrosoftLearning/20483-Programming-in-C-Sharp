@@ -7,6 +7,7 @@
 #### Preparation Steps
 
 Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
+    >**Note:** If any security warning appears, click **OK**.
 
 #### Demonstration Steps
 
@@ -16,7 +17,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 4. In the **Name** text box, type **ValuesAndReferences**
 5. In the **Location** text box, set the location to **[Repository Root]\Allfiles\Mod04\Democode**, and then click **OK**.
 6. Within the **ValuesAndReferences** namespace, add the following code:
-```cs
+    ```cs
     struct MyStruct
     {
        public int Contents;
@@ -28,9 +29,9 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
     {
        public int Contents = 0;
     }
-```
+    ```
 8.	Within the **Program** class, within the **Main** method, add the following code:
-```cs
+    ```cs
     MyStruct struct1 = new MyStruct();
     MyStruct struct2 = struct1;
     struct2.Contents = 100;
@@ -41,12 +42,12 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
     Console.WriteLine($"Value types: {struct1.Contents}, {struct2.Contents}");
     Console.WriteLine($"Reference types: {class1.Contents}, {class2.Contents}");
-```
+    ```
 9.  On the **Debug** menu, click **Start without Debugging**. The console window shows the following output:
-```cs
+    ```cs
     Value types: 0, 100
     Reference types: 100, 100
-   ```
+    ```
 10.	To close the console window, press Enter.
 11.	Close Visual Studio 2017.
 
