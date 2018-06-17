@@ -28,6 +28,7 @@
 12.  Press F11. Note that the debugger steps into the default constructor for the **Beverage** class.
 13.  Point out that derived class constructors implicitly call the default base class constructor unless you specify an alternative base class constructor.
 14.  Press F11 six times, until the debugger returns to the default constructor for the **Coffee** class.
+      >**Note:** If  **Microsoft Visual Studio** windows appears, press **No** and continue with F11.
 15.  Point out that the base class constructor logic is run before the derived class constructor logic.
 16.  Press F11 six times, until the debugger returns to the **Program** class.
 17.  Press F11. The second executable line of code in the **Program** class is highlighted.
