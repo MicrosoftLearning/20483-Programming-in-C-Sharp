@@ -13,7 +13,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.	In the **Open Project** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.TypeInspector** folder, click **FourthCoffee.TypeInspector.sln**, and then click **Open**.
+3.	In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.TypeInspector** folder, click **FourthCoffee.TypeInspector.sln**, and then click **Open**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
 5.	In the **Task List** window, double-click the **TODO: 01: Bring the System.Reflection namespace into scope** task.
 6.	In the code editor, click in the blank line below the comment, and then type the following code:
@@ -40,7 +40,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 15.	On the **Build** menu, click **Build Solution**.
 16.	On the **Debug** menu, click **Start Without Debugging**.
 17.	In the **Fourth Coffee Type Inspector** application, click **Load Assembly**.
-18.	In the **Open** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.TypeInspector\FourthCoffee.Core\bin\Debug** folder, click **FourthCoffee.Core.dll**, and then click **Open**. The **Types** list now contains a list of all of the types that the assembly exposes.
+18.	In the **Open** dialog box, browse to the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.TypeInspector\FourthCoffee.Core\bin\Debug** folder, click **FourthCoffee.Core.dll**, and then click **Open**. The **Types** list now contains a list of all of the types that the assembly exposes.
 19.	In the **Types** list, click **FourthCoffee.Core.Encryptor**, and then click **Inspect Type**. The **Members** list now shows all of the methods that the type exposes.
 20.	Close **Fourth Coffee Type Inspector**.
 21.	In Visual Studio, close the solution.
@@ -58,7 +58,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.	In the **Open Project** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click **Open**.
+3.	In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click **Open**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
 5.	In the **Task List** window, double-click the **TODO: 01: Invoke the Type.GetCustomAttribute method** task.
 6.	In the code editor, click in the blank line below the comment, and then type the following code:
@@ -89,12 +89,12 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
-3. In the **Open Project** dialog box, browse to the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.Core** folder, click **FourthCoffee.Core.sln**, and then click **Open**.
-4  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
+3. In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\\Mod12\Democode\Starter\FourthCoffee.Core** folder, click   **FourthCoffee.Core.sln**, and then click **Open**.
+4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
     then select **Run as adiministrator**.
 5.  Paste the following command and then press **Enter**:
     ```cs
-         cd [Repository Root]\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core
+         cd [Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core
     ```
 6.  Paste the following command and then press **Enter**:
     ```cs
@@ -107,12 +107,15 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 10. In the **Select File** dialog box, click **FourthCoffeeKeyFile.snk**, and then click **Open**.
 11. On the **Build** menu, click **Build Solution**.
 12. Switch to File Explorer.
-13. In the **[Repository Root]\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core** folder, right-click the **installAssemblyInGac.cmd** file, and then click **Edit**.
+13. In the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core** folder, right-click the **installAssemblyInGac.cmd** file, and then click **Edit**.
+
+    >**NOTE :** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
+    
 14. In Notepad, view the **Gacutil** command.
 15. Close Notepad, and then close File Explorer.
 16. Switch back to **Developer Command Prompt for VS 2017** and then run the **installAssemblyInGac** command. Verify that the command completes successfully.
 17. Run the **verifyGacInstall** command, and then ensure that the number of items found equals one.
-18. Close the **Developer Command Prompt for VS 2017** window.
+18. Close the **Administrator: Developer Command Prompt for VS 2017** window.
 19. In Visual Studio, close the solution.
 
 ### Demonstration: Specifying the Data to Include in the Grades Report Lab
@@ -123,7 +126,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 #### Demonstration Steps
 
-1.  Open the **Grades.sln** solution from the **[Repository Root]\Mod12\Labfiles\Solution\Exercise 2** folder.
+1.  Open the **Grades.sln** solution from the **[Repository Root]\AllFiles\Mod12\Labfiles\Solution\Exercise 2** folder.
 2.  In the **Grades.Utilities** project, open **IncludeInReport.cs**.
 3.  Locate the **IncludeInReportAttribute** class definition, and then explain to the students that in Exercise 1, they will make this class an attribute class and define its members.
 4.  In the **Grades.WPF** project, open **Data.cs**.
@@ -132,7 +135,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 7.  Locate the **FormatField** struct, and then explain to the students that in Exercise 2, they will define this struct to specify the formatting to apply to an item.
 8.  In the **IncludeProcessor** class, locate the **GetItemsToInclude** method.
 9.  Explain to the students that they will add code to this method to find all of the public fields and properties in the **dataForReport** object and process each item that is tagged with the **IncludeInReport** attribute to format it correctly and include it in the report.
-10. In the **Grades.WPF** project, in the **Views** folder, open **StudentProfile.xaml.cs**.
+10. In the **Grades.WPF** project, in the **Views** folder, expend **StudentProfile.xaml** and open **StudentProfile.xaml.cs**.
 11. Locate the **GenerateStudentReport** method, and then explain to the students that they add code to this method to use the **IncludeProcessor** class to determine which fields in the **Grade** object are tagged with the **IncludeInReport** attribute, format them appropriately, and include them in the report.
 12. Explain to the students that they will use the **Strong Name** tool to generate a key pair and sign the **Grades.Utilities** assembly with the key pair and then host the assembly in the GAC.
 13. Finally, they will generate a report and check that the correct properties are included in the report and the formatting is correctly applied.
