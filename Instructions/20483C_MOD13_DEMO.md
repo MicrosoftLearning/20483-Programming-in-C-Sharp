@@ -14,7 +14,7 @@
 ```xml
    <add key="EncryptedFilePath" value="[Repository Root]\Allfiles\Mod13\Democode\Data"/>
 ```
-5. Replace **[Repository Root]** with your **Repository Pash**.
+5. Replace **[Repository Root]** with your **Repository Path**.
 
 #### Demonstration Steps
 
@@ -46,9 +46,9 @@
    >**Note:** The **KeySize** property returns the size of the key in bits, so to get the value in bytes, you divide the value by 8.
 10.	Double-click the **TODO: 05: Generate the IV by using the Rfc2898DeriveBytes object** task.
 11.	Explain that the following code uses the **Rfc2898DeriveBytes** object to derive the IV by using the algorithm’s block size in bytes.
-```cs
+    ```cs
     return passwordHash.GetBytes(this._algorithm.BlockSize / 8);
-```
+    ```
     >**Note:** The **BlockSize** property returns the size of the block in bits, so to get the value in bytes, you divide the value by 8.
 12.	Double-click the **TODO: 06: Create a new MemoryStream object** task.
 13.	Explain that the following code creates an instance of the **MemoryStream** class, which will be used as a buffer for the transformed data.
@@ -105,7 +105,7 @@
 32.	In the **Fourth Coffee Message Safe** application, in the **Password** text box, type **Pa$$w0rd**.
 33.	In the **Message** text box, type **This is my secure message**, and then click **Save**.
 34.	Close the **Fourth Coffee Message Safe** application.
-35.	Open File Explorer and browse to the **Allfiles\Mod13\Democode\Data** folder.
+35.	Open File Explorer and browse to the **[Repository Root]\Allfiles\Mod13\Democode\Data** folder.
 36.	Double-click **protected_message.txt**, and then view the encrypted text in Notepad.
 37.	Close Notepad, and then close File Explorer.
 38.	In Visual Studio, on the **Debug** menu, click **Start Without Debugging**.
@@ -124,7 +124,7 @@
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2.  Initialize the database.
     -  In the **Apps** list, click **File Explorer**.
-    -  In File Explorer, navigate to the **[Repository Root]\Mod13\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+    -  In File Explorer, navigate to the **[Repository Root]\Allfiles\Mod13\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
     -  Close File Explorer.
 
 #### Demonstration Steps
@@ -149,13 +149,13 @@
 11.  Run the application, and then log on as **vallee** with the password **password99**.
 12. Generate grade reports for **George Li** and **Kevin Liu**. Save each report in the **[Repository Root]\Mod13\Labfiles\Reports** folder.
 13. Close the application, and then attempt to open one of the reports that you created in the previous step by using Notepad to show the encrypted data.
-14. From the **[Repository Root]\Mod13\Labfiles\Solution\Exercise 2** folder, open the **Schools-Reports.sln** solution.
+14. From the **[Repository Root]\Allfiles\Mod13\Labfiles\Solution\Exercise 2** folder, open the **Schools-Reports.sln** solution.
 15. Open **WordWrapper.cs**, and then locate the **DecryptWithX509** method.
 16. Explain to the students that during Exercise 2, they will add the code in this method to decrypt the reports.
-17. Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the **CompositeReport** file in the **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folder.
+17. Run the application, and then print a composite report that contains the two reports that you generated earlier. Save the **CompositeReport** file in the **[Repository Root]\Allfiles\Mod13\Labfiles\Reports\ClassReport** folder.
 18. Close the application, click Stop Debugging and then close Visual Studio.
 19. Open the composite report by double click on the file.
-20. Open File Explorer and delete the contents of the **[Repository Root]\Mod13\Labfiles\Reports** and **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folders and then close File Explorer.
+20. Open File Explorer and delete the contents of the **[Repository Root]\Allfiles\Mod13\Labfiles\Reports** and **[Repository Root]\Mod13\Labfiles\Reports\ClassReport** folders and then close File Explorer.
 
 
 ©2018 Microsoft Corporation. All rights reserved.
