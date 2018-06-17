@@ -23,7 +23,7 @@
 7.  In **Solution Explorer**, double-click **Program.cs** and review the contents of the class.
 8.  Note that the **Program** class creates two instances of the **Coffee** type: one by using the default constructor, and one by using the alternative constructor.
 9.  On the **Build** menu, click **Rebuild Solution**.
-10.  Press F11 twice so that the first line of executable code in the **Program**class is highlighted.
+10.  Press F11 twice so that the first line of executable code in the **Program** class is highlighted.
 11.  Press F11. Note that the debugger steps into the default constructor for the **Coffee** class.
 12.  Press F11. Note that the debugger steps into the default constructor for the **Beverage** class.
 13.  Point out that derived class constructors implicitly call the default base class constructor unless you specify an alternative base class constructor.
