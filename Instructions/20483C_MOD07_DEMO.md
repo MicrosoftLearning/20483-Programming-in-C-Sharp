@@ -12,31 +12,33 @@
 #### Demonstration Steps
 
 1.  Navigate to the **[Repository Root]\Allfiles\Mod07\Democode\Databases** folder, and then double-click **SetupFourthCoffeeDB.cmd**.
+    >**Note:** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
 2. Locate **[Repository Root]\Allfiles\Mod07\Democode\Databases** folder again, right-click **FourthCoffee.sql**, point to **Open With**, click **Microsoft Visual Studio Version Selector**, then click **Open**.
 3. Review the SQL query.
 4. On the **File** menu, click **Close**.
-4.  On the **File** menu, point to **New**, and then click **Project**.
-5.  In the **New Project** dialog box, expand **Templates**, click **Visual C\#**, and then in the **Template** list, click **Console App(.NET Framework)**.
-6.  In the **Name** text box, type **FourthCoffee.Employees**, in the **Location** text box, type **[Repository Root]\Mod07\Democode\Demo1\Starter**, and then click **OK**.
-7.  In **Solution Explorer**, right-click **FourthCoffee.Employees**, point to **Add**, and then click **New Item**.
-8.  In the **Add New Item – FourthCoffee.Employees** dialog box, click **ADO.NET Entity Data Model**, in the **Name** text box, type **FourthCoffeeEmployeesModel**, and then click **Add**.
-9.  In **Entity Data Model Wizard**, on the **Choose Model Contents** page, click **EF Designer from database**, and then click **Next**.
-10.  On the **Choose Your Data Connection** page, click **New Connection**.
-11. In the **Server name** text box, type **.\sqlexpress**, in the **Select or enter a database name** list, click **FourthCoffee**, and then click **OK**.
-12.  In **Entity Data Model Wizard**, on the **Choose Your Data Connection** page, click **Next**.
-13. In the **Choose Your Version** page, choose **Entity Framework 6.x** and then click **Next**.
-14.  On the **Choose Your Database Objects and Settings** page, expand **Tables**, expand **dbo**, select **Branches**, **Employees**, and **JobTitles**, and then click **Finish**.
-15. If a **Security Warning** dialog box appears, select **Do not show this message again**, and then click **OK**.
-16. On the **Build** menu, click **Build Solution**.
-17. Review the three entities that have been generated and the associations between them.
-18. Right-click the designer surface, and then click **Mapping Details**.
-19. In the **Designer** pane, click **Employee**.
-20. In the **Mapping Details** pane, review the mappings between the entity and the data source.
-21. In **Solution Explorer**, expand **FourthCoffeeEmployeesModel.edmx**, expand **FourthCoffeeEmployeesModel.Context.tt**, and then double-click **FourthCoffeeEmployeesModel.Context.cs**.
-22. In the code editor, review the code in the **FourthCoffeeEntities** partial class.
-23. In **Solution Explorer**, expand **FourthCoffeeEmployeesModel.tt**, and then double-click **Employee.cs**.
-24. Review the **Employee** partial class and the properties that have been generated.
-25.	Leave the solution open so that you can refer to it in the following topics. 
+5.  On the **File** menu, point to **New**, and then click **Project**.
+6.  In the **New Project** dialog box, expand **Templates**, click **Visual C\#**, and then in the **Template** list, click **Console App(.NET Framework)**.
+7.  In the **Name** text box, type **FourthCoffee.Employees**, in the **Location** text box, type **[Repository Root]\Allfiles\Mod07\Democode\Demo1\Starter**, and then click **OK**.
+8.  In **Solution Explorer**, right-click **FourthCoffee.Employees**, point to **Add**, and then click **New Item**.
+9.  In the **Add New Item – FourthCoffee.Employees** dialog box, click **ADO.NET Entity Data Model**, in the **Name** text box, type **FourthCoffeeEmployeesModel**, and then click **Add**.
+10.  In **Entity Data Model Wizard**, on the **Choose Model Contents** page, click **EF Designer from database**, and then click **Next**.
+11. On the **Choose Your Data Connection** page, click **New Connection**.
+12. On the **Choose Data Source page**, Select **Microsoft SQL Server** and then click **OK**.
+13. In the **Server name** text box, type **.\sqlexpress**, in the **Select or enter a database name** list, click **FourthCoffee**, and then click **OK**.
+14.  In **Entity Data Model Wizard**, on the **Choose Your Data Connection** page, click **Next**.
+15. In the **Choose Your Version** page, choose **Entity Framework 6.x** and then click **Next**.
+16.  On the **Choose Your Database Objects and Settings** page, expand **Tables**, expand **dbo**, select **Branches**, **Employees**, and **JobTitles**, and then click **Finish**.
+17. If a **Security Warning** dialog box appears, select **Do not show this message again**, and then click **OK**.
+18. On the **Build** menu, click **Build Solution**.
+19. Review the three entities that have been generated and the associations between them.
+20. Right-click the designer surface, and then click **Mapping Details**.
+21. In the **Designer** pane, click **Employee**.
+22. In the **Mapping Details** pane, review the mappings between the entity and the data source.
+23. In **Solution Explorer**, expand **FourthCoffeeEmployeesModel.edmx**, expand **FourthCoffeeEmployeesModel.Context.tt**, and then double-click **FourthCoffeeEmployeesModel.Context.cs**.
+24. In the code editor, review the code in the **FourthCoffeeEntities** partial class.
+25. In **Solution Explorer**, expand **FourthCoffeeEmployeesModel.tt**, and then double-click **Employee.cs**.
+26. Review the **Employee** partial class and the properties that have been generated.
+27.	Leave the solution open so that you can refer to it in the following topics. 
 
 
 
@@ -119,7 +121,8 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2. Initialize database:
     - In the **Apps list**, click **File Explorer**.
-    - In **File Explorer**, navigate to the **[Repository Root]\Mod07\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+    - In **File Explorer**, navigate to the **[Repository Root]\Allfiles\Mod07\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+        >**Note:** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
     - Close **File Explorer**.
 
 
@@ -141,7 +144,7 @@ by clicking on **Add New Database** button.
 7.  In the **Grades.DataModel** project, open **GradesModel.edmx**.
 8.  Explain to the students that during Exercise 1, they will generate this model from an existing database.
 9.  Briefly describe the entities and relationships that are shown in the diagram.
-10.  In the **GradesPrototype** project, in the **Views** folder, open **StudentProfile.xaml.cs**, and then locate the **Refresh** method.
+10.  In the **GradesPrototype** project, in the **Views** folder, Expand **StudentProfile.xaml.cs**, and then locate the **Refresh** method.
 11.  Explain to the students that during Exercise 2, they will add code to find all of the grades for the current student and display them in the **studentGrades ItemsControl** control.
 12.  Locate the **Convert** method in the **SubjectConverter** class.
 13.  Explain to the students that during Exercise 2, they will add this code to convert the subject ID that is stored in the grade assigned to a student in the database into a subject name.
