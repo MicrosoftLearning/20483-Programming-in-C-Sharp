@@ -46,9 +46,9 @@ Finally, you will run the application to verify that your code functions as expe
 
 #### Task 1: Detect whether the user has pressed the Enter key
 
-1.  Start File Explorer, navigate to the **[Repository Root]\\Mod01\\Labfiles\\Databases** folder, and then run **SetupSchoolDB.cmd**.
+1.  Start File Explorer, navigate to the **[Repository Root]\\Allfiles\\Mod01\\Labfiles\\Databases** folder, and then run **SetupSchoolDB.cmd**.
 2.  Close File Explorer.
-3.  Start Visual Studio and from the **[Repository Root]\\Mod01\\Labfiles\\Starter\\Exercise1** folder, open the **School.sln** solution.
+3.  Start Visual Studio and from the **[Repository Root]\\Allfiles\\Mod01\\Labfiles\\Starter\\Exercise1** folder, open the **School.sln** solution.
 4.  In the code for the **MainWindow.xaml.cs** window, find the **studentsList_KeyDown** method.
 5.  In this method, add a **switch** statement to detect whether the user has pressed Enter.  
     The second argument passed to this method is a **KeyEventArgs** object named **e**. This object has a **Key** property which returns the keyboard key
@@ -145,7 +145,7 @@ Finally, you will run the application to verify that your code functions as expe
 
 #### Task 1: Add logic to the key down method to detect if the Insert key has been pressed
 
-1.	In Visual Studio, from the **[Repository Root]\Mod01\Labfiles\Starter\Exercise 2** folder, open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Allfiles\Mod01\Labfiles\Starter\Exercise 2** folder, open the **School.sln** solution.
 2.	In the code for the **MainWindow.xaml.cs** window, locate the **studentsList_KeyDown** method.
 3.	In this method, add a statement to detect whether the user has pressed Insert.
 
