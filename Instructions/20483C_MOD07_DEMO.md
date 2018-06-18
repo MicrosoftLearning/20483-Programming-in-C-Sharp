@@ -144,7 +144,7 @@ by clicking on **Add New Database** button.
 7.  In the **Grades.DataModel** project, open **GradesModel.edmx**.
 8.  Explain to the students that during Exercise 1, they will generate this model from an existing database.
 9.  Briefly describe the entities and relationships that are shown in the diagram.
-10.  In the **GradesPrototype** project, in the **Views** folder, Expand **StudentProfile.xaml.cs**, and then locate the **Refresh** method.
+10.  In the **GradesPrototype** project, in the **Views** folder, Expand **StudentProfile.xaml** then open **StudentProfile.xaml.cs**, and locate the **Refresh** method.
 11.  Explain to the students that during Exercise 2, they will add code to find all of the grades for the current student and display them in the **studentGrades ItemsControl** control.
 12.  Locate the **Convert** method in the **SubjectConverter** class.
 13.  Explain to the students that during Exercise 2, they will add this code to convert the subject ID that is stored in the grade assigned to a student in the database into a subject name.
