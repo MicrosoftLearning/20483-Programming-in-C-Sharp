@@ -60,7 +60,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 5. Locate the **User** class again and explain to the students that during Exercise 2 they will add the abstract **SetPassword** method and use it from the set accessor of the **Password** property.
 6. In the **Student** class, locate the **SetPassword** property and explain to the students that they will add code here to override the abstract property in the **User** class to ensure that student passwords are at least six characters long.
 7. In the **Teacher** class, locate the **SetPassword** property and explain to the students that they will add code here to override the abstract property in the **User** class to ensure that teacher passwords contain at least two numeric characters and are at least eight characters long.
-8. In the **Controls** folder, open **ChangePasswordDialog.xaml**, and locate the **ok_Click** method.
+8. In the **Controls** folder, expand **ChangePasswordDialog.xaml**, open **ChangePasswordDialog.xaml.cs** and locate the **ok_Click** method
 9. Explain to the students that during Exercise 2 they will add this code to call the appropriate implementation of the **SetPassword** method according to the role of the current user.
 10. In the **Services** folder, open **ClassFullException.cs**.
 11. Explain to the students that during Exercise 3 they will add **ClassName** property and custom constructors to this class.
