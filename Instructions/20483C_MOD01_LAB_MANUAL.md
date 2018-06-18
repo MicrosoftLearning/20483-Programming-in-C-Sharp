@@ -130,7 +130,7 @@ Finally, you will run the application to verify that your code functions as expe
 >**Result :** After completing this exercise, users will be able to edit the details of a student.
 
 
-### Exercise : Implementing Insert Functionality for the Students List
+### Exercise 2: Implementing Insert Functionality for the Students List
 
 #### Scenario
 
@@ -205,7 +205,7 @@ Finally, you will run the application to verify that your code functions as expe
 
 #### Task 1: Add logic to the key down method to detect if the Delete key has been pressed
 
-1.	In Visual Studio, from the **[Repository Root]\Mod01\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Allfiles\Mod01\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
 2.	In the code for the **MainWindow.xaml.cs** window, find the **studentsList_KeyDown** method. 
 3.	In this method, add a statement to detect whether the user has pressed the Delete key. 
 
@@ -249,7 +249,7 @@ Then you will run the application to verify that the **Age** column now displays
 
 #### Task 1: Examine the MainWindow XAML
 
-1.	In Visual Studio, from the **[Repository Root]\Mod01\Labfiles\Starter\Exercise 4** folder, open the **School.sln** solution.
+1.	In Visual Studio, from the **[Repository Root]\Allfiles\Mod01\Labfiles\Starter\Exercise 4** folder, open the **School.sln** solution.
 2.	Build the solution. 
 3.	View the **MainWindow.xaml** code. 
 4.	Note how the **Age** column in **GridView** uses databinding with a value converter (**AgeConverter**).
