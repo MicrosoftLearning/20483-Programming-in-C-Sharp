@@ -135,7 +135,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 7.  Locate the **FormatField** struct, and then explain to the students that in Exercise 2, they will define this struct to specify the formatting to apply to an item.
 8.  In the **IncludeProcessor** class, locate the **GetItemsToInclude** method.
 9.  Explain to the students that they will add code to this method to find all of the public fields and properties in the **dataForReport** object and process each item that is tagged with the **IncludeInReport** attribute to format it correctly and include it in the report.
-10. In the **Grades.WPF** project, in the **Views** folder, expend **StudentProfile.xaml** and open **StudentProfile.xaml.cs**.
+10. In the **Grades.WPF** project, in the **Views** folder, Expand **StudentProfile.xaml** and then open **StudentProfile.xaml.cs**.
 11. Locate the **GenerateStudentReport** method, and then explain to the students that they add code to this method to use the **IncludeProcessor** class to determine which fields in the **Grade** object are tagged with the **IncludeInReport** attribute, format them appropriately, and include them in the report.
 12. Explain to the students that they will use the **Strong Name** tool to generate a key pair and sign the **Grades.Utilities** assembly with the key pair and then host the assembly in the GAC.
 13. Finally, they will generate a report and check that the correct properties are included in the report and the formatting is correctly applied.
