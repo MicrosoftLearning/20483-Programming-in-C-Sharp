@@ -10,12 +10,13 @@
 2. Initialize database:
     - In the **Apps list**, click **File Explorer**.
     - In **File Explorer**, navigate to the **[Repository Root]\AllFiles\Mod01\Labfiles\Databases** folder, and then double-click **SetupSchoolDB.cmd**.
-    - If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
+        >**Note:** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
     - Close **File Explorer**.
 
 #### Demonstration Steps
 
 1. From the **[Repository Root]\AllFiles\Mod01\Labfiles\Solution\Exercise 4** folder, open the **School.sln** solution.
+    >**Note:** If any security warning appears, click **OK**.
 2. Run the application, select a student name, and then press Enter to edit that student’s details.
 3. Update the **First Name** and **Last Name** text boxes to contain your name, and then click **OK**. Point out to students that this has updated the information in the main application window.
 4. Press **Insert**. Enter information for a new student (ensuring that you type a valid date of birth in the following format: mm/dd/yyyy), and then click **OK**.
