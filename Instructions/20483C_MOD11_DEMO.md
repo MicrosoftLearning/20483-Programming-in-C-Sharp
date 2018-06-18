@@ -13,11 +13,12 @@
 
 #### Demonstration Steps
 
-1.  In **Solution Explorer**, right-click the **FourthCoffee.ExceptionLogger** project, and then click Add and then click **Reference**.
+1.  In **Solution Explorer**, right-click the **FourthCoffee.ExceptionLogger** project, and then click **Add** and then click **Reference**.
 2.	In the **Reference Manager – FourthCoffee.ExceptionLogger** dialog box, perform the following steps, and then click **OK**:
     -	Expand **COM**, and then click **Type Libraries**.
     -	In the **Search** text box, type **Word**.
-    -	In the assembly list, select **Microsoft Word 14.0 Object Library**, and then select the **Microsoft Word 14.0 Object Library** check box.
+    -	In the assembly list, select **Microsoft Word [Version Number] Object Library**, and then select the **Microsoft Word [Version Number] Object Library** check box.
+    >**Note :** [Version Number] can be greater than 14.
 3.	In Visual Studio, on the **View** menu, click **Task List**.
 4.	In the **Task List** window, double-click the **TODO: 01: Bring the Microsoft.Office.Interop.Word namespace into scope.** task.
 5.	In the code editor, click in the blank line below the comment, and then type the following code:
