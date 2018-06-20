@@ -14,7 +14,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.	In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.TypeInspector** folder, click **FourthCoffee.TypeInspector.sln**, and then click **Open**.
-        >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+       >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
 5.	In the **Task List** window, double-click the **TODO: 01: Bring the System.Reflection namespace into scope** task.
 6.	In the code editor, click in the blank line below the comment, and then type the following code:
@@ -60,7 +60,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.	In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.MetadataExtractor** folder, click **FourthCoffee.MetadataExtractor.sln**, and then click **Open**.
-        >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+       >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.	In Visual Studio, on the **View** menu, click **Task List**.
 5.	In the **Task List** window, double-click the **TODO: 01: Invoke the Type.GetCustomAttribute method** task.
 6.	In the code editor, click in the blank line below the comment, and then type the following code:
@@ -92,7 +92,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3. In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\\Mod12\Democode\Starter\FourthCoffee.Core** folder, click   **FourthCoffee.Core.sln**, and then click **Open**.
-        >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+       >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
     then select **Run as adiministrator**.
 5.  Paste the following command and then press **Enter**:
@@ -112,7 +112,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 12. Switch to File Explorer.
 13. In the **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core** folder, right-click the **installAssemblyInGac.cmd** file, and then click **Edit**.
 
-    >**NOTE :** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
+    >**Note :** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
     
 14. In Notepad, view the **Gacutil** command.
 15. Close Notepad, and then close File Explorer.
@@ -130,7 +130,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 #### Demonstration Steps
 
 1.  Open the **Grades.sln** solution from the **[Repository Root]\AllFiles\Mod12\Labfiles\Solution\Exercise 2** folder.
-        >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+       >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2.  In the **Grades.Utilities** project, open **IncludeInReport.cs**.
 3.  Locate the **IncludeInReportAttribute** class definition, and then explain to the students that in Exercise 1, they will make this class an attribute class and define its members.
 4.  In the **Grades.WPF** project, open **Data.cs**.
