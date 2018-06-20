@@ -42,7 +42,7 @@ Finally, you will run the application and verify that the appropriate views are 
 
 #### Task 1: Examine the window and views in the application
 
-1.  Start **Microsoft Visual Studio** and open the **GradesPrototype.sln** solution from the **[Repository Root]\\Mod03\\Labfiles\\Starter\\Exercise 1** folder.
+1.  Start **Microsoft Visual Studio** and open the **GradesPrototype.sln** solution from the **[Repository Root]\\Allfiles\\Mod03\\Labfiles\\Starter\\Exercise 1** folder.
 2.  Build the solution.
 3.  Review **MainWindow.xaml**, which is the main window for the application and will host the following views:
    -	LogonPage.xaml
@@ -105,7 +105,7 @@ Finally, you will run the application and verify that the appropriate views are 
 ![alt text](./Images/20483C_03_StudentProfileKevinLiu.png "The Student Profile page")
 
 6.	Log off the application.
-7. Log on as the student, **grubere**, with **password** as the password.
+7. Log on as the student, **Gruber**, with **password** as the password.
 8. Verify that the application displays the student profile page for Eric Grubere.
 9. Close the application and then close the solution.
 
@@ -120,7 +120,7 @@ In this exercise, you will define basic structs that will hold the teacher, stud
 
 #### Task 1: Define basic structs for holding Grade, Student, and Teacher information
 
-1. Open the **GradesPrototype** solution from the **[Repository Root]\Mod03\Labfiles\Starter\Exercise 2** folder.
+1. Open the **GradesPrototype** solution from the **[Repository Root]\Allfiles\Mod03\Labfiles\Starter\Exercise 2** folder.
 
 2.  In the **Data** folder, open **Grade.cs**.
 
@@ -171,7 +171,7 @@ Finally, you will run the application and verify that only valid users can log o
 
 #### Task 1: Add the LogonFailed event
 
-1.  Open the **GradesPrototype** solution from the **[Repository Root]\Mod03\Labfiles\Starter\Exercise 3** folder.
+1.  Open the **GradesPrototype** solution from the **[Repository Root]\Allfiles\Mod03\Labfiles\Starter\Exercise 3** folder.
 2.  In the **LogonPage.xaml.cs** file, in the **Event Members** region, define an event handler named **LogonFailed**.
 3.  In the **Logon_Click** event, add code to do the following:
     -  Determine whether the user is a teacher by using a LINQ query to retrieve teachers with the same username and password as the current user. If the LINQ query returns a result, then the user is a teacher.
