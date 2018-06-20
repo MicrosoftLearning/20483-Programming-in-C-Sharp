@@ -54,6 +54,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod05\Labfiles\Solution\Exercise 3** folder.
+      >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2. In the **Data** folder, open **Grade.cs**, and locate the **User** class.
 3. Explain to the students that during Exercise 1 they will add this class and add the **UserName** and **Password** properties and the **VerifyPassword** method.
 4. Locate the **Student** class and explain to the students that during Exercise 1 they will modify this class to inherit from the new **User** class and to use the member implementations that it provides.
