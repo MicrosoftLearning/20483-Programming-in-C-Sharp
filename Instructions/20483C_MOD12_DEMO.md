@@ -92,7 +92,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3. In the **Open Project** dialog box, browse to the **[Repository Root]\AllFiles\\Mod12\Democode\Starter\FourthCoffee.Core** folder, click   **FourthCoffee.Core.sln**, and then click **Open**.
-       >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+      >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
     then select **Run as adiministrator**.
 5.  Paste the following command and then press **Enter**:
