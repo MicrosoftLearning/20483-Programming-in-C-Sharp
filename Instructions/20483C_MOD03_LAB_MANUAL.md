@@ -106,7 +106,7 @@ Finally, you will run the application and verify that the appropriate views are 
 
 6.	Log off the application.
 7. Log on as the student, **Gruber**, with password as the **password**.
-8. Verify that the application displays the student profile page for Eric Grubere.
+8. Verify that the application displays the student profile page for Eric Gruber.
 9. Close the application and then close the solution.
 
 >**Result:** After completing this exercise, you should have updated the **Grades Prototype** application to respond to user events and move among the application views appropriately.
