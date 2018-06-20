@@ -37,7 +37,7 @@ Finally, you will run the application and verify that it still functions correct
 
 #### Task 1: Convert the Grades struct into a class.
 
-1.  Start **Microsoft Visual Studio** and open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod04\Labfiles\Starter\Exercise 1** folder.
+1.  Start **Microsoft Visual Studio** and open the **GradesPrototype.sln** solution from the **[Repository Root]\AllFiles\Mod04\Labfiles\Starter\Exercise 1** folder.
 2.  In the **Data** folder, in **Grade.cs**, convert the **Grade** struct into a class.
 3.  Define a class constructor that takes the following parameters and uses them to populate the public properties of the class:
     -   **studentID**
@@ -125,7 +125,7 @@ Finally, you will create a unit test project to verify that your validation code
 
 #### Task 1: Create a list of valid subject names
 
-1. In **Visual Studio**, from the **[Repository Root]\Mod04\Labfiles\Starter\Exercise 2** folder, open the **GradesPrototype.sln** solution.
+1. In **Visual Studio**, from the **[Repository Root]\AllFiles\Mod04\Labfiles\Starter\Exercise 2** folder, open the **GradesPrototype.sln** solution.
 2. In the **Data** folder, in the **DataSource** class, define a generic **List** collection to hold the names of valid subjects.
 3. In the **CreateData** method in that class, populate the list with the following subject names:
    -   **Math**
@@ -187,7 +187,7 @@ Finally, you will sort the student data and then run the application to verify t
 
 #### Task 1: Run the application and verify that the students are not displayed in any specific order when logged on as a teacher
 
-1.  In **Visual Studio**, from the **[Repository Root]\Mod04\Labfiles\Starter\Exercise 3** folder, open the **GradesPrototype.sln** solution.
+1.  In **Visual Studio**, from the **[Repository Root]\AllFiles\Mod04\Labfiles\Starter\Exercise 3** folder, open the **GradesPrototype.sln** solution.
 2.  Build the solution and resolve any compilation errors.
 3.  Log in as **vallee** with **password** as the password. Verify that the students are not displayed in any specific order.
 4.  Close the application.
@@ -239,7 +239,7 @@ After a student has been added to the database, that student will be able to log
 
 #### Task 1: Change the Teachers and Grades collections to be generic List collections
 
-1.  In **Visual Studio**, from the **[Repository Root]\Mod04\Labfiles\Starter\Exercise 4** folder, open the **GradesPrototype.sln** solution.
+1.  In **Visual Studio**, from the **[Repository Root]\AllFiles\Mod04\Labfiles\Starter\Exercise 4** folder, open the **GradesPrototype.sln** solution.
 
 2.  In the **Data** folder, in the **DataSource.cs** code, change the **Teachers** collection to be a generic **List** collection.
 3. Change the **Grades** collection to be a generic **List** collection.
