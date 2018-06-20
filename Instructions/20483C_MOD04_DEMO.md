@@ -13,7 +13,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1. Open **Visual Studio 2017**.
 2. In Visual Studio, on the **File** menu, point to **New**, and then click **Project**.
-3. In the **New Project** dialog box, in the **Templates** list, click **Visual C\#**, and then in the **Project Type** list, click **Console Application (.NET Framework)**.
+3. In the **New Project** dialog box, in the **Templates** list, click **Visual C\#**, and then in the **Project Type** list, click **Console App (.NET Framework)**.
 4. In the **Name** text box, type **ValuesAndReferences**
 5. In the **Location** text box, set the location to **[Repository Root]\Allfiles\Mod04\Democode**, and then click **OK**.
 6. Within the **ValuesAndReferences** namespace, add the following code:
