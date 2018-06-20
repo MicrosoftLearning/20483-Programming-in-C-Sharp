@@ -199,7 +199,12 @@ Finally, you will run your application and verify that the changes you make to s
             MessageBox.Show(ex.Message, "Error saving changes");
             this.schoolContext.Refresh(RefreshMode.ClientWins, schoolContext.Students);
   ```
-
+#### Task 4: Run the application and verify that data changes are persisted to the database
+1. Run the application.
+2. Change the last name of **Kevin Liu** to **Cook**.
+3. Verify that **Save Changes** button working as expected.
+4. Remove the student **George Li**.
+5. Close the application.
 
 
 >**Results** : After completing this exercise, modified student data will be saved to the database.
