@@ -11,6 +11,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 
 1. Open **Visual Studio 2017**.
 2. Navigate to **[Repository Root]\Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor**, and then open the **FourthCoffee.LogProcessor.sln** file.
+ >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 3. In **Visual Studio**, on the **View** menu, click **Task List**.
 4. In the **Task List** window, double-click the **TODO: 01: Ensure log file directory exists.** task.
 5. In the code editor, click the blank line below the comment, and then type the following code:
@@ -70,6 +71,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 #### Demonstration Steps
 
 1. Navigate to **[Repository Root]\Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, and then open the **FourthCoffee.ExceptionLogger.sln** file.
+ >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2. Right-click **FourthCoffee.ExceptionLogger** project, and then select **Manage NuGet Packages**.
 3. In **NuGet: FourthCoffee.ExceptionLogger**, click **Browse**.
 4. Click the **Search** text box and type **Newtonsoft.Json**
@@ -120,6 +122,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod06\Labfiles\Solution\Exercise 2** folder.
+  >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2. In the **Views** folder, open **StudentProfile.xaml** and verify that the user interface has been updated to include the **Save Report** button and the **Load Report** button.
 3. In the **Views** folder, open **StudentProfile.xaml.cs**, and locate the **SaveReport_Click** method.
 4. Explain to the students that during the lab they will add the code in this method to prompt the user for a file name to save the report as, and to call methods to generate, preview, and save the report.
