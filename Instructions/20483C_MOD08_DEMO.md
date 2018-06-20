@@ -100,6 +100,7 @@
 #### Demonstration Steps
 
 1.  Open the **GradesPrototype.sln** solution from the **[Repository Root]\\Allfiles\\Mod08\\Labfiles\\Solution\\Exercise 3** folder.
+    >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2.  In **Solution Explorer**, right-click **Solution ‘GradesPrototype’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **GradesPrototype** to **Start**, and then click **OK**.
 4.  Rebuild the solution.
