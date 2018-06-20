@@ -36,10 +36,10 @@ Finally, you will run the application to verify that the student’s image is di
 #### Task 1: Create the StudentPhoto user control
 
 
-1.  Start **File Explorer**, navigate to the **[Repository Root]\\Mod09\\Labfiles\\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.  Start **File Explorer**, navigate to the **[Repository Root]\\Allfiles\\Mod09\\Labfiles\\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close **File Explorer**.
-3.  Start **Microsoft Visual Studio**, and then open the **Grades.sln** solution from the **[Repository Root]\\Mod09\\Labfiles\\Starter\\Exercise 1** folder.
-4.  Set the following projects to start without debugging at startup:
+3.  Start **Microsoft Visual Studio**, and then open the **Grades.sln** solution from the **[Repository Root]\\Allfiles\\Mod09\\Labfiles\\Starter\\Exercise 1** folder.
+4.  Set the following projects to start at startup:
    -  **Grades.Web**
    -  **Grades.WPF**
 5.  Add a new WPF user control named **StudentPhoto.xaml** to the **Controls** folder in the **Grades.WPF** project.
@@ -164,7 +164,7 @@ Finally, you will run the application to verify that the student’s image is di
 7.  Move the cursor away from the red **x** and verify that the student photograph becomes opaque and that the red **x** becomes transparent.
 8.  Click the red **x** for **Weber**, verify that the **Student** message box appears, and then click **Yes**.
 9.  Verify that **Weber** is removed from the student list.
-10. Close the application.
+10. Close the application, and then in **Visual Studio**, close the solution.
 
 
 >**Result:** After completing this exercise, the application will display the photographs of each student on the **Student List** page.
@@ -183,8 +183,8 @@ Finally, you will run the application to verify that the styling of the text ele
 
 #### Task 1: Define and apply styles for the LogonPage view
 
-1. In **Visual Studio**, open the **Grades.sln** solution from the **[Repository Root]\Mod09\Labfiles\Starter\Exercise 2** folder.
-2. Set the following projects to start without debugging at startup:
+1. In **Visual Studio**, open the **Grades.sln** solution from the **[Repository Root]\Allfiles\Mod09\Labfiles\Starter\Exercise 2** folder.
+2. Set the following projects to start at startup:
    -	**Grades.Web**
    -	**Grades.WPF**
 3. In the **Grades.WPF** project, in the **Views** folder, open **LogonPage.xaml**.
@@ -220,7 +220,7 @@ Finally, you will run the application to verify that the styling of the text ele
 3.	Below this comment, set the properties of the **LabelStyle** style by using the following information:
    -	TextWrapping: **NoWrap**
    -	FontFamily: **Buxton Sketch**
-  -		FontSize: **19**
+   -	FontSize: **19**
    -	Foreground: **#FF303030**
 4.	Locate the **\<!-- TODO: Exercise 2: Task 2b: Define the text styling used throughout the application -->** comment.
 5.	Below this comment, set the properties of the **TextBoxStyle** style by using the following information:
@@ -257,8 +257,8 @@ Finally, you will run the application to verify that the animation executes corr
 
 #### Task 1: Define animations for the StudentPhoto control
 
-1.  In **Visual Studio**, open the **Grades.sln** solution from the **[Repository Root]\\Mod09\\Labfiles\\Starter\\Exercise 3** folder.
-2.  Set the following projects to start without debugging at startup:
+1.  In **Visual Studio**, open the **Grades.sln** solution from the **[Repository Root]\\Allfiles\\Mod09\\Labfiles\\Starter\\Exercise 3** folder.
+2.  Set the following projects to start at startup:
    -  **Grades.Web**
    -  **Grades.WPF**
 3.  In the **Grades.WPF** project, in the **Controls** folder, open the **StudentPhoto.xaml** file.
@@ -314,7 +314,7 @@ public void OnMouseEnter()
     }
 ```
 6. Add another event handler called **Student_MouseLeave** that forwards the **MouseLeave** event to the **StudentPhoto** control.
-7. In the XAML markup for the **StudentsPage **view, specify that the **MouseEnter** event for the **StudentPhoto** control in the **DataTemplate** should trigger the **Student_MouseEnter** event handler method, and the **MouseLeave** event should trigger the **Student_MouseLeave** event handler.
+7. In the XAML markup for the **StudentsPage** view, specify that the **MouseEnter** event for the **StudentPhoto** control in the **DataTemplate** should trigger the **Student_MouseEnter** event handler method, and the **MouseLeave** event should trigger the **Student_MouseLeave** event handler.
 
 #### Task 3: Build and test the application
 
