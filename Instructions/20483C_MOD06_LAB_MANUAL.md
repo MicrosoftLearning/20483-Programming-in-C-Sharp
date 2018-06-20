@@ -44,8 +44,8 @@ Finally, you will save the student report in the disk and view the data held in 
 
 #### Task 1: Prompt the user for a filename and retrieve the grade data
 
-1. Start **Microsoft Visual Studio 2017**.
-2. From the **[Repository Root]\Mod06\Labfiles\Starter\Exercise 1** folder, open the **GradesPrototype.sln** solution.
+1. Open **Visual Studio 2017**.
+2. From the **[Repository Root]\AllFiles\Mod06\Labfiles\Starter\Exercise 1** folder, open the **GradesPrototype.sln** solution.
 3. In the **Views** folder, open the **StudentProfile.xaml** user interface, and
 note that it has been updated to include a **Save Report** button that users
 will click to generate and save the grades report.
@@ -96,7 +96,7 @@ To the **LoadReport_Click** method, you will also add code that loads the report
 
 #### Task 1: Define the File Dialog settings to load the report file
 
-1.	In **Visual Studio**, from the **[Repository Root]\Mod06\Labfiles\Starter\Exercise 2** folder, open the **GradesPrototype.sln** solution.
+1.	In **Visual Studio**, from the **[Repository Root]\AllFiles\Mod06\Labfiles\Starter\Exercise 2** folder, open the **GradesPrototype.sln** solution.
 2. In **StudentProfile.xaml.cs**, in the **LoadReport_Click** method, add code to
 the beginning of the method block that defines the load dialog settings.
 3. Show a dialog box to the user and save the dialog result into a Boolean variable.
