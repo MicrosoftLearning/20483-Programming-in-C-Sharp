@@ -58,6 +58,7 @@
 #### Demonstration Steps
 
 1.  From the **[Repository Root]\Allfiles\Mod02\Labfiles\Solution\Exercise 3** folder, open the **School.sln** solution.
+   >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2.  Open **MainWindow.xaml.cs** and locate the **studentsList_KeyDown** method.
 3.  Explain to students that in Exercise 1 they will refactor the code that they added to this method in Lab 1 into separate methods that can be called from multiple locations.
 4.  Show students the refactored code in the **EditStudent**, **AddNewStudent**, and **RemoveStudent** methods.
