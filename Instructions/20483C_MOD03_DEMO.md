@@ -16,6 +16,7 @@ If any security warning appears, click **OK**.
 3.  In the **New Project** dialog box, in the **Installed** list, click **Visual C\#**, and then in the **Project Type** list, click **Console App(.NET Framework)**.
 4.  In the **Name** text box, type **UsingStructs**
 5.  In the **Location** text box, set the location to **[Repository Root]\Allfiles\Mod03\Democode**, and then click **OK**.
+   >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 6.  In the **UsingStructs** namespace, add the following code:
 ```cs
     struct Coffee
@@ -57,6 +58,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.  Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open Project** dialog box, browse to the **[Repository Root]\Allfiles\Mod03\Democode\Starter** folder, click **EventsAndXAML.sln**, and then click **Open**.
+   >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  In **Solution Explorer**, expand **EventsAndXAML**, and then double-click **MainWindow.xaml**.
 5.  Notice that the window includes a button named **btnGetTime** and a label named **lblShowTime**.
 6. In the **Design** window, click the button to select it.
@@ -92,6 +94,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 ### Demonstration: Writing Code for the Grades Prototype Application Lab
 
 1.  From the **[Repository Root]\Allfiles\Mod03\Labfiles\Solution\Exercise 3** folder, open the **GradesPrototype.sln** solution.
+   >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2.  Run the application and log on as **vallee** and the password **password**.
 3.  Point out the **Welcome** message and class name to the students. Explain that each of the names in the display is a student in Esther Valle’s class.
 4.  Click **Kevin Liu** and explain to the students that this page displays Kevin’s grades.
