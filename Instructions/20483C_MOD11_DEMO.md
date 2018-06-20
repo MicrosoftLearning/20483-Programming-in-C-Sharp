@@ -75,7 +75,7 @@
 #### Demonstration Steps
 
 1.  Open the **Grades.sln** solution from the **[Repository Root]\Allfiles\Mod11\Labfiles\Solution\Exercise 2** folder.
-        >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+    >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2.  In **Solution Explorer**, right-click **Solution ‘Grades’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**.
 4.  Build the solution.
