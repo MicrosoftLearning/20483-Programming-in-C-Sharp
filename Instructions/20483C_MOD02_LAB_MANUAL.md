@@ -31,13 +31,11 @@ The application currently allows a user to edit a student’s details by pressin
 
 #### Task 1: Copy the code for editing a student into the studentsList_MouseDoubleClick event handler
 
-1.	Start the **MSL-TMG1** virtual machine if it is not already running. 
-2.	Start the **20483B-SEA-DEV11** virtual machine and log on as **Student** with the password **Pa$$w0rd**.
-3.	Start **File Explorer**, navigate to the **[Repository Root]\Mod02\Labfiles\Databases** folder, and then run **SetupSchoolDB.cmd**.
-4.	Close **File Explorer**.
-5.	Start **Microsoft Visual Studio** and from the **[Repository Root]\Mod02\Labfiles\Starter\Exercise 1** folder, open the **School.sln** solution. 
-6.	In the code for the **MainWindow.xaml.cs** window, in the **studentsList_KeyDown** event, locate the code for editing student details which is in the **case Key.Enter** block.
-7.	Copy the code in this block to the clipboard and then paste it into the **StudentsList_MouseDoubleClick** method.
+1.	Start **File Explorer**, navigate to the **[Repository Root]\Allfiles\Mod02\Labfiles\Databases** folder, and then run **SetupSchoolDB.cmd**.
+2.	Close **File Explorer**.
+3.	Start **Microsoft Visual Studio** and from the **[Repository Root]\Allfiles\Mod02\Labfiles\Starter\Exercise 1** folder, open the **School.sln** solution. 
+4.	In the code for the **MainWindow.xaml.cs** window, in the **studentsList_KeyDown** event, locate the code for editing student details which is in the **case Key.Enter** block.
+5.	Copy the code in this block to the clipboard and then paste it into the **StudentsList_MouseDoubleClick** method.
 
 
 #### Task 2: Run the application and verify that the user can now double-click a student to edit their details
@@ -49,22 +47,14 @@ The application currently allows a user to edit a student’s details by pressin
 5.	Verify that the updated data is copied back to the student list.
 6.	Close the application.
 
-
-#### Task 3: Use the Analyze Solution for Code Clones wizard to detect the duplicated code.
-
-1.	On the **Analyze** menu, click **Analyze Solution for Code Clones**.
-2.	In the **Code Clone Analysis Results** window, expand **Exact Match**. 
-3.	Using the results of the analysis in the **Code Clone Analysis Results** window, refactor the duplicated code into a method called **editStudent** that takes a student as a parameter.
-4.	Call this method from the **studentsList_MouseDoubleClick** and **studentsList_KeyDown** methods. 
-
-#### Task 4: Refactor the logic that adds and deletes a student into the addNewStudent and deleteStudent methods
+#### Task 3: Refactor the logic that adds and deletes a student into the addNewStudent and deleteStudent methods
 
 1.	Refactor the code in the **case Key.Insert** code block in the **studentsList_KeyDown** method into a method called **addNewStudent** that takes no parameters.
 2.	Call this method from the **case Key.Insert** code block in the **studentsList_KeyDown** method.
 3.	Refactor the code in the **case Key.Delete** code block in the **studentsList_KeyDown** method into a method called **removeStudent** that takes a student as a parameter.
 4.	Call this method from the **case Key.Delete** code block in the **studentsList_KeyDown** method.
 
-#### Task 5: Verify that students can still be added and removed from the application
+#### Task 4: Verify that students can still be added and removed from the application
 
 1.	Build the solution and resolve any compilation errors.
 2.	Run the application.
@@ -73,7 +63,7 @@ The application currently allows a user to edit a student’s details by pressin
 5.	Delete the student **Run Liu** and verify that the prompt window appears and the student is removed from the student list. 
 6.	Close the application. 
 
-#### Task 6: Debug the application and step into the new method calls
+#### Task 5: Debug the application and step into the new method calls
 
 1.	Add a breakpoint at the start of the **switch** statement in the **studentsList_KeyDown** method.
 2.	Debug the application.
@@ -108,7 +98,7 @@ Finally, you will run the application and test your validation code.
 
 #### Task 1: Run the application and observe that student details that are not valid can be entered
 
-1.	In **Visual Studio**, from the **[Repository Root]\Mod02\Labfiles\Starter\Exercise 2** folder, open the **School.sln** solution.
+1.	In **Visual Studio**, from the **[Repository Root]\Allfiles\Mod02\Labfiles\Starter\Exercise 2** folder, open the **School.sln** solution.
 2.	Build the solution and resolve any compilation errors.
 3.	Run the application.
 4.	Press Insert to display the **new student** window.
@@ -165,7 +155,7 @@ Finally, you will run your application and verify that the changes you make to s
 
 #### Task 1: Verify that data changes are not persisted to the database
 
-1.	In **Visual Studio**, from the **[Repository Root]\Mod02\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
+1.	In **Visual Studio**, from the **[Repository Root]\Allfiles\Mod02\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
 2.	Build the solution and resolve any compilation errors.
 3.	Run the application.
 4.	Change **Kevin Liu’s** last name to **Cook** by pressing Enter in the main application window
@@ -209,6 +199,9 @@ Finally, you will run your application and verify that the changes you make to s
             MessageBox.Show(ex.Message, "Error saving changes");
             this.schoolContext.Refresh(RefreshMode.ClientWins, schoolContext.Students);
   ```
+
+
+
 >**Results** : After completing this exercise, modified student data will be saved to the database.
 
 ©2018 Microsoft Corporation. All rights reserved.
