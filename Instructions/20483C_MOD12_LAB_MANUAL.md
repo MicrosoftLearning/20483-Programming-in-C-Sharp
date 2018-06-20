@@ -39,7 +39,7 @@ Finally, you will build the application and then use the MSIL Disassembler utili
 1.  Start File Explorer, navigate to the **[Repository Root]\\Allfiles\\Mod12\\Labfiles\\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
 3.  Start Visual Studio, from the **[Repository Root]\\Allfiles\\Mod12\\Labfiles\\Starter\\Exercise 1** folder, open the **Grades.sln** solution.
-4.  Set the following projects to start without debugging at startup:
+4.  Set the following projects to start at startup:
    - **Grades.Web**
    - **Grades.WPF**
 5.	In the **Grades.Utilities** project, in the **IncludeInReport.cs** class, add code to specify that the **IncludeInReportAttribute** class is an attribute class.
