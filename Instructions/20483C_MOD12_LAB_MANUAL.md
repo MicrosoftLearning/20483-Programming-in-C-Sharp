@@ -36,9 +36,9 @@ Finally, you will build the application and then use the MSIL Disassembler utili
 
 #### Task 1: Write the code for the IncludeInReportAttribute class
 
-1.  Start File Explorer, navigate to the **[Repository Root]\\Mod12\\Labfiles\\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.  Start File Explorer, navigate to the **[Repository Root]\\Allfiles\\Mod12\\Labfiles\\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
-3.  Start Visual Studio, from the **[Repository Root]\\Mod12\\Labfiles\\Starter\\Exercise 1** folder, open the **Grades.sln** solution.
+3.  Start Visual Studio, from the **[Repository Root]\\Allfiles\\Mod12\\Labfiles\\Starter\\Exercise 1** folder, open the **Grades.sln** solution.
 4.  Set the following projects to start without debugging at startup:
    - **Grades.Web**
    - **Grades.WPF**
@@ -77,7 +77,7 @@ In the **Grades.WPF** project, in the **Data.cs** file, in the **LocalGrade** cl
 #### Task 3: Build the application and review the metadata for the LocalGrades class
 
 1.  Build the solution, and then resolve any compilation errors.
-2.  Use the IL DASM utility to examine the metadata of the **LocalGrades** class in the **Grades.WPF.exe** assembly. The IL DASM utility is located in the **C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools** folder, and the **Grades.WPF.exe** assembly is located in the **[Repository Root]\Mod12\Labfiles\Starter\Exercise 1\Grades.WPF\bin\Debug** folder.
+2.  Use the IL DASM utility to examine the metadata of the **LocalGrades** class in the **Grades.WPF.exe** assembly. The IL DASM utility is located in the **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7 Tools** folder, and the **Grades.WPF.exe** assembly is located in the **[Repository Root]\Allfiles\Mod12\Labfiles\Starter\Exercise 1\Grades.WPF\bin\Debug** folder.
 3. Verify that the **IncludeInReport** attribute has been applied to the specified properties in the class.
 
 >**Result :** After completing this exercise, the **Grades.Utilities** assembly will contain an **IncludeInReport** custom attribute and the **Grades** class will contain fields and properties that are tagged with that attribute.
@@ -94,8 +94,8 @@ You will then update the code for the **StudentProfile** view to include fields 
 #### Task 1: Implement a static helper class called IncludeProcessor
 
 
-1.	In Visual Studio, from the **[Repository Root]\Mod12\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
-2.	Set the following projects to start without debugging at startup:
+1.	In Visual Studio, from the **[Repository Root]\Allfiles\Mod12\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
+2.	Set the following projects to start at startup:
     -	**Grades.Web**
     -	**Grades.WPF**
 3.	In the **Grades.Utilities** project, open **IncludeInReport.cs**.
@@ -138,12 +138,12 @@ Next, you will use **Gacutil.exe** to add the assembly to the GAC. You will then
 
 #### Task 1: Sign the Grades.Utilities assembly and deploy it to the GAC
 
-1.	In Visual Studio, from the **[Repository Root]\Mod12\Labfiles\Starter\Exercise 3** folder, open the **Grades.sln** solution.
-2.	Set the following projects to start without debugging at startup:
+1.	In Visual Studio, from the **[Repository Root]\Allfiles\Mod12\Labfiles\Starter\Exercise 3** folder, open the **Grades.sln** solution.
+2.	Set the following projects to start at startup:
     -	**Grades.Web**
     -	**Grades.WPF**
-3.	Run the **VS2012 x86 Native Tools Command Prompt** window as Administrator.
-4.	Run the **Sn.exe** utility to create a key pair file named **GradesKey.snk** in the **[Repository Root]\Mod12\Labfiles\Starter** folder.
+3.	Run the **Developer Command Prompt for VS 2017** window as Administrator.
+4.	Run the **Sn.exe** utility to create a key pair file named **GradesKey.snk** in the **[Repository Root]\Allfiles\Mod12\Labfiles\Starter** folder.
 5.	In Visual Studio, set the properties of the **Grades.Utilities** project to use the key pair that you have just created to sign the assembly.
 6.	Build the solution, and then resolve any compilation errors.
 7.	At the command prompt, use the **Gacutil** utility to add the **Grades.Utilities** assembly to the GAC. 
