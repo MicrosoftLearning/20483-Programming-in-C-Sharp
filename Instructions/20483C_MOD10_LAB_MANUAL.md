@@ -33,10 +33,10 @@ Finally, you will build and test the application and verify that the UI remains 
 
 #### Task 1: Build and run the application
 
-1.	Start File Explorer, navigate to the **[Repository Root]\Mod10\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.	Start File Explorer, navigate to the **[Repository Root]\Allfiles\Mod10\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.	Close File Explorer.
-3.	Start Visual Studio, from the **[Repository Root]\Mod10\Labfiles\Starter\Exercise 1** folder, open the **Grades.sln** solution.
-4.	Set the following projects to start without debugging at startup:
+3.	Start Visual Studio, from the **[Repository Root]\Allfiles\Mod10\Labfiles\Starter\Exercise 1** folder, open the **Grades.sln** solution.
+4.	Set the following projects to start at startup:
    - **Grades.Web**
    - **Grades.WPF**
 5.	Build the solution, and then resolve any compilation errors. 
@@ -106,8 +106,8 @@ Finally, you will build and test the application and verify that the UI displays
 
 #### Task 1: Create the BusyIndicator user control
 
-1.  In Visual Studio, from the **[Repository Root]\Mod10\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
-2.  Set the following projects to start without debugging at startup:
+1.  In Visual Studio, from the **[Repository Root]\Mod10\Allfiles\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
+2.  Set the following projects to start at startup:
     -  **Grades.Web**
     -  **Grades.WPF**
 3.  Build the solution.
