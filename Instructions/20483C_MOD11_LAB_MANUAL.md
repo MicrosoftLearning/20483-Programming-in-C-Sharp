@@ -34,10 +34,10 @@ You will run this method as a separate task. Finally, you will build and test th
 
 #### Task 1: Examine the WordWrapper class that provides a functional wrapper around the dynamic (COM) API for Word
 
-1.  Start File Explorer, navigate to the **[Repository Root]\Mod11\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.  Start File Explorer, navigate to the **[Repository Root]\Allfiles\Mod11\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
-3.  Start Visual Studio and open the **Grades.sln** solution from the **[Repository Root]\Mod11\Labfiles\Starter\Exercise 1** folder.
-4.  Set the following projects to start without debugging at startup:
+3.  Start Visual Studio and open the **Grades.sln** solution from the **[Repository Root]\Allfiles\Mod11\Labfiles\Starter\Exercise 1** folder.
+4.  Set the following projects to start at startup:
   - **Grades.Web**
   -  **Grades.WPF**
 5.	In the **Grades.Utilities** project, review the contents of the **WordWrapper.cs** file.
@@ -63,7 +63,7 @@ You will run this method as a separate task. Finally, you will build and test th
 1.  Build the solution and resolve any compilation errors.
 2.  Run the application.
 3.  Log on as **vallee** and the password **password99**.
-4.  Generate a grade report for **Kevin Liu**, save the report in the **[Repository Root]\Mod11\Labfiles\Starter\Exercise 1** folder, and then close the application. 
+4.  Generate a grade report for **Kevin Liu**, save the report in the **[Repository Root]\Allfiles\Mod11\Labfiles\Starter\Exercise 1** folder, and then close the application. 
 5. In Visual Studio, close the solution.
 6.	Open **Kevin Liu’s** grade report in Word, review the report, and then close Word. 
 
@@ -86,19 +86,15 @@ Finally, you will build and test the application and verify that Word now closes
 
 #### Task 1: Run the application to generate a grades report and view the Word task in Task Manager
 
-1.	In Visual Studio, from the [Repository Root]\Mod11\Labfiles\Starter\Exercise 2 folder, open the **Grades.sln** solution.
-2.	Set the following projects to start without debugging at startup: 
+1.	In Visual Studio, from the **[Repository Root]\Allfiles\Mod11\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
+2.	Set the following projects to start at startup: 
     -	**Grades.Web**
     -	**Grades.WPF**
 3.	Build the solution and resolve any compilation errors.
 4.	Run the application.
 5.	Log on as **vallee** and the password **password99**.
-6.	Generate a grade report for **Kevin Liu**, save the report in the **[Repository Root]\Mod11\Labfiles\Starter\Exercise 2** folder, and then close the application.
+6.	Generate a grade report for **Kevin Liu**, save the report in the **[Repository Root]\Allfiles\Mod11\Labfiles\Starter\Exercise 2** folder, and then close the application.
 7.	Use File Explorer to verify that the report has been generated.
-8.	Open Task Manager, and then verify that Word is still running.
-9.	In Task Manager, end the Word task, and then close Task Manager.
-
-
 
 #### Task 2: Update the WordWrapper class to terminate Word correctly
 
@@ -133,7 +129,7 @@ Finally, you will build and test the application and verify that Word now closes
 3.  Run the application.
 4.  Log on as **vallee** and the password **password99**.
 5.  View **George Li’s** grade report.
-6.  Save the report in the **[Repository Root]\Mod11\Labfiles\Starter\Exercise 2** folder. As you click **Save**, in the **Task Manager** window, verify that **Microsoft Word (32 bit)** appears and then disappears from the **Background processes** group.
+6.  Save the report in the **[Repository Root]\Allfiles\Mod11\Labfiles\Starter\Exercise 2** folder. As you click **Save**, in the **Task Manager** window, verify that **Microsoft Word (32 bit)** appears and then disappears from the **Background processes** group.
 7.  Close Task Manager, close the application, and then in Visual Studio, close the solution.
 
 
