@@ -35,33 +35,20 @@ Next, you will specify the data context for the data service and configure acces
 Finally, you will add an operation to the data service that returns a list of all the students in a specified class.
 
 
-#### Task 1: Create the Grades.Web project.
+#### Task 1: Configure data service in the Grades.Web project.
 
-1.  Start File Explorer, navigate to the **[Repository Root]\Mod08\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
+1.  Start File Explorer, navigate to the **[Repository Root]\Allfiles\Mod08\Labfiles\Databases** folder, and then run **SetupSchoolGradesDB.cmd**.
 2.  Close File Explorer.
-3.  Start Microsoft Visual Studio, and from the **[Repository Root]\Mod08\Labfiles\Starter\Exercise 1** folder, open the **GradesPrototype.sln** solution.
-4.  Add a **Visual C\# ASP.NET Empty Web Application** project called **Grades.Web** to the solution.
-5.  Configure the new project as follows:
-   -  Start Action: **Don’t open a page.**
-   -  Servers: **Use Local IIS Web server**
-   -  Project Url: **http://localhost:1650/**
-6.  Set the following projects to start at startup:
-   -  **Grades.Web**
-   -  **Grades.WPF**
-7.  Save all of the files.
-
-
-#### Task 2: Add a data service to the Grades.Web project.
-
-1.	Add a new folder named **Services** to the **Grades.Web** project.
-2.	Add a new WCF Data Service named **GradesWebDataService** to the **Services** folder.
-3.	Add a reference to the **Grades.DataModel** project in the **Grades.Web** project.
-4.	Add a reference to the **EntityFramework** assembly. This assembly is located in the **[Repository Root]\Mod08\Labfiles\Starter\Exercise 1\packages\EntityFramework.5.0.0\lib\net45** folder.
-5.	Copy the **\<connectionStrings\>** element from the **App.config** file in the **GradesPrototype** project and paste it into the **Web.config** file in the **Grades.Web** project.
+3.  Start Microsoft Visual Studio, and from the **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 1** folder, open the **GradesPrototype.sln** solution.
+4. Add a new folder named **Services** to the **Grades.Web** project.
+5. Add a new WCF Data Service named **GradesWebDataService** to the **Services** folder.
+6. Add a reference to the **Grades.DataModel** project in the **Grades.Web** project.
+7. Add a reference to the **EntityFramework** assembly. This assembly is located in the **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 1\packages\EntityFramework.5.0.0\lib\net45** folder.
+8.	Copy the **\<connectionStrings\>** element from the **App.config** file in the **GradesPrototype** project and paste it into the **Web.config** file in the **Grades.Web** project.
    >**Note:** The data service in the **Grades.Web** project needs to connect to the same data source used by the data model.
 
 
-#### Task 3: Specify the GradesDBEntities data context for the data service.
+#### Task 2: Specify the GradesDBEntities data context for the data service.
 
 1.  In the code in the **Grades.WebDataService.svc** file, add a **using** directive to bring the **Grades.DataModel** namespace into scope.
 2.  Modify the class declaration of the **GradesWebDataService** to use the **SchoolGradesDBEntities** class as the data source.
@@ -73,17 +60,16 @@ Finally, you will add an operation to the data service that returns a list of al
    -	**Subjects**
    -	**Users**
 
-#### Task 4: Add an operation to retrieve all of the students in a specified class.
+#### Task 3: Add an operation to retrieve all of the students in a specified class.
 
 1.  In the **GradesWebDataService** class, add an operation named **StudentsInClass** that takes a class name as a string and returns an **IEnumerable\<Student\>** collection. This operation should be annotated with the **WebGet** attribute.
 2.  In this operation, use a LINQ query against the **CurrentDataSource** object to retrieve and return all of the students in the class.
 3.  In the **InitializeService** method, set the access rule for the **StudentsInClass** operation to **ServiceOperationRights.AllRead**.
 
-#### Task 5: Build and test the data service.
-
+#### Task 4: Build and test the data service.
 
 1.  Build the solution, and then resolve any compilation errors.
-2.  In **Solution Explorer**, in the **Grades.Web** project, in the **Services** folder, right-click **GradesWebDataService.svc**, and then click **View in Browser (Internet Explorer)**.
+2.  In **Solution Explorer**, in the **Grades.Web** project, in the **Services** folder, right-click **GradesWebDataService.svc**, and then click **View in Browser (Microsoft Edge)**.
 3.  Verify that Internet Explorer displays an XML description of the entities that the data service exposes.
 4.  Close Internet Explorer.
 5.  In Visual Studio, close the solution.
@@ -104,21 +90,21 @@ Finally, you will test the application to verify that it runs the same as if the
 
 #### Task 1: Add an OData Connected Service for the WCF Data Service to the GradesPrototype application.
 
-1.  In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod08\Labfiles\Starter\Exercise 2** folder.
+1.  In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 2** folder.
 2.  Set the following projects to start at startup:
    -  **Grades.Web**
    -  **Grades.WPF**
 3.  Rebuild the solution.
 4.  In the **GradesPrototype** project, remove the reference to the **Grades.DataModel** project.
-5.  Add a service reference to **http://localhost:1650** by using the **Grades.DataModel** namespace.
+5.  Add a service reference to **http://localhost:1655/Services/GradesWebDataService.svc/$metadata** by using the **Grades.DataModel** namespace.
 6.  Update the namespace declaration in the **Reference.cs** file for OData Connected Service to **Grades.DataModel**. The **Reference.cs** file is generated in the **ConnectedServices\Grades.DataModel** folder in **Solution Explorer**.
    >**Note:** Add Connected Service Wizard prepends the namespace that you specify with the namespace of the project, so the result, in this case, is **GradesPrototype.Grades.DataModel**. The existing code in the **GradesPrototype** project expects the various entity classes to be located in the **Grades.DataModel** namespace. You can either update every reference throughout the project, or you can change the namespace of the data service; this lab opts for the latter approach.
     There is one drawback with this approach; if you regenerate the data service reference (this will be necessary if, for example, you modify WCF Data Service and add a new entity class), you will have to edit the **Reference.cs** file and update the namespace again because any manual changes you make to this file will be lost.
-1.  Add a new folder named **DataModel** to the **GradesPrototype** project.
-2.  Copy the following code files from the **Grades.DataModel** project to the **GradesPrototype\DataModel** folder:
-   -  Classes.cs
-   -  customGrade.cs
-   -  customTeacher.cs
+7.  Add a new folder named **DataModel** to the **GradesPrototype** project.
+8.  Copy the following code files from the **Grades.DataModel** project to the **GradesPrototype\DataModel** folder:
+   -  **Classes.cs**
+   -  **customGrade.cs**
+   -  **customTeacher.cs**
    >**Note:** The **Classes.cs**, **Grade.cs**, and **Teacher.cs** files contain custom functionality for the **Grade** and **Teacher** classes that you implemented in an earlier lab.
     Data Services does not propagate any custom functionality that is defined for a data model, so you must manually copy these files to the **Grades.DataModel** project. 
 	You will also have to make some small changes to this code to access data through OData Connected Service rather than by referencing the entities themselves. 
@@ -128,7 +114,7 @@ Finally, you will test the application to verify that it runs the same as if the
 
 #### Task 2: Modify the code that accesses the EDM to use the WCF Data Service.
 
-1. In the **Grades.Web** project, in the **Services** folder, in **SessionContext.cs**, modify the **DBContext** declaration to pass a new **Uri** object pointing to **http://localhost:1650/Services/GradesWebDataService.svc** to the **SchoolGradesDBEntities** constructor.
+1. In the **Grades.Web** project, in the **Services** folder, in **SessionContext.cs**, modify the **DBContext** declaration to pass a new **Uri** object pointing to **http://localhost:1655/Services/GradesWebDataService.svc** to the **SchoolGradesDBEntities** constructor.
    >**Note:** The **DBContext** object provides the object context for accessing the data source. Previously this object context retrieved data directly from a local EDM. Now the data service provides this object context, and the constructor requires the URL of the data service.
 2.	Add the following static constructor to the **SessionContext** class.
  ```cs
@@ -198,7 +184,7 @@ Finally, you will run the application to verify that the images appear.
 
 #### Task 1: Create the ImageNameConverter value converter class.
 
-1.  In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod08\Labfiles\Starter\Exercise 3* folder.
+1.  In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 3* folder.
 2.  Set the following projects to start at startup:
    -  **Grades.Web**
    -  **Grades.WPF**
