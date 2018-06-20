@@ -70,8 +70,8 @@ Finally, you will add an operation to the data service that returns a list of al
 
 1.  Build the solution, and then resolve any compilation errors.
 2.  In **Solution Explorer**, in the **Grades.Web** project, in the **Services** folder, right-click **GradesWebDataService.svc**, and then click **View in Browser (Microsoft Edge)**.
-3.  Verify that Internet Explorer displays an XML description of the entities that the data service exposes.
-4.  Close Internet Explorer.
+3.  Verify that **Microsoft Edge** displays an XML description of the entities that the data service exposes.
+4.  Close Browser.
 5.  In Visual Studio, close the solution.
 
 >**Result:** After completing this exercise, you should have added a WCF Data Service to the application to provide remote access to the **SchoolGrades** database.
