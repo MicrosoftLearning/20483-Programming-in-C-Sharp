@@ -8,7 +8,8 @@
 #### Preparation Steps
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
-2. Navigate to **Allfiles\Mod08\Democode\Starter\Fourth Coffee Contact Finder**, and then open the **Fourth Coffee Contact Finder.sln** file.
+2. Navigate to **[Repository Root]\Allfiles\Mod08\Democode\Starter\Fourth Coffee Contact Finder**, and then open the **Fourth Coffee Contact Finder.sln** file.
+  >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 
 
 #### Demonstration Steps
@@ -98,7 +99,7 @@
     
 #### Demonstration Steps
 
-1.  Open the **GradesPrototype.sln** solution from the **[Repository Root]\\Mod08\\Labfiles\\Solution\\Exercise 3** folder.
+1.  Open the **GradesPrototype.sln** solution from the **[Repository Root]\\Allfiles\\Mod08\\Labfiles\\Solution\\Exercise 3** folder.
 2.  In **Solution Explorer**, right-click **Solution ‘GradesPrototype’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **GradesPrototype** to **Start**, and then click **OK**.
 4.  Rebuild the solution.
