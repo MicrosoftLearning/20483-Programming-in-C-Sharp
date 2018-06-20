@@ -30,7 +30,7 @@ Finally, you will build and run the application without making any other changes
 
 #### Task 1: Create the User abstract base class
 
-1.  Start **Microsoft Visual Studio** and open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod05\Labfiles\Starter\Exercise 1** folder.
+1.  Start **Microsoft Visual Studio** and open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod05\Labfiles\Starter\Exercise 1** folder.
 2.  In the **Grade.cs** file, in the **Data** folder, create a new abstract class called **User**.
 3.  Add the **UserName** and **Password** properties to the **User** class. You can copy the code for the **UserName** and **Password** properties and the private **\_password** field from either the **Student** class or the **Teacher** class.
 4.  Add the **VerifyPassword** method to the **User** class. You can copy the code for the **VerifyPassword** method from either the **Student** class or the **Teacher** class.
@@ -70,7 +70,7 @@ Finally, you will build and run the application to test the password functionali
 
 #### Task 1: Define the SetPassword abstract method
 
-1. In **Visual Studio**, open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod05\Labfiles\Starter\Exercise 2** folder.
+1. In **Visual Studio**, open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod05\Labfiles\Starter\Exercise 2** folder.
 2. In the **Data** folder, in the **Grade.cs** file, in the **User** class, define a public abstract method called **SetPassword**. This method should take a string parameter containing the password and return a Boolean value indicating whether the password has been set successfully.
 3. In the **User** class, modify the set accessor of the **Password** property to call the **SetPassword** method rather than directly writing to the **\_password** field. Throw an **ArgumentException** exception if the **SetPassword** method returns false.
 
@@ -132,7 +132,7 @@ In this exercise, you will create a new custom exception class called **ClassFul
 
 #### Task 1: Implement the ClassFullException class
 
-1.	In **Visual Studio**, open the **GradesPrototype.sln** solution from the **[Repository Root]\Mod05\Labfiles\Starter\Exercise 3** folder.
+1.	In **Visual Studio**, open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod05\Labfiles\Starter\Exercise 3** folder.
 2.  Review the **ClassFullException** class in the **Services** folder. Notice that the class inherits from the **Exception** class, but most of the functionality is yet to be defined.
 3.  Add a private string field called **\_className** and a public virtual read-only string property called **ClassName** to the **ClassFullException** class. This property should return the value in the **\_className** field. The **\_className** field will hold the name of the class that is full when the exception is raised.
 4.  Add a default public constructor to the **ClassFullException** class. This constructor should simply delegate its responsibilities to the equivalent constructor in the **Exception** class.
