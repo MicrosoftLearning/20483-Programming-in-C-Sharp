@@ -64,6 +64,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 #### Demonstration Steps
 
 1. From the **[Repository Root]\Allfiles\Mod04\Labfiles\Solution\Exercise 4** folder, open the **GradesPrototype.sln** solution.
+    >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2. In the **Data** folder, open **Grade.cs** and explain to the students that during Exercise 1 they will convert the structs that they created in the previous lab into the classes in this file.
 3. In the **Teacher** class, locate the **VerifyPassword** method and explain to the students that they will add this method to both the **Teacher** and **Student** classes to compare the password that the user enters with the password for that user that is currently held in the **DataSource.cs** class.
 4. In the **Data** folder, open **DataSource.cs**, and expand the **Sample Data** region.
