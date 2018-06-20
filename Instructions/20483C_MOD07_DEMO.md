@@ -53,6 +53,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.	Open **Visual Studio 2017**.
 2.	In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open File** dialog box to, browse to the **[RepositoryRoot]\Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, and then open the **FourthCoffee.Employees.sln** file.
+    >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  In **Solution Explorer**, expand **FourthCoffee.Employees**, and then double-click **Program.cs**.
 5.  Review the definition of the **DBContext** variable.
 6.  Review the code in the **PrintEmployeesList** method that uses the **DBContext** variable to access the data in the EDM.
@@ -77,6 +78,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.  Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open Project** dialog box, browse to the **[Repository Root]\Allfiles\Mod07\Democode\Demo3\FourthCoffee.Employees** folder, click **FourthCoffee.Employees.sln**, and then click **Open**.
+    >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  In **Solution Explorer**, expand **FourthCoffee.Employees**, and then double-click **Program.cs**.
 5.  Review the LINQ code in each of the methods.
 6.  On the **Build** menu, click **Build Solution**.
@@ -100,6 +102,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1.  Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open Project** dialog box, browse to the **[Repository Root]\Allfiles\Mod07\Democode\Demo4\FourthCoffee.Employees** folder, click **FourthCoffee.Employees.sln**, and then click **Open**.
+    >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  In **Solution Explorer**, expand **FourthCoffee.Employees**, and then double-click **Program.cs**.
 5.  Review the LINQ code in each of the methods.
 6.  On the **Build** menu, click **Build Solution**.
@@ -131,6 +134,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 1. Open **Visual Studio 2017**.
 2.  In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  In the **Open Project** dialog box, browse to the **[Repository Root]\Allfiles\Mod07\Labfiles\Solution\Exercise 3** folder, click **GradesPrototype.sln**, and then click **Open**.
+    >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 4.  In **Server Explorer**, expand **Data Connection**, expend **{YourName}\sqlexpress.SchoolGradesDB.dbo** data connection and then expand **Tables**.
     >**Note :** If **SchoolGradesDB** wasn't appearing in Server Explorer, you can add it manually
 by clicking on **Add New Database** button.
