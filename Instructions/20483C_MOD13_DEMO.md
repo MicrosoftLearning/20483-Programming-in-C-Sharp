@@ -9,6 +9,7 @@
 
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2. Navigate to **[Repository Root]\Allfiles\Mod13\Democode\FourthCoffee.MessageSafe**, and then open the **FourthCoffee.MessageSafe.sln** file.
+      >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 3. In **Solution Explorer**, expand **FourthCoffee.MessageSafe** project, double-click **App.config**.
 4. Locate the following line:
 ```xml
@@ -132,6 +133,7 @@
 #### Demonstration Steps
 
 1.  From the **[Repository Root]\Allfiles\Mod13\Labfiles\Solution\Exercise 1** folder, open the **Grades.sln** solution.
+      >**Note:** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2.  In **Solution Explorer**, right-click **Solution ‘Grades’**, and then click **Properties**.
 3.  On the **Startup Project** page, click **Multiple startup projects**. Set **Grades.Web** and **Grades.WPF** to **Start**, and then click **OK**.
 4.  Open **Windows Menu** and type **Developer Command Prompt for VS 2017**, right click on the app
