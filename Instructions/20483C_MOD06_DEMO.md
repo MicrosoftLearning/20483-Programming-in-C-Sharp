@@ -24,40 +24,40 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
  ```cs
     return Directory.GetFiles(this._logDirectoryPath,   "*.txt");       
  ```
-7.	In the **Task List** window, double-click the **TODO: 03: Check for existing combined log file and delete if it already exists.** task.
-8.	In the code editor, click the blank line below the comment, and then type the following code:
+8.	In the **Task List** window, double-click the **TODO: 03: Check for existing combined log file and delete if it already exists.** task.
+9.	In the code editor, click the blank line below the comment, and then type the following code:
  ```cs
     if (File.Exists(combinedLogPath))
        File.Delete(combinedLogPath);
  ```
-9.	In the **Task List** window, double-click the **TODO: 04: Write the heading to the combined log file.** task.
-10.	In the code editor, click the blank line below the comment, and then type the following code:
+10.	In the **Task List** window, double-click the **TODO: 04: Write the heading to the combined log file.** task.
+11.	In the code editor, click the blank line below the comment, and then type the following code:
  ```cs
     File.AppendAllLines(combinedLogPath, heading);
  ```
-11.	In the **Task List** window, double-click the **TODO: 05: Get the log file name without the file extension.** task.
-12.	In the code editor, click the blank line below the comment, and then type the following code:
+12.	In the **Task List** window, double-click the **TODO: 05: Get the log file name without the file extension.** task.
+13.	In the code editor, click the blank line below the comment, and then type the following code:
  ```cs
     var logName = Path.GetFileNameWithoutExtension(logPath);
  ```
-13.	In the **Task List** window, double-click the **TODO: Task 06: Read the contents of the existing log file.** task.
-14.	In the code editor, click the blank line below the comment, and then type the following code:
+14.	In the **Task List** window, double-click the **TODO: Task 06: Read the contents of the existing log file.** task.
+15.	In the code editor, click the blank line below the comment, and then type the following code:
  ```cs
     var logText = File.ReadAllText(logPath);
  ```
-15.	In the **Task List** window, double-click the **TODO: Task 07: Write the log file contents to the combined log file.** task.
-16.	In the code editor, click the blank line below the comment, and then type the following code:
+16.	In the **Task List** window, double-click the **TODO: Task 07: Write the log file contents to the combined log file.** task.
+17.	In the code editor, click the blank line below the comment, and then type the following code:
  ```cs
     File.AppendAllLines(combinedLogPath, logContent);
  ```
-17. In the **Task List** window, double-click the **//TODO 09: Replace [Repository Root] with your folder path.** task.
-18. Replace **[Repository Root]** with your folder path. 
-19.	On the **Build** menu, click **Build Solution**.
-20.	On the **Debug** menu, click **Start Without Debugging**.
-21.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
-22.	Open **File Explorer** and browse to the **[Repository Root]\Allfiles\Mod06\Democode\Data\Logs** folder.
-23.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
-24.	Close **Notepad**, close **File Explorer**, and then close **Visual Studio**.
+18. In the **Task List** window, double-click the **//TODO 09: Replace [Repository Root] with your folder path.** task.
+19. Replace **[Repository Root]** with your folder path. 
+20.	On the **Build** menu, click **Build Solution**.
+21.	On the **Debug** menu, click **Start Without Debugging**.
+22.	In the **Command Prompt** window, when prompted to press any key to continue, press Enter.
+23.	Open **File Explorer** and browse to the **[Repository Root]\Allfiles\Mod06\Democode\Data\Logs** folder.
+24.	Double-click **CombinedLog.txt**, verify that the file contains a heading, and then verify the contents of each log file.
+25.	Close **Notepad**, close **File Explorer**, and then close **Visual Studio**.
 
 
 # Lesson 2:  Serializing and Deserializing Data
