@@ -73,9 +73,9 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 12. In **Solution Explorer**, expand **MainWindow.xaml**, expand **MainWindow.xaml.cs**, and then double-click **MainWindow**.
 13. Switch back to the **MainWindow.xaml** window.
 14. In the **Button** element, note that the designer has added the following attribute:
-```cs
+    ```cs
     Click="btnGetTime_Click"
-```
+    ```
     This attribute subscribes the **btnGetTime_Click** method to the **Click** event.
 15. On the **Build** menu, click **Build Solution**.
 16. In **Solution Explorer**, expand **obj**, expand **Debug**, and then double-click **MainWindow.g.i.cs**.
