@@ -17,7 +17,7 @@ After completing this lab, you will be able to:
 
 ### Lab Setup
 
-Estimated Time: **75 minutes**
+Estimated Time: **60 minutes**
 
 ### Exercise 1: Creating an Entity Data Model from The School of Fine Arts Database
 
@@ -152,7 +152,7 @@ Finally, you will run the application and verify that the data validation works 
 ```cs
     Match matchGrade = Regex.Match(assessment, @"^[A-E][+-]?$");
 ```
-    -	If the string passed is not in the valid range, throw a new **ArgumentOutOfRangeException** exception. Otherwise, return **true**.
+   - If the string passed is not in the valid range, throw a new **ArgumentOutOfRangeException** exception. Otherwise, return **true**.
 8. In the **Controls** folder, in the **GradeDialog.xaml.cs** class, locate the **ok_Click** method.
 9. In this method, add code to:
    -  Create a new **Grade** object.
