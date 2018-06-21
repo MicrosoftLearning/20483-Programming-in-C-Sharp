@@ -118,7 +118,7 @@ Finally, you will run the application to verify that the student’s image is di
    -   ToolTipService.Tooltip: **Remove from class**
    -   Tag: **{Binding}**
    >**Note:** The **Tag** property will contain a reference to the student, so that the "remove" functionality knows which student to remove. 
-   > This property will use the data binding of *ItemsControl** that contains the **DataTemplate** to reference the student.
+   > This property will use the data binding of **ItemsControl** that contains the **DataTemplate** to reference the student.
 3. Add an image control as a child of the grid control and use it to display the **delete.png** picture in the **Images** folder. Set the **Stretch** property to **Uniform**. This image contains a cross symbol that will be displayed by the remove icon.
     The XAML markup for the grid control should look like this:
 ```xml
