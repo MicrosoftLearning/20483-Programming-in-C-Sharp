@@ -184,7 +184,7 @@ Finally, you will run the application to verify that the images appear.
 
 #### Task 1: Create the ImageNameConverter value converter class.
 
-1.  In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 3* folder.
+1.  In Visual Studio, open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 3** folder.
 2.  Set the following projects to start at startup:
    -  **Grades.Web**
    -  **Grades.WPF**
