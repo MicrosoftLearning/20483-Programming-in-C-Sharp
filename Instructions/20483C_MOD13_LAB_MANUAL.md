@@ -1,6 +1,6 @@
 
 
-# Module 13: Encrypting and Decrypting the Grades Report
+# Module 13: Encrypting and Decrypting Data
 
 # Lab: Encrypting the Grades Report
 
