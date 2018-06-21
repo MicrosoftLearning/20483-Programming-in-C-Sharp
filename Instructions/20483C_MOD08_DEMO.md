@@ -89,7 +89,7 @@
 1. Ensure that you have cloned the 20483C directory from GitHub. It contains the code segments for this course's labs and demos. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2. Initialize the database:
    - In the **Apps list**, click **File Explorer**.
-   - In **File Explorer**, navigate to the **[Repository Root]\Mod08\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
+   - In **File Explorer**, navigate to the **[Repository Root]\Allfiles\Mod08\Labfiles\Databases** folder, and then double-click **SetupSchoolGradesDB.cmd**.
     >**Note:** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
    - Close **File Explorer**.
 3. Ensure that you have completed the following steps before starting working on this module:
