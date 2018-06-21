@@ -252,7 +252,7 @@ After a student has been added to the database, that student will be able to log
 1.  In the **Data** folder, in the **Grade.cs** code, in the **Teacher** class, implement the **EnrollInClass** method as follows:
    -   Verify that the student is not already enrolled in another class.
    -   If the student is not in another class, set the **TeacherID** property of the student to the current **TeacherID**.
-   -   If the student is in another class, throw an **ArgumentException **exception to show that the student is already assigned to a class.
+   -   If the student is in another class, throw an **ArgumentException** exception to show that the student is already assigned to a class.
 
 2.  In the **Teacher** class, add code to the **RemoveFromClass** method as follows:
    -   Verify that the **Student** is actually assigned to the class for the given teacher.
