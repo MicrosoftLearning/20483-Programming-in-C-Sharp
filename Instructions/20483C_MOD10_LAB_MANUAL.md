@@ -106,7 +106,7 @@ Finally, you will build and test the application and verify that the UI displays
 
 #### Task 1: Create the BusyIndicator user control
 
-1.  In Visual Studio, from the **[Repository Root]\Mod10\Allfiles\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
+1.  In Visual Studio, from the **[Repository Root]\Allfiles\Mod10\Allfiles\Labfiles\Starter\Exercise 2** folder, open the **Grades.sln** solution.
 2.  Set the following projects to start at startup:
     -  **Grades.Web**
     -  **Grades.WPF**
@@ -121,22 +121,22 @@ Finally, you will build and test the application and verify that the UI displays
     -	Set the horizontal and vertical alignments to **Center**.
     -	Set the background to a horizontal linear gradient from light gray to dark gray.
     -	Add a drop shadow effect with opacity of 0.75.
-7.	In the **Border** element, add a **Grid** element with the following characteristics: 
+9.	In the **Border** element, add a **Grid** element with the following characteristics: 
     -	Set the margin to **10** units.
     -	Define two rows with automatically determined heights.
-8.	In the first row of the **Grid** element, add a **ProgressBar** element with the following characteristics: 
+10.	In the first row of the **Grid** element, add a **ProgressBar** element with the following characteristics: 
     -	Set the width to **200** units.
     -	Set the height to **25** units.
     -	Set the margin to **20** units.
     -	Set the name of the control to **progress**.
     -	Set the progress bar to provide generic, continuous feedback rather than actual values (Hint: use the **IsIndeterminate** attribute).
-9.	In the second row of the **Grid** element, add a **TextBlock** element with the following characteristics: 
+11.	In the second row of the **Grid** element, add a **TextBlock** element with the following characteristics: 
     -	Set the font size to **14** points.
     -	Apply the **Verdana** font.
     -	Set the text alignment to **Center**.
     -	Display the message **Please Wait…**
     -	Set the name of the control to **txtMessage**.
-10.	Your completed XAML markup should look like the following code:
+12.	Your completed XAML markup should look like the following code:
 ```xml
     <UserControl x:Class="Grades.WPF.BusyIndicator"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -164,8 +164,8 @@ Finally, you will build and test the application and verify that the UI displays
         </Grid>
     </UserControl>
 ```
-11.	Save all files. 
-12.	In the **Grades.WPF** project, in the **MainWindow.xaml** file, add a **BusyIndicator** element with the following characteristics: 
+13.	Save all files. 
+14.	In the **Grades.WPF** project, in the **MainWindow.xaml** file, add a **BusyIndicator** element with the following characteristics: 
     -	Set the margin to **0**.
     -	Set the visibility to **Collapsed**.
     -	Set the name of the control to **busyIndicator**.
