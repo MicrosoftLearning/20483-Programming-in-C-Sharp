@@ -80,9 +80,9 @@
 30.	Close Visual Studio.
 
 
-# Lesson 2:  Accessing Data in the Cloud
+# Lesson 2:  Accessing Data by Using OData Connected Services
 
-### Demonstration: Retrieving and Modifying Grade Data in the Cloud Lab
+### Demonstration: Retrieving and Modifying Grade Data Remotely
 
 #### Preparation Steps
 
