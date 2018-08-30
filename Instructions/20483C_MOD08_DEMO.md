@@ -33,7 +33,7 @@
 11.	In the code editor, click in the blank line below the comment, and then type the following code:
  ```cs
     this._request = WebRequest.Create(
-       this._serviceUri.AbsoluteUri) as 
+       this._serviceUri) as 
        HttpWebRequest;
  ```
 12.	In the **Task List** window, double-click the **TODO: 04: Configure the request to send JSON data** task.
