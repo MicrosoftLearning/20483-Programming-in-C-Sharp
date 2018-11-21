@@ -1,6 +1,6 @@
 # Module 1:  Developing the Code for a Graphical Application
 
-# Lesson 3:  Visual C# Programming Language Constructs
+## Lesson 3:  Visual C# Programming Language Constructs
 
 ### Demonstration: Developing the Class Enrollment Application Lab
 
