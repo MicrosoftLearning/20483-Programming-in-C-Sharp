@@ -6,7 +6,7 @@
 ### Scenario
 
 You are a Microsoft Visual C# developer working for a software development company that is writing applications for The School of Fine Arts, an elementary school for gifted children.
-The school administrators require an application that they can use to enroll students in a class. The application must enable an administrator to add and remove students from classes, as well as to update the details of students. 
+The school administrators require an application that they can use to enroll students in a class. The application must enable an administrator to add and remove students from classes, as well as to update the details of students.
 You have been asked to write the code that implements the business logic for the application.
 
 >**Note :** During the labs for the first two modules in this course, you will write code for this class enrollment application.
@@ -31,9 +31,9 @@ Estimated Time: **105 minutes**
 #### Scenario
 
 In this exercise, you will write the code that enables an administrator who is using the application to edit a student’s details.
-A list of students is displayed in the user interface of the application. When the user selects a student and then presses a key on the keyboard, you will check whether the key they pressed was Enter. 
+A list of students is displayed in the user interface of the application. When the user selects a student and then presses a key on the keyboard, you will check whether the key they pressed was Enter.
 If they did press Enter, you will write code to display the student’s details in a separate form, which the user can use to modify the details.
-When the user closes the form, you will copy the updated details back to the list box displaying the list of students. 
+When the user closes the form, you will copy the updated details back to the list box displaying the list of students.
 Finally, you will run the application to verify that your code functions as expected, and then use the debugging tools to examine code as it runs.
 
 #### Task 1: Detect whether the user has pressed the Enter key
@@ -50,16 +50,15 @@ Finally, you will run the application to verify that your code functions as expe
 #### Task 2: Initialize the StudentForm window and populate it with the details of the currently selected student
 
 1. If the user has pressed the Enter key, create a new instance of the **StudentForm** window named **sf** and set the **Title** property of the window to **Edit Student Details**.
-2. Populate the following text boxes on the form with the corresponding properties of the current student: 
+2. Populate the following text boxes on the form with the corresponding properties of the current student:
     - firstName
     - lastName
     - dateOfBirth
    To store data in a text box in a window, set the **Text** property of the text box to the required string.
 3. Display the date of birth by using the standard short date format without the time element by using the “d” format specifier as shown in the following code:
-
-```cs
+    ```cs
     sf.dateOfBirth.Text = student.DateOfBirth.ToString("d");
-```
+    ```
 
 #### Task 3: Display the StudentForm window and copy the updated student details entered back to the Student object
 
@@ -99,10 +98,10 @@ Finally, you will run the application to verify that your code functions as expe
 9. Enter code to change the **sf.lastName.Text** value to **"Dubicki"**, and then verify that value changes in the **Watch 1** window.
 
     | **Field**     | **Value**     |
-    | ------------- |:-------------:| 
-    | First Name    | Dominik       | 
-    | Last Name     | Dubicki       | 
-    | Date of Birth | 8/10/2005     | 
+    | ------------- |:-------------:|
+    | First Name    | Dominik       |
+    | Last Name     | Dubicki       |
+    | Date of Birth | 8/10/2005     |
 
 11. Stop debugging the application.
 12. In Visual Studio, on the **Debug** menu, click **Delete All Breakpoints**, and then close the solution.
@@ -115,8 +114,8 @@ Finally, you will run the application to verify that your code functions as expe
 
 In this exercise, you will write code that enables an administrator who is using the application to add a new student to the students list.
 A list of students is displayed in the user interface of the application. When the user presses a key on the keyboard, you will check whether the key they pressed was Insert.
-If they did press Insert, you will write code to display a form in which the user can enter the details of a new student, including their first name, last name, and date of birth. 
-When the user closes the form, you will add the new student to the list of students and display the details in the list box. 
+If they did press Insert, you will write code to display a form in which the user can enter the details of a new student, including their first name, last name, and date of birth.
+When the user closes the form, you will add the new student to the list of students and display the details in the list box.
 Finally, you will run the application to verify that your code functions as expected.
 
 #### Task 1: Add logic to the key down method to detect if the Insert key has been pressed
@@ -125,14 +124,13 @@ Finally, you will run the application to verify that your code functions as expe
 2. In the code for the **MainWindow.xaml.cs** window, locate the **studentsList_KeyDown** method.
 3. In this method, add a statement to detect whether the user has pressed Insert.
 
-#### Task 2: Initialize the student form.
+#### Task 2: Initialize the student form
 
 1. If the user has pressed Insert, create a new instance of the **StudentForm** window.
 2. Set the **Title** property of the window to **New Student for Class** appended to the **Class** property of the **teacher** object. Use code similar to the following to create the string for the **Title** property.
-
-```cs
+    ```cs
     "New Student for Class " + teacher.Class
-```
+    ```
 
 #### Task 3: Display the StudentForm window and enable the user to provide the details of the new student
 
@@ -162,15 +160,15 @@ Finally, you will run the application to verify that your code functions as expe
 #### Scenario
 
 In this exercise, you will write code that enables an administrator to remove a student from the students list.
-A list of students is displayed in the user interface of the application. If the user selects a student and then presses a key on the keyboard, you will check whether the key they pressed was Delete. 
-If they did press Delete, the application will prompt the user to confirm that they want to remove the selected student from the class. If they do, the student will be deleted from the student list for the appropriate class, otherwise nothing changes. 
+A list of students is displayed in the user interface of the application. If the user selects a student and then presses a key on the keyboard, you will check whether the key they pressed was Delete.
+If they did press Delete, the application will prompt the user to confirm that they want to remove the selected student from the class. If they do, the student will be deleted from the student list for the appropriate class, otherwise nothing changes.
 Finally, you will run the application to verify that your code functions as expected.
 
 #### Task 1: Add logic to the key down method to detect if the Delete key has been pressed
 
 1. In Visual Studio, from the **[Repository Root]\Allfiles\Mod01\Labfiles\Starter\Exercise 3** folder, open the **School.sln** solution.
-2. In the code for the **MainWindow.xaml.cs** window, find the **studentsList_KeyDown** method. 
-3. In this method, add a statement to detect whether the user has pressed the Delete key. 
+2. In the code for the **MainWindow.xaml.cs** window, find the **studentsList_KeyDown** method.
+3. In this method, add a statement to detect whether the user has pressed the Delete key.
 
 #### Task 2: Prompt the user to confirm that they want to remove the selected student from the class
 
@@ -197,15 +195,15 @@ Finally, you will run the application to verify that your code functions as expe
 #### Scenario
 
 In this exercise, you will update the application to display a student’s age instead of their date of birth.
-You will write code in the **AgeConverter** class that is linked to the grid column displaying student ages. 
-In this class, you will write code to work out the difference between the current date and the date of birth of the student, and then convert this value into years. 
+You will write code in the **AgeConverter** class that is linked to the grid column displaying student ages.
+In this class, you will write code to work out the difference between the current date and the date of birth of the student, and then convert this value into years.
 Then you will run the application to verify that the **Age** column now displays age in years instead of the date of birth.
 
 #### Task 1: Examine the MainWindow XAML
 
 1. In Visual Studio, from the **[Repository Root]\Allfiles\Mod01\Labfiles\Starter\Exercise 4** folder, open the **School.sln** solution.
 2. Build the solution.
-3. View the **MainWindow.xaml** code. 
+3. View the **MainWindow.xaml** code.
 4. Note how the **Age** column in **GridView** uses databinding with a value converter (**AgeConverter**).
 
 #### Task 2: Add logic to the AgeConverter class to calculate a student’s age from their date of birth
