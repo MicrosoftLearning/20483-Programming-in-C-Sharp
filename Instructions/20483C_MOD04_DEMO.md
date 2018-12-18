@@ -1,6 +1,6 @@
 # Module 4: Creating Classes and Implementing Type-Safe Collections
 
-# Lesson 1: Creating Classes
+## Lesson 1: Creating Classes
 
 ### Demonstration: Comparing Reference Types and Value Types
 
@@ -23,14 +23,14 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
        public int Contents;
     }
     ```
-7.	Immediately below the code you just added, add the following code:
+7. Immediately below the code you just added, add the following code:
     ```cs
     class MyClass
     {
        public int Contents = 0;
     }
     ```
-8.	Within the **Program** class, within the **Main** method, add the following code:
+8. Within the **Program** class, within the **Main** method, add the following code:
     ```cs
     MyStruct struct1 = new MyStruct();
     MyStruct struct2 = struct1;
@@ -43,17 +43,15 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
     Console.WriteLine($"Value types: {struct1.Contents}, {struct2.Contents}");
     Console.WriteLine($"Reference types: {class1.Contents}, {class2.Contents}");
     ```
-9.  On the **Debug** menu, click **Start without Debugging**. The console window shows the following output:
+9. On the **Debug** menu, click **Start without Debugging**. The console window shows the following output:
     ```cs
     Value types: 0, 100
     Reference types: 100, 100
     ```
-10.	To close the console window, press Enter.
-11.	Close Visual Studio 2017.
+10. To close the console window, press Enter.
+11. Close Visual Studio 2017.
 
-
-
-# Lesson 3: Implementing Type-Safe Collections
+## Lesson 3: Implementing Type-Safe Collections
 
 ### Demonstration: Adding Data Validation and Type-Safety to the Application Lab
 
@@ -93,8 +91,6 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 27. Click **Enroll Student** and explain to the students that even though Darren was removed from this user’s class, he still exists as a student and can be added later to a class.
 28. Click **Close**, click **Log off**, and then close the application.
 29. Close Visual Studio.
-
-
 
 ©2018 Microsoft Corporation. All rights reserved.
 

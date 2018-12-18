@@ -1,7 +1,7 @@
 
 # Module 5: Creating a Class Hierarchy by Using Inheritance
 
-# Lesson 1: Creating Class Hierarchies
+## Lesson 1: Creating Class Hierarchies
 
 ### Demonstration: Calling Base Class Constructors
 
@@ -13,37 +13,35 @@
 
 #### Demonstration Steps
 
-
-1.  In **Solution Explorer**, double-click **Beverage.cs** and review the contents of the class.
-2.  Note that the **Beverage** class contains a default constructor and an alternative constructor.
-3.  In **Solution Explorer**, double-click **Coffee.cs** and review the contents of the class.
-4.  Note that the **Coffee** class inherits from the **Beverage** class.
-5.  Note that the **Coffee** class contains a default constructor and an alternative constructor.
+1. In **Solution Explorer**, double-click **Beverage.cs** and review the contents of the class.
+2. Note that the **Beverage** class contains a default constructor and an alternative constructor.
+3. In **Solution Explorer**, double-click **Coffee.cs** and review the contents of the class.
+4. Note that the **Coffee** class inherits from the **Beverage** class.
+5. Note that the **Coffee** class contains a default constructor and an alternative constructor.
 6. Note that the alternative constructor explicitly calls the alternative constructor in the base class.
-7.  In **Solution Explorer**, double-click **Program.cs** and review the contents of the class.
-8.  Note that the **Program** class creates two instances of the **Coffee** type: one by using the default constructor, and one by using the alternative constructor.
-9.  On the **Build** menu, click **Rebuild Solution**.
-10.  Press F11 twice so that the first line of executable code in the **Program** class is highlighted.
-11.  Press F11. Note that the debugger steps into the default constructor for the **Coffee** class.
-12.  Press F11. Note that the debugger steps into the default constructor for the **Beverage** class.
-13.  Point out that derived class constructors implicitly call the default base class constructor unless you specify an alternative base class constructor.
-14.  Press F11 six times, until the debugger returns to the default constructor for the **Coffee** class.
-      >**Note:** If  **Microsoft Visual Studio** windows appears, press **No** and continue with F11.
-15.  Point out that the base class constructor logic is run before the derived class constructor logic.
-16.  Press F11 six times, until the debugger returns to the **Program** class.
-17.  Press F11. The second executable line of code in the **Program** class is highlighted.
-18.  Press F11. Note that the debugger steps into the alternative constructor for the **Coffee** class.
-19.  Press F11. Note that the debugger steps into the alternative constructor for the **Beverage** class.
-20.  Place your mouse over the **Beverage** constructor parameters and point out that the **Coffee** constructor has passed argument values to this constructor.
-21.  Press F11 six times, until the debugger returns to the alternative constructor for the **Coffee** class.
-22.  Press F11 six times, until the debugger returns to the **Program** class.
-23.	Press F5 to run the remainder of the application. 
-24.	When the console window appears, point out that it makes no difference to consumers of the class whether variables were set by the derived class constructor or the base class constructor. 
-25.	To close the console window, press Enter. 
-26.	Close Visual Studio. 
+7. In **Solution Explorer**, double-click **Program.cs** and review the contents of the class.
+8. Note that the **Program** class creates two instances of the **Coffee** type: one by using the default constructor, and one by using the alternative constructor.
+9. On the **Build** menu, click **Rebuild Solution**.
+10. Press F11 twice so that the first line of executable code in the **Program** class is highlighted.
+11. Press F11. Note that the debugger steps into the default constructor for the **Coffee** class.
+12. Press F11. Note that the debugger steps into the default constructor for the **Beverage** class.
+13. Point out that derived class constructors implicitly call the default base class constructor unless you specify an alternative base class constructor.
+14. Press F11 six times, until the debugger returns to the default constructor for the **Coffee** class.
+    >**Note:** If  **Microsoft Visual Studio** windows appears, press **No** and continue with F11.
+15. Point out that the base class constructor logic is run before the derived class constructor logic.
+16. Press F11 six times, until the debugger returns to the **Program** class.
+17. Press F11. The second executable line of code in the **Program** class is highlighted.
+18. Press F11. Note that the debugger steps into the alternative constructor for the **Coffee** class.
+19. Press F11. Note that the debugger steps into the alternative constructor for the **Beverage** class.
+20. Place your mouse over the **Beverage** constructor parameters and point out that the **Coffee** constructor has passed argument values to this constructor.
+21. Press F11 six times, until the debugger returns to the alternative constructor for the **Coffee** class.
+22. Press F11 six times, until the debugger returns to the **Program** class.
+23. Press F5 to run the remainder of the application.
+24. When the console window appears, point out that it makes no difference to consumers of the class whether variables were set by the derived class constructor or the base class constructor.
+25. To close the console window, press Enter.
+26. Close Visual Studio.
 
-
-# Lesson 2: Extending .NET Framework Classes
+## Lesson 2: Extending .NET Framework Classes
 
 ### Demonstration: Refactoring Common Functionality into the User Class Lab
 
@@ -54,7 +52,7 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 #### Demonstration Steps
 
 1. Open the **GradesPrototype.sln** solution from the **[Repository Root]\Allfiles\Mod05\Labfiles\Solution\Exercise 3** folder.
-      >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
+    >**Note :** If any Security warning dialog box appears, clear **Ask me for every project in this solution** check box and then click **OK**.
 2. In the **Data** folder, open **Grade.cs**, and locate the **User** class.
 3. Explain to the students that during Exercise 1 they will add this class and add the **UserName** and **Password** properties and the **VerifyPassword** method.
 4. Locate the **Student** class and explain to the students that during Exercise 1 they will modify this class to inherit from the new **User** class and to use the member implementations that it provides.
@@ -78,7 +76,6 @@ Ensure that you have cloned the 20483C directory from GitHub. It contains the co
 22. Attempt to change the password to **pass** (a password that is not valid) and point out the error message that is displayed.
 23. Change the password to **passwd** (a valid password) and point out that the password is successfully changed.
 24. Close the application, and then close Visual Studio.
-
 
 ©2018 Microsoft Corporation. All rights reserved.
 

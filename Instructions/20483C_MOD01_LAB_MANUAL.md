@@ -103,8 +103,8 @@ Finally, you will run the application to verify that your code functions as expe
     | Last Name     | Dubicki       |
     | Date of Birth | 8/10/2005     |
 
-11. Stop debugging the application.
-12. In Visual Studio, on the **Debug** menu, click **Delete All Breakpoints**, and then close the solution.
+10. Stop debugging the application.
+11. In Visual Studio, on the **Debug** menu, click **Delete All Breakpoints**, and then close the solution.
 
 >**Result :** After completing this exercise, users will be able to edit the details of a student.
 
