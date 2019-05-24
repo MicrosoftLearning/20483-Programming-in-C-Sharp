@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -38,7 +39,7 @@ namespace GradesPrototype.Data
                     }
 
                     // If the date is valid, then save it in the appropriate format.
-                    _assessmentDate = assessmentDate.ToString("d");
+                    _assessmentDate = assessmentDate.ToString("d", CultureInfo.InvariantCulture);
                 }
                 else
                 {
