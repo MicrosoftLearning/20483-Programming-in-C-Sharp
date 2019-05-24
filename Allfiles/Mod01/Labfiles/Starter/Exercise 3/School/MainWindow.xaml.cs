@@ -78,7 +78,7 @@ namespace School
                         // When the user closes the form, copy the details back to the student
                         student.FirstName = sf.firstName.Text;
                         student.LastName = sf.lastName.Text;
-                        student.DateOfBirth = DateTime.ParseExact(sf.dateOfBirth.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
+                        student.DateOfBirth = DateTime.Parse(sf.dateOfBirth.Text, CultureInfo.InvariantCulture);
                         // Enable saving (changes are not made permanent until they are written back to the database)
                         saveChanges.IsEnabled = true;
                     }
@@ -101,7 +101,7 @@ namespace School
                         Student newStudent = new Student();
                         newStudent.FirstName = sf.firstName.Text;
                         newStudent.LastName = sf.lastName.Text;
-                        newStudent.DateOfBirth = DateTime.ParseExact(sf.dateOfBirth.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
+                        newStudent.DateOfBirth = DateTime.Parse(sf.dateOfBirth.Text, CultureInfo.InvariantCulture);
                         // Assign the new student to the current teacher
                         this.teacher.Students.Add(newStudent);
 
