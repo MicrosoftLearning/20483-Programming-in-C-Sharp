@@ -10,6 +10,7 @@ using School.Data;
 // Bring the System.Data and System.Data.Objects namespaces into scope
 using System.Data;
 using System.Data.Objects;
+using System.Transactions;
 
 namespace School
 {
@@ -18,6 +19,9 @@ namespace School
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Defines the transaction for the db connection
+        private TransactionScope scope;
+
         // Connection to the School database
         private SchoolDBEntities schoolContext = null;
 
@@ -37,6 +41,7 @@ namespace School
         // Connect to the database and display the list of teachers when the window appears
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            this.scope = new TransactionScope(TransactionScopeOption.RequiresNew);
             this.schoolContext = new SchoolDBEntities();
             teachersList.DataContext = this.schoolContext.Teachers;
         }
