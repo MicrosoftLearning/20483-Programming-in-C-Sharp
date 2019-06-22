@@ -32,7 +32,7 @@ In this exercise, you will use the **Entity Data Model Wizard** to generate an E
 3. Open **Visual Studio 2017**, and from the **[Repository Root]\\Allfiles\\Mod07\\Labfiles\\Starter\\Exercise 1** folder, open the **GradesPrototype.sln** solution.
 4. Add a new class library project named **Grades.DataModel** to the solution.
 5. Add a new **ADO.NET Entity Data Model** named **GradesModel** to the **Grades.DataModel** project.
-6. Generate the model from the **SchoolGradesDB** database on the **.\sqlexpress** server and include the following tables:
+6. Generate the model from the **SchoolGradesDB** database on the **(localdb)\MSSQLLocalDB** server and include the following tables:
    - **Grades**
    - **Students**
    - **Subjects**
