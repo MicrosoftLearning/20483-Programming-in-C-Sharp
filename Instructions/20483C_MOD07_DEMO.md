@@ -24,7 +24,7 @@
 10. In **Entity Data Model Wizard**, on the **Choose Model Contents** page, click **EF Designer from database**, and then click **Next**.
 11. On the **Choose Your Data Connection** page, click **New Connection**.
 12. On the **Choose Data Source page**, Select **Microsoft SQL Server** and then click **OK**.
-13. In the **Server name** text box, type **.\sqlexpress**, in the **Select or enter a database name** list, click **FourthCoffee**, and then click **OK**.
+13. In the **Server name** text box, type **(localdb)\MSSQLLocalDB**, in the **Select or enter a database name** list, click **FourthCoffee**, and then click **OK**.
 14. In **Entity Data Model Wizard**, on the **Choose Your Data Connection** page, click **Next**.
 15. In the **Choose Your Version** page, choose **Entity Framework 6.x** and then click **Next**.
 16. On the **Choose Your Database Objects and Settings** page, expand **Tables**, expand **dbo**, select **Branches**, **Employees**, and **JobTitles**, and then click **Finish**.
