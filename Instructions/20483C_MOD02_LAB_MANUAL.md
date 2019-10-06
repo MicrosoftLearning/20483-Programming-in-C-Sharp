@@ -173,20 +173,25 @@ Finally, you will run your application and verify that the changes you make to s
 1. Enclose the lines of code that call the **SaveChanges** method of the **schoolContext** object and disable the **Save Changes** button in a **try** block.
 2. Below the **try** block, add a **catch** block to catch any  **OptimisticConcurrencyException** exceptions that may occur.
 3. In the **catch** block, add the following code:
+
     ```cs
     // If the user has changed the same students earlier, then overwrite their changes with the new data
-    this.schoolContext.Refresh(RefreshMode.StoreWins, schoolContext.Students);
+    this.schoolContext.Refresh(RefreshMode.ClientWins, schoolContext.Students);
     this.schoolContext.SaveChanges();
     ```
+
 4. Add another **catch** block to catch any **UpdateException** exceptions that may occur, storing the exception in a variable named **uEx**.
 5. In the **catch** block, add the following code:
+
     ```cs
     // If some sort of database exception has occurred, then display the reason for the exception and rollback
     MessageBox.Show(uEx.InnerException.Message, "Error saving changes");
     this.schoolContext.Refresh(RefreshMode.StoreWins, schoolContext.Students);
     ```
+
 6. Add another **catch** block to catch any other type of exception that might occur, storing the exception in a variable named **ex**.
 7. In the **catch** block, add the following code:
+
     ```cs
     // If some other exception occurs, report it to the user
     MessageBox.Show(ex.Message, "Error saving changes");
