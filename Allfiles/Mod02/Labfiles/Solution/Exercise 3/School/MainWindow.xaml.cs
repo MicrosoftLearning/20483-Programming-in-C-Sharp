@@ -19,9 +19,6 @@ namespace School
     /// </summary>
     public partial class MainWindow : Window
     {
-        // Defines the transaction for the db connection
-        private TransactionScope scope;
-
         // Connection to the School database
         private SchoolDBEntities schoolContext = null;
 
@@ -41,9 +38,13 @@ namespace School
         // Connect to the database and display the list of teachers when the window appears
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            this.scope = new TransactionScope(TransactionScopeOption.RequiresNew);
             this.schoolContext = new SchoolDBEntities();
             teachersList.DataContext = this.schoolContext.Teachers;
+        }
+
+        private void Window_Unloaded(object sender, RoutedEventArgs e)
+        {
+            this.schoolContext.Dispose();
         }
 
         // When the user selects a different teacher, fetch and display the students for that teacher
@@ -174,8 +175,7 @@ namespace School
                 // Disable the Save button (it will be enabled if the user makes more changes)
                 saveChanges.IsEnabled = false;
             }
-
-           // Catch the common exceptions that can occur when saving changes
+            // Catch the common exceptions that can occur when saving changes
             catch (OptimisticConcurrencyException)
             {
                 // If another user has changed the same students earlier, then overwrite their changes with the new data
