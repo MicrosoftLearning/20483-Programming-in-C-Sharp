@@ -88,7 +88,8 @@
     >**Note:** If a Windows protected your PC dialog appears, click **More info** and then click **Run Anyway**.
    - Close **File Explorer**.
 3. Ensure that you have completed the following steps before starting working on this module:
-   - Install **Microsoft.OData.ConnectedService.vsix** from **[Repository Root]\AllFiles\Assets**. Alternatively download the latest  version from the Visual Studio Marketplace.
+   - Install **Microsoft.OData.ConnectedService.vsix** from **[Repository Root]\AllFiles\Assets**.  
+     Alternatively download the latest version from the Visual Studio Marketplace: https://marketplace.visualstudio.com/items?itemName=laylaliu.ODataConnectedService
    - Install **WcfDataServices.exe** from **[Repository Root]\AllFiles\Assets**.
    - Run **WCF.reg** file from **[Repository Root]\AllFiles\Assets**.
 
