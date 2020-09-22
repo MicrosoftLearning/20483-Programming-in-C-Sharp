@@ -233,13 +233,13 @@ Finally, you will run the application to verify that the styling of the text ele
 2. Locate the **\<!-- TODO: Exercise 2: Task 2a: Define the label styling used throughout the application --\>** comment near the end of the file.
 3. Below this comment, set the properties of the **LabelStyle** style by using the following information:
    - TextWrapping: **NoWrap**
-   - FontFamily: **Buxton Sketch**
+   - FontFamily: **Comic Sans MS**
    - FontSize: **19**
    - Foreground: **#FF303030**
 4. Locate the **\<!-- TODO: Exercise 2: Task 2b: Define the text styling used throughout the application --\>** comment.
 5. Below this comment, set the properties of the **TextBoxStyle** style by using the following information:
    - TextWrapping: **NoWrap**
-   - FontFamily: **Buxton Sketch**
+   - FontFamily: **Comic Sans MS**
    - FontSize: **12**
    - TextAlignment: **Left**
    - Foreground: **#FF303030**
